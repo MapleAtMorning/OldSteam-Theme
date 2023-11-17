@@ -1,0 +1,14 @@
+:root { /* Let's define colours based on steamscheme.res */
+	--LightGreenBG: #5a6a50 !important;
+	--GreenBG: #4c5844 !important;
+	--DarkGreenBG: #3e4637 !important;
+	--BorderBright: #808080 !important;
+	--BorderDark: #282e22 !important;
+	--OffWhite: #d8ded3 !important;
+	--Maize: #c4b550 !important;
+	--MaizeBG: #91863c !important;
+	--Label: #a0aa95 !important;
+	--DimListText: #758666 !important;
+	--DisabledText1: #75806f !important;
+	--DisabledText2: #282e22 !important; 
+}

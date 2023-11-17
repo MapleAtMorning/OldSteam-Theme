@@ -1,0 +1,112 @@
+/* [class*="gamelistbar"]{
+    outline: 1px rgba(0, 255, 0, 0.25) solid !important;
+} */
+
+/* Home Button & Collections Button ======================================================================= */
+[class*="gamelisthome_Bar_"]{
+    background-color: var(--DarkGreenBG) !important;
+    border: 1px solid var(--GreenBG);
+    border-radius: 0%;
+}
+
+[class*="gamelisthome_Bar_"] svg{
+    display: none;
+}
+
+[class^="gamelistbar_GameList"]{
+    padding-top: 8px;
+    padding-bottom: 2px;
+}
+
+/* Games Software Dropdown & Toggles ======================================================================= */
+
+[class^="gamelistdropdown_Bar_"] [class^="gamelistdropdown_Menu"]{
+    background-color: var(--DarkGreenBG);
+    border: 1px solid var(--GreenBG);
+    border-radius: 0%;
+}
+
+[class*="contextmenu_contextMenu_"]{
+    background: var(--DarkGreenBG) !important;
+    border: 1px solid var(--GreenBG);
+    border-radius: 0%;
+}
+[class*="contextmenu_contextMenu_"] .DialogCheckbox{
+    box-shadow: none !important;
+}
+
+[class*="contextmenu_contextMenu_"] svg{
+    stroke: var(--Maize) !important;
+}
+
+[class^="gamelistdropdown_Bar_"] [class^="gamelistdropdown_Menu"]:hover{
+    background-color: var(--GreenBG);
+}
+
+[class^="gamelistdropdown_Filters"] [class*="Active"] svg{
+    fill: var(--Maize) !important;
+}
+[class^="gamelistdropdown_Filters"] [class*="Active"] circle, [class^="gamelistdropdown_Filters"] [class*="Active"] polyline{
+    stroke: var(--Maize) !important;
+}
+
+[class^="gamelistbar"], [class^="gamelist_Container"]{
+    background-color: var(--DarkGreenBG);
+    box-shadow: none;
+}
+
+[class^="gamelistdropdown_Bar_"]{
+    background-color: var(--DarkGreenBG);
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* Game Search Bar ======================================================================= */
+[class^="gamelistsearchbar_Container_"]{
+    padding-top: 6px;
+    padding-bottom: 4px;
+    background-color: var(--DarkGreenBG);
+}
+
+[class^="gamelistsearchbar_Container_"] .DialogInput{
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+[class^="gamelistsearchbar_Container_"] [class*="SearchInput"]{
+    border-radius: 0%;
+    border: 1px solid var(--GreenBG);
+    margin-right: 5px;
+}
+/*
+[class^="gamelistsearchbar_Container_"] [class*="Advanced"]{
+    background-color: var(--GreenBG);
+    border: 1px outset;
+    border-radius: 0%;
+} */
+
+/* Categories ======================================================================= */
+
+[class^="gamelistsectionheader_Container"], [class^="gamelistsectionheader_Container"]:hover{
+    background: transparent;
+}
+
+[class^="gamelistsectionheader_Container"] svg{
+    stroke: var(--Maize);
+}
+
+[class^="gamelistsectionheader_Section"], [class^="gamelistsectionheader_Section"]:hover{
+    color: var(--Maize) !important;
+}
+/* Handle events */
+[class^="gamelistbar"] [class*="Selected"]{
+    background-color: var(--GreenBG);
+    box-shadow: none !important;
+}
+
+/* Games ======================================================================= */
+[class^="gamelistentry_"][class*="Selected"]:hover, [class^="gamelistentry_"][class*="Selected"]:hover [class^="gamelistentry"]{
+    background-color: var(--GreenBG);
+}
+[class^="gamelistentry_"]:hover{
+    background-color: transparent;
+}
