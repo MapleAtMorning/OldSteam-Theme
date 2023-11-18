@@ -1,12 +1,23 @@
-/* [class*="gamelistbar"]{
-    outline: 1px rgba(0, 255, 0, 0.25) solid !important;
-} */
+[class*="Checkbox"] stop{
+    stop-color: var(--Maize) !important;
+}
+
+[class^="gamelistbar"], [class^="gamelist_Container"]{
+    background-color: var(--DarkGreenBG);
+    border-radius: 0%;
+    box-shadow: none;
+}
+
+[class*="library_LeftListSizableContainer_"]{
+    border: 1px inset var(--BorderBright);
+}
 
 /* Home Button & Collections Button ======================================================================= */
 [class*="gamelisthome_Bar_"]{
     background-color: var(--DarkGreenBG) !important;
     border: 1px solid var(--GreenBG);
     border-radius: 0%;
+    color: var(--GreenBG) !important;
 }
 
 [class*="gamelisthome_Bar_"] svg{
@@ -16,6 +27,20 @@
 [class^="gamelistbar_GameList"]{
     padding-top: 8px;
     padding-bottom: 2px;
+}
+
+[class*="gamelisthome_CollectionButton_"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright);
+    border-radius: 0%;
+}
+
+[class*="gamelisthome_CollectionIconBox_"]{
+    background: gray !important;
+}
+
+[class*="Selected"] [class*="gamelisthome_CollectionIconBox_"], [class*="gamelisthome_CollectionButton_"]:hover [class*="gamelisthome_CollectionIconBox_"]{
+    background: #d3d3d3 !important;
 }
 
 /* Games Software Dropdown & Toggles ======================================================================= */
@@ -31,6 +56,7 @@
     border: 1px solid var(--GreenBG);
     border-radius: 0%;
 }
+
 [class*="contextmenu_contextMenu_"] .DialogCheckbox{
     box-shadow: none !important;
 }
@@ -50,15 +76,16 @@
     stroke: var(--Maize) !important;
 }
 
-[class^="gamelistbar"], [class^="gamelist_Container"]{
-    background-color: var(--DarkGreenBG);
-    box-shadow: none;
-}
 
 [class^="gamelistdropdown_Bar_"]{
     background-color: var(--DarkGreenBG);
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+/* This is for the scroll button. I think it sucks! :) */
+[class*="gamelistdropdown_Scroll"]{
+    display: none;
 }
 
 /* Game Search Bar ======================================================================= */
@@ -72,17 +99,44 @@
     background-color: transparent !important;
     box-shadow: none !important;
 }
+
 [class^="gamelistsearchbar_Container_"] [class*="SearchInput"]{
     border-radius: 0%;
     border: 1px solid var(--GreenBG);
     margin-right: 5px;
+    height: 34px;
 }
-/*
-[class^="gamelistsearchbar_Container_"] [class*="Advanced"]{
-    background-color: var(--GreenBG);
-    border: 1px outset;
+
+[class^="gamelistsearchbar_AdvancedSearchButton_"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright);
     border-radius: 0%;
-} */
+}
+/* Advanced Search Menu */
+[class^="gamelistsearchbar_AdvancedSearchPane_"]{
+    background-color: var(--GreenBG) !important;
+    box-shadow: none !important;
+    border-radius: 0% !important;
+    border: 1px solid var(--DarkGreenBG);
+
+}
+
+[class^="gamelistsearchbar_AdvancedSearchPane_"]::before{
+    display: none;
+}
+
+[class^="gamelistsearchbar_FilterTag_"]{
+    background-color: var(--GreenBG) !important;
+}
+
+[class^="appfilterpane_FilterBucketLabel"]{
+    color: var(--Maize) !important;
+}
+
+[class^="appfilterpane_SaveButton_"]{
+    background: var(--MaizeBG) !important;
+    color: var(--OffWhite) !important;
+}
 
 /* Categories ======================================================================= */
 
@@ -104,9 +158,28 @@
 }
 
 /* Games ======================================================================= */
-[class^="gamelistentry_"][class*="Selected"]:hover, [class^="gamelistentry_"][class*="Selected"]:hover [class^="gamelistentry"]{
+[class^="gamelistentry_"][class*="Selected"]:hover, [class^="gamelistentry_"][class*="Selected"]:hover > [class^="gamelistentry"]{
     background-color: var(--GreenBG);
 }
+
+[class^="gamelistentry_"][class*="Selected"]:hover *{
+    background-color: transparent;
+}
+
 [class^="gamelistentry_"]:hover{
     background-color: transparent;
+}
+
+[class*="gamelistentry_Updating_"], [class*="gamelistentry_DownloadProgress_"]{
+    color: var(--Maize) !important;
+}
+
+[class*="gamelistentry_Updating_"] circle{
+    stroke: var(--Maize) !important;
+}
+
+[class*="gamelistentry_HoverOverlay_"]{
+    background-color: var(--LightGreenBG) !important;
+    box-shadow: none !important;
+    border-radius: 0% !important;
 }

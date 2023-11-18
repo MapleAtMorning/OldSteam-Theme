@@ -1,0 +1,4 @@
+::-webkit-scrollbar-thumb{
+    background-color: var(--GreenBG) !important;
+    border-radius: 0% !important;
+}
