@@ -1,0 +1,16 @@
+[class^="steamdesktop_OuterFrame_"]{
+    border: 1px outset var(--BorderBright);
+    padding: 0px 10px;
+    background-color: var(--GreenBG);
+}
+
+[class^="steamdesktop_ContentFrame"]{
+    padding: 5px !important;
+    background-color: var(--GreenBG);
+    border: 1px outset var(--BorderBright);
+    margin-bottom: 10px;
+}
+
+[class^="steamdesktop_Wrapper_"]{
+    border: none !important;
+}

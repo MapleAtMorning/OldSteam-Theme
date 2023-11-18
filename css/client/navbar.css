@@ -1,0 +1,79 @@
+
+[class*="steamdesktop_URLBarReplacement_"]{
+    display: none;
+}
+
+[class*="steamdesktop_TopBar_"]{
+    background-color: var(--GreenBG) !important;
+    flex-direction: row !important;
+    box-shadow: none !important;
+    border: none;
+    padding-bottom: 3px;
+    position: relative;
+}
+
+[class*="steamdesktop_TopBar_"] > div{
+    padding: 0;
+    margin: 0;
+}
+
+/* RootMenu Buttons ======================================================================= */
+[class*="rootmenu_RootMenuButton_"]{
+    color: white;
+}
+
+/* Navigation Buttons ======================================================================= */
+
+[class*="supernav_MenuButton"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright);
+    border-radius: 0%;
+    text-decoration: none !important;
+    font-weight: normal !important;
+    padding: 5px !important;
+    font-size: 12px !important;
+}
+
+[class*="menu_MenuWrapper"][class*="Selected"] [class*="supernav_MenuButton"]{
+    color: var(--Maize) !important;
+    border: 1px inset var(--BorderBright);
+}
+
+[class*="menu_MenuWrapper"][class*="Selected"] [class*="supernav_MenuButton"]::after{
+    display: none !important;
+}
+
+/* Dropdowns ======================================================================= */
+[class*="menu_MenuItem"]{
+    background-color: var(--GreenBG);
+}
+[class*="menu_MenuItem"]:hover{
+    background-color: var(--LightGreenBG) !important;
+}
+
+/* Account & News & More ======================================================================= */
+[class*="titlebarcontrols_TitleBarControls"]{
+    position: absolute;
+    right: 0;
+    align-items: start;
+}
+
+[class*="titlebarcontrols_GamepadUIToggle"], [class*="titlebarcontrols_VRToggle"], [class*="titlebarcontrols_AnnouncementsButton"], [class*="titlebarcontrols_NotificationsButton"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright);
+    border-radius: 0%;
+    padding: 5px;
+    margin: 0 5px 3px;
+    position: relative;
+    width: 17px !important;
+    min-width: 17px !important;
+    height: 17px !important;
+    min-height: 17px !important;
+    color: gray !important;
+}
+
+[class*="titlebarcontrols_GamepadUIToggle"]:hover, [class*="titlebarcontrols_VRToggle"]:hover, [class*="titlebarcontrols_AnnouncementsButton"]:hover, [class*="titlebarcontrols_NotificationsButton"]:hover{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright);
+    color: #fff !important;
+}
