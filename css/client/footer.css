@@ -1,0 +1,33 @@
+[class^="bottombar_BottomBar"]{
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+}
+
+[class^="bottombar_FriendsButton"], [class^="bottombar_AddGameButton"]{
+    background-color: var(--GreenBG);
+    border: 1px outset var(--BorderBright);
+    padding: 3px;
+    gap: 0;
+} 
+
+[class^="bottombar_FriendsButton"] [class*="Text"], [class^="bottombar_AddGameButton"] [class*="Text"]{
+    color: white !important;
+}
+
+[class^="bottombar_DownloadStatusContent"] [class*="Icon"], [class^="bottombar_DownloadStatusContent"] [class*="Queue"]{
+    color: var(--OffWhite);
+    box-shadow: none;
+}
+
+[class^="bottombar_FriendsButton"] [class*="Icon"], [class^="bottombar_AddGameButton"] [class*="Icon"]{
+    display: none;
+}
+
+[class^="bottombar_DetailedDownloadProgress_"] [class^="bottombar_ProgressBarWrapper_"] [class^="progressbar_ProgressBar"]{
+    --color-progress-bar-foreground: var(--Maize) !important;
+}
+
+[class^="bottombar_Status_"]{
+    color: var(--Maize) !important;
+}

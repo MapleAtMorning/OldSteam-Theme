@@ -1,7 +1,3 @@
-[class*="Checkbox"] stop{
-    stop-color: var(--Maize) !important;
-}
-
 [class^="gamelistbar"], [class^="gamelist_Container"]{
     background-color: var(--DarkGreenBG);
     border-radius: 0%;
@@ -14,10 +10,14 @@
 
 /* Home Button & Collections Button ======================================================================= */
 [class*="gamelisthome_Bar_"]{
-    background-color: var(--DarkGreenBG) !important;
-    border: 1px solid var(--GreenBG);
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright);
     border-radius: 0%;
-    color: var(--GreenBG) !important;
+}
+
+[class*="Selected"][class*="gamelisthome_Bar_"]{
+    background-color: var(--DarkGreenBG) !important;
+    border: 1px inset var(--BorderBright);
 }
 
 [class*="gamelisthome_Bar_"] svg{
@@ -111,6 +111,10 @@
     background-color: var(--GreenBG) !important;
     border: 1px outset var(--BorderBright);
     border-radius: 0%;
+}
+[class*="Extended"] [class^="gamelistsearchbar_AdvancedSearchButton_"]{
+    background-color: var(--DarkGreenBG) !important;
+    border: 1px inset var(--BorderBright);
 }
 /* Advanced Search Menu */
 [class^="gamelistsearchbar_AdvancedSearchPane_"]{

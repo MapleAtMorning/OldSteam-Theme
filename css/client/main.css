@@ -1,6 +1,6 @@
 [class^="steamdesktop_OuterFrame_"]{
     border: 1px outset var(--BorderBright);
-    padding: 0px 10px;
+    padding: 0px 15px;
     background-color: var(--GreenBG);
 }
 
@@ -8,9 +8,30 @@
     padding: 5px !important;
     background-color: var(--GreenBG);
     border: 1px outset var(--BorderBright);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 [class^="steamdesktop_Wrapper_"]{
     border: none !important;
+}
+
+[class*="tooltip_TextToolTip_"]{
+    box-shadow: none;
+    background-color: var(--LightGreenBG);
+    border-radius: 0%;
+    border: 1px outset var(--BorderBright);
+}
+.DialogCheckbox{
+    box-shadow: none;
+    border-radius: 0%;
+    background-color: var(--DarkGreenBG);
+    border: 1px inset var(--BorderBright);
+}
+[class*="Checkbox"] stop{
+    stop-color: var(--Maize) !important;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--GreenBG) !important;
+    border-radius: 0% !important;
 }

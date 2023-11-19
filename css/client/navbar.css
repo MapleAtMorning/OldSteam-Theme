@@ -20,6 +20,8 @@
 /* RootMenu Buttons ======================================================================= */
 [class*="rootmenu_RootMenuButton_"]{
     color: white;
+    padding: 0% 4px;
+    height: min-content;
 }
 
 /* Navigation Buttons ======================================================================= */
@@ -30,8 +32,13 @@
     border-radius: 0%;
     text-decoration: none !important;
     font-weight: normal !important;
-    padding: 5px !important;
+    padding: 5px 8px !important;
     font-size: 12px !important;
+    text-transform: none;
+}
+
+[class*="supernav_SuperNav_"] [class*="menu_MenuWrapper"]{
+    padding: 5px;
 }
 
 [class*="menu_MenuWrapper"][class*="Selected"] [class*="supernav_MenuButton"]{
@@ -76,4 +83,26 @@
     background-color: var(--GreenBG) !important;
     border: 1px outset var(--BorderBright);
     color: #fff !important;
+}
+
+[class*="titlebarcontrols_GamepadUIToggle"] svg{
+    position: static !important;
+    top: auto !important;
+}
+
+[class*="titlebarcontrols_AccountMenu_"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright);
+    height: 27px !important;
+    min-height: 27px !important;
+}
+
+[class*="steamavatar_avatarStatus"], [class*="titlebarcontrols_AccountMenu_"] [class*="titlebarcontrols_Chevron"]{
+    display: none !important;
+    background: transparent !important;
+}
+
+
+[class*="steamavatar_avatar"]{
+    box-shadow: none;
 }

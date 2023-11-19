@@ -2,5 +2,6 @@
 @import url(css/library/library.css);
 @import url(css/library/sidebar.css);
 
-@import url(css/client/main.css);
 @import url(css/client/navbar.css);
+@import url(css/client/main.css);
+@import url(css/client/footer.css);

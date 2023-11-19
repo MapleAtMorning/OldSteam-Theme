@@ -1,4 +1,53 @@
-::-webkit-scrollbar-thumb{
-    background-color: var(--GreenBG) !important;
-    border-radius: 0% !important;
+
+/* Draggable divider ===================================================================== */
+[class^="library_LibraryWindowDivider"]{
+    width: 8px;
+    min-width: 8px;
+    background-color: transparent !important;
+}
+
+[class^="library_LibraryWindowDivider"]:hover{
+    background-color: transparent !important;
+}
+
+/* Game page for single game ===================================================================== */
+
+[class^="library_MainPanel"]{
+    border: 1px inset var(--BorderBright) !important;
+}
+
+[class*="appdetailsoverview_Container"]{
+    background-color: var(--DarkGreenBG);
+}
+
+[class*="appdetailssection_AppDetailsSection_"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
+    background: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright) !important;
+    padding: 5px;
+}
+
+[class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+[class*="appdetailsoverview_Backdrop"]{
+    display: none !important;
+}
+
+[class*="appdetailsprimarylinkssection_LinkInner"], [class*="appdetailsprimarylinkssection_Link_"]{
+    padding: 0 !important;
+    margin: 0;
+}
+
+[class*="appdetailsprimarylinkssection_LinkInner"]{
+    margin-right: 10px;
+}
+
+[class*="appdetailsprimarylinkssection_Text"]{
+    background: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright) !important;
+    color: white !important;
+    padding: 3px 6px;
 }
