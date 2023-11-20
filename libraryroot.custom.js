@@ -8,7 +8,6 @@ const outerFrame = document.getElementsByClassName("steamdesktop_OuterFrame_3mz8
 const contentFrame = document.getElementsByClassName("steamdesktop_ContentFrame_1rDh5")[0]
 
 var vrMode = document.getElementsByClassName("titlebarcontrols_VRToggle_3lRfT")[0]
-const bigPicture = document.getElementsByClassName("titlebarcontrols_GamepadUIToggle_3LKQ3")[0].parentNode
 
 const steamLogoContainer = document.getElementsByClassName("rootmenu_SteamButton_bSKGl")[0]
 const newLogo = document.createElement("img")
@@ -25,6 +24,7 @@ steamLogoContainer.firstChild.remove()
 steamLogoContainer.insertBefore(newLogo, steamLogoContainer.firstChild)
 
 // Move the VR & Bigpicture buttons from the right of the account button to the left
+const bigPicture = document.getElementsByClassName("titlebarcontrols_GamepadUIToggle_3LKQ3")[0].parentNode
 accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
 if (vrMode != undefined){
     vrMode = vrMode.parentNode

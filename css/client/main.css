@@ -21,12 +21,22 @@
     border-radius: 0%;
     border: 1px outset var(--BorderBright);
 }
+
 .DialogCheckbox{
     box-shadow: none;
     border-radius: 0%;
     background-color: var(--DarkGreenBG);
     border: 1px inset var(--BorderBright);
 }
+
+.DialogButton{
+    box-shadow: none;
+    background-color: var(--GreenBG);
+    border-radius: 0%;
+    border: 1px outset var(--BorderBright);
+}
+
+
 [class*="Checkbox"] stop{
     stop-color: var(--Maize) !important;
 }

@@ -16,11 +16,14 @@
 
 - [ ] View all friends button
 - [ ] Activity backgrounds
-- [ ] Activity typing background
+- [x] Activity typing background
+- [ ] Activity typing post button
 - [ ] Big view latest news page 
-- [ ] Achievements
+- [x] Achievements
 - [ ] Steam workshop ad
-- [ ] Review
+- [ ] Review ad
+- [ ] Top bar after scrolling
+- [ ] CATEGORIZE CSS
 
 
 ## Client UI

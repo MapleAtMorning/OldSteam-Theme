@@ -77,6 +77,13 @@
     border-radius: 0%;
     color: var(--OffWhite);
 }
+[class*="posttextentry_PostTextEntry"] [class*="posttextentry_PostTextEntryArea"]:focus{
+    background: var(--DarkGreenBG);
+    border: 1px solid var(--GreenBG);
+    border-radius: 0%;
+    color: white;
+    box-shadow: none;
+}
 
 [class*="appdetailsplaysection_MenuButton"], [class*="appdetailsgameinfopanel_Container_"]{
     background-color: var(--GreenBG);
@@ -103,3 +110,40 @@
     fill: var(--Maize) !important;
 }
 
+[class*="appdetailsachievementssection_AchievementProgress"]{
+    border-radius: 0% !important;
+}
+
+[class*="appdetailsachievementssection_AchievementProgressContainer"]{
+    border: 1px inset var(--BorderBright);
+}
+
+[class*="achievementiconbase_Icon"], [class*="appdetailsachievementssection_RemainderContainer"], [class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"], [class*="posttextentry_"][class*="Button"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright) !important;
+    border-radius: 0% !important;
+    box-shadow: none;
+    color: white;
+}
+
+[class*="posttextentry_"][class*="Enabled"]{
+    background: var(--GreenBG) !important;
+}
+
+[class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"]:active{
+    background-color: var(--DarkGreenBG);
+    border: 1px inset var(--BorderBright);
+}
+
+[class*="appdetailsachievementssection_RemainderText"]{
+    text-shadow: none;
+}
+
+[class*="appdetailsachievementssection_AchievementProgress_"]{
+    background-color: var(--Maize) !important;
+}
+
+[class*="appdetailsachievementssection_HighlightDiv"]{
+    background: transparent;
+    box-shadow: none;
+}
