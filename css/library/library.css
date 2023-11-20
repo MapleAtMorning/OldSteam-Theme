@@ -26,6 +26,21 @@
     padding: 5px;
 }
 
+[class^="appdetailsspotlight_ReviewContainer"], [class^="appdetailsspotlight_ReviewContainer"] button{
+    background: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright) !important;
+    border-radius: 0%;
+    color: var(--Maize);
+}
+
+[class^="appdetailsspotlight_ReviewContainer"] svg{
+    fill: var(--Maize);
+}
+
+[class^="writereview_Playtime"], .online [class^="personanameandstatus_playerName"]{
+    color: var(--Maize) !important;
+}
+
 [class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
     background-color: transparent !important;
     border: none !important;
@@ -34,6 +49,10 @@
 
 [class*="appdetailsoverview_Backdrop"]{
     display: none !important;
+}
+
+[class^="appdetailsplaysection_PlayBar"], [class^="writereview_RatingContainer"]{
+    background: transparent !important;
 }
 
 [class*="appdetailsprimarylinkssection_LinkInner"], [class*="appdetailsprimarylinkssection_Link_"]{
@@ -45,9 +64,42 @@
     margin-right: 10px;
 }
 
-[class*="appdetailsprimarylinkssection_Text"]{
+[class*="appdetailsprimarylinkssection_Text"], [class*="appdetailsactivitysection_ViewLastNews"]{
     background: var(--GreenBG) !important;
     border: 1px outset var(--BorderBright) !important;
     color: white !important;
     padding: 3px 6px;
 }
+
+[class*="posttextentry_PostTextEntry"] [class*="posttextentry_PostTextEntryArea"]{
+    background: var(--DarkGreenBG);
+    border: 1px solid var(--GreenBG);
+    border-radius: 0%;
+    color: var(--OffWhite);
+}
+
+[class*="appdetailsplaysection_MenuButton"], [class*="appdetailsgameinfopanel_Container_"]{
+    background-color: var(--GreenBG);
+    border: 1px outset var(--BorderBright);
+    border-radius: 0%;
+    color: white;
+}
+
+[class*="appdetailsplaysection_MenuActive"]{
+    background-color: var(--DarkGreenBG) !important;
+    border: 1px inset var(--BorderBright);
+}
+
+[class*="appdetailsgameinfopanel_BoxArt_"]{
+    box-shadow: none !important;
+}
+
+[class*="appdetailsgameinfocontainer_AppGameInfoContainer"], [class*="appdetailsgameinfocontainer_Container"]{
+    transition: none;
+}
+
+[class*="appdetailsplaysection_MenuButton"][class*="Favorited"] path{
+    stroke: var(--Maize) !important;
+    fill: var(--Maize) !important;
+}
+

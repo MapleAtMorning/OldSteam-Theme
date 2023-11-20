@@ -12,6 +12,16 @@
 - [x] Fix weird box showing up on games that have updates
 - [x] Checkbox oldifying
 
+### Library Game Page
+
+- [ ] View all friends button
+- [ ] Activity backgrounds
+- [ ] Activity typing background
+- [ ] Big view latest news page 
+- [ ] Achievements
+- [ ] Steam workshop ad
+- [ ] Review
+
 
 ## Client UI
 

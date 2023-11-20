@@ -7,13 +7,12 @@ const bottomBar = document.getElementsByClassName("bottombar_BottomBarContainer_
 const outerFrame = document.getElementsByClassName("steamdesktop_OuterFrame_3mz8w")[0]
 const contentFrame = document.getElementsByClassName("steamdesktop_ContentFrame_1rDh5")[0]
 
-const bigPicture = document.getElementsByClassName("titlebarcontrols_VRToggle_3lRfT")[0].parentNode
-const vrMode = document.getElementsByClassName("titlebarcontrols_GamepadUIToggle_3LKQ3")[0].parentNode
+var vrMode = document.getElementsByClassName("titlebarcontrols_VRToggle_3lRfT")[0]
+const bigPicture = document.getElementsByClassName("titlebarcontrols_GamepadUIToggle_3LKQ3")[0].parentNode
 
 const steamLogoContainer = document.getElementsByClassName("rootmenu_SteamButton_bSKGl")[0]
 const newLogo = document.createElement("img")
 newLogo.src = "https://raw.githubusercontent.com/ungstein/OG-Steam-Library/main/steamui/images/icon_steam.png"
-
 
 // Moving all the big parts
 outerFrame.insertBefore(rootMenuNav, outerFrame.firstChild) 
@@ -21,13 +20,16 @@ contentFrame.insertBefore(topBar, contentFrame.firstChild)
 topBar.appendChild(accountNewsMore)
 contentFrame.appendChild(bottomBar)
 
-// Moving parts inside of the account area
-accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
-accountNewsMore.insertBefore(vrMode, accountNewsMore.firstChild)
+// Replace the logo with the old one
 steamLogoContainer.firstChild.remove()
 steamLogoContainer.insertBefore(newLogo, steamLogoContainer.firstChild)
 
+// Move the VR & Bigpicture buttons from the right of the account button to the left
+accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
+if (vrMode != undefined){
+    vrMode = vrMode.parentNode
+    accountNewsMore.insertBefore(vrMode, accountNewsMore.firstChild)
+}
 
-
-// This breaks things. it stays in the corner.
+// This breaks things. it stays in the corner. Edit: Do i even need this?
 // topBar.appendChild(windowControls)

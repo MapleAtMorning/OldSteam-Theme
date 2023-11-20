@@ -102,6 +102,10 @@
     background: transparent !important;
 }
 
+[class*="titlebarcontrols_AccountMenu_"].online div{
+    color: var(--Maize);
+}
+
 
 [class*="steamavatar_avatar"]{
     box-shadow: none;
