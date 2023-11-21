@@ -30,10 +30,28 @@
 }
 
 .DialogButton{
-    box-shadow: none;
-    background-color: var(--GreenBG);
-    border-radius: 0%;
-    border: 1px outset var(--BorderBright);
+    box-shadow: none !important;
+    background-color: var(--GreenBG) !important;
+    border-radius: 0% !important;
+    border: 1px outset var(--BorderBright) !important;
+    color: white;
+}
+
+.DialogInput{
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0% !important;
+    border: 1px solid var(--GreenBG);
+}
+.DialogInput:hover, .DialogInput:focus{
+    background-color: transparent !important;
+}
+
+[class*="emoticon_NewEmoticonIndicator"]{
+background: transparent;
+}
+[class*="emoticon_NewEmoticonIndicator"] [class*="emoticon_NewEmoticonCircle"]{
+    background-color: var(--Maize);
 }
 
 

@@ -12,12 +12,47 @@
 
 /* Game page for single game ===================================================================== */
 
+/* General Background and stuff */
+[class*="appdetailsoverview_Container"]{
+    background-color: var(--DarkGreenBG);
+}
+
 [class^="library_MainPanel"]{
     border: 1px inset var(--BorderBright) !important;
 }
 
-[class*="appdetailsoverview_Container"]{
-    background-color: var(--DarkGreenBG);
+[class^="writereview_Playtime"], .online [class^="personanameandstatus_playerName"]{
+    color: var(--Maize) !important;
+}
+
+[class*="appdetailsoverview_Backdrop"]{
+    display: none !important;
+}
+
+/* Mcdonalds Play Place & Info*/
+[class^="appdetailsplaysection_PlayBar"], [class^="writereview_RatingContainer"]{
+    background: var(--GreenBG) !important;
+}
+
+[class*="appdetailsgameinfopanel_BoxArt_"]{
+    box-shadow: none !important;
+}
+
+[class*="appdetailsplaysection_MenuButton"], [class*="appdetailsgameinfopanel_Container_"]{
+    background-color: var(--GreenBG);
+    border: 1px outset var(--BorderBright);
+    border-radius: 0%;
+    color: white;
+}
+
+[class*="appdetailsplaysection_MenuActive"]{
+    background-color: var(--DarkGreenBG) !important;
+    border: 1px inset var(--BorderBright);
+}
+
+[class*="appdetailsplaysection_MenuButton"][class*="Favorited"] path{
+    stroke: var(--Maize) !important;
+    fill: var(--Maize) !important;
 }
 
 [class*="appdetailssection_AppDetailsSection_"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
@@ -26,33 +61,8 @@
     padding: 5px;
 }
 
-[class^="appdetailsspotlight_ReviewContainer"], [class^="appdetailsspotlight_ReviewContainer"] button{
-    background: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright) !important;
-    border-radius: 0%;
-    color: var(--Maize);
-}
-
-[class^="appdetailsspotlight_ReviewContainer"] svg{
-    fill: var(--Maize);
-}
-
-[class^="writereview_Playtime"], .online [class^="personanameandstatus_playerName"]{
-    color: var(--Maize) !important;
-}
-
-[class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
-    background-color: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-}
-
-[class*="appdetailsoverview_Backdrop"]{
-    display: none !important;
-}
-
-[class^="appdetailsplaysection_PlayBar"], [class^="writereview_RatingContainer"]{
-    background: transparent !important;
+[class*="appdetailsgameinfocontainer_AppGameInfoContainer"], [class*="appdetailsgameinfopanel_Container"]{
+    transition: none !important;
 }
 
 [class*="appdetailsprimarylinkssection_LinkInner"], [class*="appdetailsprimarylinkssection_Link_"]{
@@ -71,12 +81,33 @@
     padding: 3px 6px;
 }
 
+/* You've played X hours, review popup */
+[class^="appdetailsspotlight_ReviewContainer"], [class^="appdetailsspotlight_ReviewContainer"] button{
+    background: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright) !important;
+    border-radius: 0%;
+    color: var(--Maize);
+}
+
+[class^="appdetailsspotlight_ReviewContainer"] svg{
+    fill: var(--Maize);
+}
+
+/* Activity*/
+
+[class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
 [class*="posttextentry_PostTextEntry"] [class*="posttextentry_PostTextEntryArea"]{
     background: var(--DarkGreenBG);
     border: 1px solid var(--GreenBG);
     border-radius: 0%;
     color: var(--OffWhite);
 }
+
 [class*="posttextentry_PostTextEntry"] [class*="posttextentry_PostTextEntryArea"]:focus{
     background: var(--DarkGreenBG);
     border: 1px solid var(--GreenBG);
@@ -85,31 +116,107 @@
     box-shadow: none;
 }
 
-[class*="appdetailsplaysection_MenuButton"], [class*="appdetailsgameinfopanel_Container_"]{
+[class*="posttextentry_"][class*="Button"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright) !important;
+    border-radius: 0% !important;
+    box-shadow: none;
+}
+
+[class*="posttextentry_"][class*="Enabled"]{
+    background: var(--GreenBG) !important;
+}
+
+[class*="appactivityday_AppActivityDay"]{
     background-color: var(--GreenBG);
     border: 1px outset var(--BorderBright);
-    border-radius: 0%;
+    padding: 5px;
+}
+
+[class*="appactivityday_AppActivityDay"] [class*="appactivityday_AppActivityDate"]{ 
     color: white;
 }
 
-[class*="appdetailsplaysection_MenuActive"]{
-    background-color: var(--DarkGreenBG) !important;
-    border: 1px inset var(--BorderBright);
+[class*="appactivityday_LeftSideMajorUpdateBar"]{
+    display: none;
 }
 
-[class*="appdetailsgameinfopanel_BoxArt_"]{
-    box-shadow: none !important;
+[class*="appactivityday_PartnerEventLargeUpdate"]{
+    border: none;
+    box-shadow: none;
+    background: transparent;
 }
 
-[class*="appdetailsgameinfocontainer_AppGameInfoContainer"], [class*="appdetailsgameinfocontainer_Container"]{
+[class*="appactivityday_PartnerEventLargeImage_Image"][class*="appactivityday_Blur"]{
+    display: none !important;
+}
+
+[class*="appactivityday_PartnerEventLargeImage_Container"]{
+    background: transparent;
     transition: none;
 }
 
-[class*="appdetailsplaysection_MenuButton"][class*="Favorited"] path{
-    stroke: var(--Maize) !important;
+[class*="appactivityday_PartnerEventLargeImage_Container"]:hover{
+    background: transparent;
+}
+
+[class*="appactivityday_PartnerEventTypeUpdate"]{
+    color: var(--Maize);
+    text-shadow: none;
+}
+
+[class*="appactivityday_PartnerEventLargeImage_TextColumn"]{
+    margin: 0;
+    padding: 0;
+}
+
+[class*="appactivityday_PartnerEventLargeImage_Title"]{
+    color: white;
+    text-shadow: none;
+}
+
+[class*="appactivityday_PartnerEventLargeImage_Summary"]{
+    color: var(--OffWhite);
+    text-shadow: none;
+}
+
+[class*="comment_thread_RatingBar"]{
+    opacity: 1;
+}
+
+[class*="comment_thread_RatingBar"] [class*="Button_"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright);
+}
+
+[class*="comment_thread_RatingBar"] [class*="LikeButton"][class*="CanClick"] path, [class*="comment_thread_RatingBar"] [class*="LikeButton"][class*="CanClick"] [class*="Count"]{
+    color: var(--DimListText);
+    fill: var(--DimListText) !important;
+}
+
+[class*="comment_thread_RatingBar"] [class*="LikeButton"] path, [class*="comment_thread_RatingBar"] [class*="LikeButton"] [class*="Count"]{
+    color: var(--Maize);
     fill: var(--Maize) !important;
 }
 
+[class*="comment_thread_RatingBar"] [class*="Count"]{
+    color: var(--DimListText);
+}
+
+[class*="comment_thread_RatingBar"] path{
+    fill: var(--DimListText) !important;
+    color: var(--DimListText) !important;
+}
+
+
+
+/* Side Button???????????????????????????????????? */
+[class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"]:active{
+    background-color: var(--DarkGreenBG);
+    border: 1px inset var(--BorderBright);
+}
+
+/* Achievements */
 [class*="appdetailsachievementssection_AchievementProgress"]{
     border-radius: 0% !important;
 }
@@ -117,24 +224,6 @@
 [class*="appdetailsachievementssection_AchievementProgressContainer"]{
     border: 1px inset var(--BorderBright);
 }
-
-[class*="achievementiconbase_Icon"], [class*="appdetailsachievementssection_RemainderContainer"], [class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"], [class*="posttextentry_"][class*="Button"]{
-    background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright) !important;
-    border-radius: 0% !important;
-    box-shadow: none;
-    color: white;
-}
-
-[class*="posttextentry_"][class*="Enabled"]{
-    background: var(--GreenBG) !important;
-}
-
-[class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"]:active{
-    background-color: var(--DarkGreenBG);
-    border: 1px inset var(--BorderBright);
-}
-
 [class*="appdetailsachievementssection_RemainderText"]{
     text-shadow: none;
 }
@@ -146,4 +235,12 @@
 [class*="appdetailsachievementssection_HighlightDiv"]{
     background: transparent;
     box-shadow: none;
+}
+
+[class*="achievementiconbase_Icon"], [class*="appdetailsachievementssection_RemainderContainer"], [class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"]{
+    background-color: var(--GreenBG) !important;
+    border: 1px outset var(--BorderBright) !important;
+    border-radius: 0% !important;
+    box-shadow: none;
+    color: white;
 }
