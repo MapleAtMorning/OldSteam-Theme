@@ -1,0 +1,40 @@
+[class*="launchoptionsdialog_LaunchOptionDialog"], .DialogContent{
+    background: var(--GreenBG);
+    border: var(--Outset);
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_OptionList"] [class*="launchoptionsdialog_ListContainer"]{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0%;
+    box-shadow: none;
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_OptionList"] [class*="launchoptionsdialog_ListContainer"] [class*="launchoptionsdialog_ListItem"]{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_OptionList"] [class*="launchoptionsdialog_ListContainer"] [class*="launchoptionsdialog_ListItem"]:hover {
+    background-color: var(--GreenBG);
+    color: var(--Maize);
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_PlayButton"], [class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_CancelButton"]{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_PlayButton"]:hover, [class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_CancelButton"]:hover{
+    background-color: var(--GreenBG);
+    color: var(--Maize);
+}
+
+[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_PlayButton"]:active, [class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_CancelButton"]:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+

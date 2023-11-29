@@ -1,0 +1,21 @@
+/* Disable tilt on hover */
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox"]:hover:not([class*="Landscape"]){
+    transform: rotateX(0deg) translateZ(0px);
+    box-shadow: none;
+    filter: brightness(1) contrast(1) saturate(1);
+}
+
+/* Disable zoom */
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox"]:hover:not([class*="Portrait"]) img{
+    transform: scale(1) !important;
+    filter: brightness(1) contrast(1) saturate(1) !important;
+}
+
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox"]{
+    border: var(--Inset);
+    box-shadow: none;
+}
+
+[class*="libraryhome_LibraryHome"]{
+    background: var(--DarkGreenBG);
+}

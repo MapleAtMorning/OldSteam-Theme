@@ -6,13 +6,13 @@
 
 [class^="bottombar_FriendsButton"], [class^="bottombar_AddGameButton"]{
     background-color: var(--GreenBG);
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     padding: 3px;
     gap: 0;
 } 
 
 [class^="bottombar_FriendsButton"] [class*="Text"], [class^="bottombar_AddGameButton"] [class*="Text"]{
-    color: white !important;
+    color: var(--OffWhite) !important;
 }
 
 [class^="bottombar_DownloadStatusContent"] [class*="Icon"], [class^="bottombar_DownloadStatusContent"] [class*="Queue"]{

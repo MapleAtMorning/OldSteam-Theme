@@ -5,19 +5,20 @@
 }
 
 [class*="library_LeftListSizableContainer_"]{
-    border: 1px inset var(--BorderBright);
+    border: var(--Inset);
 }
 
 /* Home Button & Collections Button ======================================================================= */
 [class*="gamelisthome_Bar_"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     border-radius: 0%;
 }
 
+
 [class*="Selected"][class*="gamelisthome_Bar_"]{
     background-color: var(--DarkGreenBG) !important;
-    border: 1px inset var(--BorderBright);
+    border: var(--Inset);
 }
 
 [class*="gamelisthome_Bar_"] svg{
@@ -29,18 +30,23 @@
     padding-bottom: 2px;
 }
 
+[class^="gamelisthome_Label"]{
+    color: var(--OffWhite);
+    text-transform: none;
+}
+
 [class*="gamelisthome_CollectionButton_"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     border-radius: 0%;
 }
 
 [class*="gamelisthome_CollectionIconBox_"]{
-    background: gray !important;
+    background: var(--OffWhite) !important;
 }
 
 [class*="Selected"] [class*="gamelisthome_CollectionIconBox_"], [class*="gamelisthome_CollectionButton_"]:hover [class*="gamelisthome_CollectionIconBox_"]{
-    background: #d3d3d3 !important;
+    background: var(--OffWhite) !important;
 }
 
 /* Games Software Dropdown & Toggles ======================================================================= */
@@ -49,6 +55,7 @@
     background-color: var(--DarkGreenBG);
     border: 1px solid var(--GreenBG);
     border-radius: 0%;
+    text-transform: none ;
 }
 
 [class*="contextmenu_contextMenu_"]{
@@ -76,11 +83,35 @@
     stroke: var(--Maize) !important;
 }
 
-
 [class^="gamelistdropdown_Bar_"]{
     background-color: var(--DarkGreenBG);
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+[class*="gamelistdropdown_DropDown"] [class*="gamelistdropdown_Row"]{
+    text-transform: none;
+} 
+
+[class*="appfilterpane_Container"] [class*="appfilterpane_FilterArea"] [class*="appfilterpane_FilterBucket"] [class*="appfilterpane_FilterBucketLabel"]{
+    text-transform: none;
+}
+
+[class*="appfilterpane_Container"] [class*="appfilterpane_SaveButton"]{
+    background: var(--LightGreenBG) !important;
+    transition: none;
+}
+
+[class*="appfilterpane_Container"] [class*="appfilterpane_SaveButton"]:hover{
+    color: var(--Maize);
+}
+
+[class*="appfilterpane_Container"] [class*="appfilterpane_SaveButton"]::before{
+    display: none;
+}
+
+[class*="appfilterpane_Container"] [class*="appfilterpane_SaveButton"]:hover .SVGIcon_Button{
+    fill: var(--Maize);
 }
 
 /* This is for the scroll button. I think it sucks! :) */
@@ -109,12 +140,17 @@
 
 [class^="gamelistsearchbar_AdvancedSearchButton_"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     border-radius: 0%;
 }
+
+[class^="gamelistsearchbar_Container_"] [class^="gamelistsearchbar_AdvancedSearchContainer_"] [class^="gamelistsearchbar_AdvancedSearchButton_"] svg path{
+    fill: var(--OffWhite);
+}
+
 [class*="Extended"] [class^="gamelistsearchbar_AdvancedSearchButton_"]{
     background-color: var(--DarkGreenBG) !important;
-    border: 1px inset var(--BorderBright);
+    border: var(--Inset);
 }
 /* Advanced Search Menu */
 [class^="gamelistsearchbar_AdvancedSearchPane_"]{
@@ -122,7 +158,6 @@
     box-shadow: none !important;
     border-radius: 0% !important;
     border: 1px solid var(--DarkGreenBG);
-
 }
 
 [class^="gamelistsearchbar_AdvancedSearchPane_"]::before{
@@ -154,6 +189,7 @@
 
 [class^="gamelistsectionheader_Section"], [class^="gamelistsectionheader_Section"]:hover{
     color: var(--Maize) !important;
+    text-transform: none !important;
 }
 /* Handle events */
 [class^="gamelistbar"] [class*="Selected"]{
@@ -172,6 +208,10 @@
 
 [class^="gamelistentry_"]:hover{
     background-color: transparent;
+}
+
+[class*="gamelistentry_Running"] span{
+    color: var(--Maize);
 }
 
 [class*="gamelistentry_Updating_"], [class*="gamelistentry_DownloadProgress_"]{

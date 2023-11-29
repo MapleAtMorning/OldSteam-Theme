@@ -1,5 +1,5 @@
 [class^="steamdesktop_OuterFrame_"]{
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     padding: 0px 15px;
     background-color: var(--GreenBG);
 }
@@ -7,7 +7,7 @@
 [class^="steamdesktop_ContentFrame"]{
     padding: 5px !important;
     background-color: var(--GreenBG);
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     margin-bottom: 15px;
 }
 
@@ -19,22 +19,67 @@
     box-shadow: none;
     background-color: var(--LightGreenBG);
     border-radius: 0%;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
+}
+
+input[type="radio"]{
+    appearance: none;
+    margin: 0;
+    color: var(--Maize);
+    height: 13px;
+    width: 13px;
+    border: var(--Inset);
+}
+
+input[type="radio"]::before{
+    content: "";
+    height: 7px;
+    width: 7px;
+    margin: 2px 0 0 2px;
+    display: block;
+    opacity: 0;
+    background-color: var(--Maize);
+}
+
+input[type="radio"]:checked::before{
+    opacity: 1;
+}
+
+input[type="radio"]:focus{
+    outline: transparent;
 }
 
 .DialogCheckbox{
     box-shadow: none;
     border-radius: 0%;
-    background-color: var(--DarkGreenBG);
-    border: 1px inset var(--BorderBright);
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
 }
 
 .DialogButton{
     box-shadow: none !important;
-    background-color: var(--GreenBG) !important;
+    background: var(--GreenBG) !important;
     border-radius: 0% !important;
-    border: 1px outset var(--BorderBright) !important;
-    color: white;
+    border: var(--Outset) !important;
+    color: var(--OffWhite);
+}
+
+.DialogFooter .DialogButton::before{
+    box-shadow: none;
+}
+
+.DialogButton:hover{
+    color: var(--Maize) !important;
+}
+
+.DialogButton:active{
+    border: var(--Inset) !important;
+    background: var(--DarkGreenBG) !important;
+}
+
+.DialogButton.disabled, .DialogButton.Disabled, .DialogButton.disabled:hover, .DialogButton.Disabled:hover{
+    color: var(--DisabledText1) !important;
+    background-color: var(--DarkGreenBG) !important;
 }
 
 .DialogInput{
@@ -43,9 +88,56 @@
     border-radius: 0% !important;
     border: 1px solid var(--GreenBG);
 }
+
 .DialogInput:hover, .DialogInput:focus{
     background-color: transparent !important;
 }
+
+.DialogLabel{
+    color: var(--Label);
+}
+
+
+.ModalPosition_Content{
+    box-shadow: none !important;
+}
+
+.ModalPosition_TopBar{
+    display: none;
+}
+
+
+.DesktopUI .window-controls > div, .ModalPosition_Dismiss .closeButton{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+    height: 20px;
+    width: 20px;
+    transition: none; 
+    margin: 0 3px;
+}
+
+.DesktopUI .title-area-icon-inner{
+    transition: none;
+}
+
+.DesktopUI .window-controls > div:hover, .ModalPosition_Dismiss .closeButton:hover{
+    background: var(--GreenBG) !important;
+}
+
+.DesktopUI .window-controls > div:active, .ModalPosition_Dismiss .closeButton:active{
+    background: var(--DarkGreenBG) !important;
+    border: var(--Inset);
+}
+
+.DesktopUI .window-controls > div [class*="SVGIcon"] line, .DesktopUI .window-controls > div [class*="SVGIcon"] rect, .ModalPosition_Dismiss .closeButton line{
+    stroke: var(--OffWhite) !important;
+}
+
+.DesktopUI .window-controls > div:hover [class*="SVGIcon"] line, .DesktopUI .window-controls > div:hover [class*="SVGIcon"] rect, .ModalPosition_Dismiss .closeButton:hover line{
+    stroke: var(--Maize) !important;
+}
+
 
 [class*="emoticon_NewEmoticonIndicator"]{
 background: transparent;
@@ -62,4 +154,8 @@ background: transparent;
 ::-webkit-scrollbar-thumb{
     background-color: var(--GreenBG) !important;
     border-radius: 0% !important;
+}
+
+::selection{
+    text-shadow: none;
 }

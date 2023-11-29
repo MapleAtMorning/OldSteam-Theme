@@ -19,7 +19,7 @@
 
 /* RootMenu Buttons ======================================================================= */
 [class*="rootmenu_RootMenuButton_"]{
-    color: white;
+    color: var(--OffWhite);
     padding: 0% 4px;
     height: min-content;
 }
@@ -28,13 +28,14 @@
 
 [class*="supernav_MenuButton"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     border-radius: 0%;
     text-decoration: none !important;
     font-weight: normal !important;
     padding: 5px 8px !important;
     font-size: 12px !important;
     text-transform: none;
+    color: var(--OffWhite);
 }
 
 [class*="supernav_SuperNav_"] [class*="menu_MenuWrapper"]{
@@ -43,7 +44,7 @@
 
 [class*="menu_MenuWrapper"][class*="Selected"] [class*="supernav_MenuButton"]{
     color: var(--Maize) !important;
-    border: 1px inset var(--BorderBright);
+    border: var(--Inset);
 }
 
 [class*="menu_MenuWrapper"][class*="Selected"] [class*="supernav_MenuButton"]::after{
@@ -67,7 +68,7 @@
 
 [class*="titlebarcontrols_GamepadUIToggle"], [class*="titlebarcontrols_VRToggle"], [class*="titlebarcontrols_AnnouncementsButton"], [class*="titlebarcontrols_NotificationsButton"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     border-radius: 0%;
     padding: 5px;
     margin: 0 5px 3px;
@@ -76,12 +77,16 @@
     min-width: 17px !important;
     height: 17px !important;
     min-height: 17px !important;
-    color: gray !important;
+    color: var(--OffWhite) !important;
+}
+
+.SVGIcon_Notification{
+    color: var(--OffWhite) !important;
 }
 
 [class*="titlebarcontrols_GamepadUIToggle"]:hover, [class*="titlebarcontrols_VRToggle"]:hover, [class*="titlebarcontrols_AnnouncementsButton"]:hover, [class*="titlebarcontrols_NotificationsButton"]:hover{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     color: #fff !important;
 }
 
@@ -92,7 +97,7 @@
 
 [class*="titlebarcontrols_AccountMenu_"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     height: 27px !important;
     min-height: 27px !important;
 }
@@ -103,8 +108,14 @@
 }
 
 [class*="titlebarcontrols_AccountMenu_"].online div{
-    color: var(--Maize);
+    color: var(--OffWhite);
+    font-weight: 100;
 }
+[class*="titlebarcontrols_AccountMenu_"].ingame div{
+    color: var(--Maize);
+    font-weight: 100;
+}
+
 
 
 [class*="steamavatar_avatar"]{

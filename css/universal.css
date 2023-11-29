@@ -1,4 +1,4 @@
-:root { /* Let's define colours based on steamscheme.res */
+:root { /* Copied and pasted from the orignal OGSteam <3 */
 	--LightGreenBG: #5a6a50 !important;
 	--GreenBG: #4c5844 !important;
 	--DarkGreenBG: #3e4637 !important;
@@ -11,4 +11,6 @@
 	--DimListText: #758666 !important;
 	--DisabledText1: #75806f !important;
 	--DisabledText2: #282e22 !important; 
+    --Inset: 1px inset var(--BorderBright);
+    --Outset: 1px outset var(--BorderBright);
 }

@@ -18,20 +18,89 @@
 }
 
 [class^="library_MainPanel"]{
-    border: 1px inset var(--BorderBright) !important;
+    border: var(--Inset) !important;
 }
 
-[class^="writereview_Playtime"], .online [class^="personanameandstatus_playerName"]{
+[class^="writereview_Playtime"]{
     color: var(--Maize) !important;
+}
+
+[class*="appdetails_ScrollContainer"], [class*="library_AppDetailsTransitionGroup"], [class*="libraryhome_Container"]{
+    background: var(--DarkGreenBG) !important;
+    background-image: none !important;
 }
 
 [class*="appdetailsoverview_Backdrop"]{
     display: none !important;
 }
 
+[class*="smartscrollcontainer_ScrollToTopButton"]{
+    display: none;
+}
+
+.online [class^="personanameandstatus_playerName"]{
+    color: var(--OffWhite);
+}
+
+.ingame [class^="personanameandstatus_playerName"]{
+    color: var(--Maize);
+}
+
+
 /* Mcdonalds Play Place & Info*/
-[class^="appdetailsplaysection_PlayBar"], [class^="writereview_RatingContainer"]{
+[class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"], [class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"]:hover{
+    transition: none;
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0%;
+}
+
+[class*="appactionbutton_Green_"] [class*="appactionbutton_PlayButton_"], [class*="appactionbutton_Green_"] [class*="appactionbutton_PlayButton_"]:hover{
+    background: var(--LightGreenBG) !important;
+    border: var(--Outset);
+}
+
+[class*="appdetailsplaysection_InnerContainer"]{
+    padding: 10px 20px;
+}
+
+[class*="appactionbutton_ButtonText"]{
+    text-transform: none !important;
+    font-weight: 700 !important;
+}
+
+[class*="appdetailsplaysection_PlayBarLabel"] {
+    text-transform: none;
+}
+
+[class*="appactionbutton_Green_"] [class*="appactionbutton_ButtonText"]{
+    color: var(--OffWhite);
+}
+
+[class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"] svg path{
+    fill: var(--OffWhite);
+}
+
+[class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"]:hover svg path, [class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"]:hover svg line{
+    fill: var(--Maize);
+    stroke: var(--Maize);
+}
+
+[class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"]:hover [class*="appactionbutton_ButtonText"]{
+    color: var(--Maize);
+}
+
+[class^="appdetailsplaysection_PlayBar_"]{
+    background: var(--DarkGreenBG) !important;
+}
+
+[class*="appdetailsplaysection_StickyHeader_"] > [class*="appdetailsplaysection_PlayBar_"], [class^="writereview_RatingContainer"]{
     background: var(--GreenBG) !important;
+}
+
+[class*="appdetailsplaysection_StickyHeaderShadow"][class*="Visible"]{
+    background: transparent;
+    border-top: var(--Inset);
 }
 
 [class*="appdetailsgameinfopanel_BoxArt_"]{
@@ -40,14 +109,14 @@
 
 [class*="appdetailsplaysection_MenuButton"], [class*="appdetailsgameinfopanel_Container_"]{
     background-color: var(--GreenBG);
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
     border-radius: 0%;
-    color: white;
+    color: var(--OffWhite);
 }
 
 [class*="appdetailsplaysection_MenuActive"]{
     background-color: var(--DarkGreenBG) !important;
-    border: 1px inset var(--BorderBright);
+    border: var(--Inset);
 }
 
 [class*="appdetailsplaysection_MenuButton"][class*="Favorited"] path{
@@ -57,7 +126,7 @@
 
 [class*="appdetailssection_AppDetailsSection_"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
     background: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright) !important;
+    border: var(--Outset) !important;
     padding: 5px;
 }
 
@@ -76,15 +145,28 @@
 
 [class*="appdetailsprimarylinkssection_Text"], [class*="appdetailsactivitysection_ViewLastNews"]{
     background: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright) !important;
-    color: white !important;
+    border: var(--Outset) !important;
+    color: var(--OffWhite) !important;
     padding: 3px 6px;
+}
+
+[class*="appdetailsprimarylinkssection_Text"]:active{
+    background: var(--DarkGreenBG) !important;
+    border: var(--Inset) !important;
+}
+
+[class*="appdetailsprimarylinkssection_LinkInner"]:hover [class*="appdetailsprimarylinkssection_Text"]{
+    color: var(--Maize) !important;
+}
+
+[class*="appdetailsplaysection_StatusNameContainer"] [class*="appdetailsplaysection_PlayBarGameName"]{
+    color: var(--OffWhite);
 }
 
 /* You've played X hours, review popup */
 [class^="appdetailsspotlight_ReviewContainer"], [class^="appdetailsspotlight_ReviewContainer"] button{
     background: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright) !important;
+    border: var(--Outset) !important;
     border-radius: 0%;
     color: var(--Maize);
 }
@@ -95,10 +177,27 @@
 
 /* Activity*/
 
+[class*="appdetailssectionheader_LabelText"]{
+    color: var(--OffWhite);
+    text-transform: none;
+}
+
+[class*="appactivityday_PartnerEventType"], [class*="appactivityday_PartnerEventType"] > div{
+    text-transform: none;
+}
+
 [class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
     background-color: transparent !important;
     border: none !important;
     padding: 0 !important;
+}
+
+[class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailsactivitysection_FetchMoreContainer_"]{
+    color: var(--OffWhite);
+}
+
+[class*="appdetailsactivitysection_ActivityFeedContainer_"] [class*="appdetailsactivitysection_FetchMoreContainer_"]::before{
+    box-shadow: none !important;
 }
 
 [class*="posttextentry_PostTextEntry"] [class*="posttextentry_PostTextEntryArea"]{
@@ -112,13 +211,13 @@
     background: var(--DarkGreenBG);
     border: 1px solid var(--GreenBG);
     border-radius: 0%;
-    color: white;
+    color: var(--OffWhite);
     box-shadow: none;
 }
 
 [class*="posttextentry_"][class*="Button"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright) !important;
+    border: var(--Outset) !important;
     border-radius: 0% !important;
     box-shadow: none;
 }
@@ -129,34 +228,35 @@
 
 [class*="appactivityday_AppActivityDay"]{
     background-color: var(--GreenBG);
-    border: 1px outset var(--BorderBright);
-    padding: 5px;
+    border: var(--Outset);
+    padding: 10px;
 }
 
 [class*="appactivityday_AppActivityDay"] [class*="appactivityday_AppActivityDate"]{ 
-    color: white;
+    color: var(--OffWhite);
+    text-transform: none;
 }
 
 [class*="appactivityday_LeftSideMajorUpdateBar"]{
     display: none;
 }
 
-[class*="appactivityday_PartnerEventLargeUpdate"]{
+[class*="appactivityday_PartnerEventLargeUpdate"], [class*="appactivityday_PartnerEventMediumImage_B"], [class*="appactivityday_PartnerEventTextOnly"], [class*="appactivityday_PartnerEventTextOnly"]:hover{
     border: none;
     box-shadow: none;
     background: transparent;
 }
 
-[class*="appactivityday_PartnerEventLargeImage_Image"][class*="appactivityday_Blur"]{
+[class*="appactivityday_PartnerEventMediumImage_Image"][class*="appactivityday_Blur"], [class*="appactivityday_PartnerEventLargeImage_Image"][class*="appactivityday_Blur"]{
     display: none !important;
 }
 
-[class*="appactivityday_PartnerEventLargeImage_Container"]{
+[class*="appactivityday_PartnerEventMediumImage_Container"], [class*="appactivityday_PartnerEventLargeImage_Container"]{
     background: transparent;
     transition: none;
 }
 
-[class*="appactivityday_PartnerEventLargeImage_Container"]:hover{
+[class*="appactivityday_PartnerEventMediumImage_Container"]:hover, [class*="appactivityday_PartnerEventLargeImage_Container"]:hover{
     background: transparent;
 }
 
@@ -165,70 +265,92 @@
     text-shadow: none;
 }
 
-[class*="appactivityday_PartnerEventLargeImage_TextColumn"]{
+[class*="appactivityday_PartnerEventMediumImage_TextColumn"], [class*="appactivityday_PartnerEventLargeImage_TextColumn"]{
     margin: 0;
     padding: 0;
 }
 
-[class*="appactivityday_PartnerEventLargeImage_Title"]{
-    color: white;
-    text-shadow: none;
-}
-
-[class*="appactivityday_PartnerEventLargeImage_Summary"]{
+[class*="appactivityday_PartnerEventMediumImage_Title"], [class*="appactivityday_PartnerEventLargeImage_Title"]{
     color: var(--OffWhite);
     text-shadow: none;
 }
 
-[class*="comment_thread_RatingBar"]{
+[class*="appactivityday_PartnerEventMediumImage_Summary"], [class*="appactivityday_PartnerEventLargeImage_Summary"]{
+    color: var(--OffWhite);
+    text-shadow: none;
+}
+
+[class*="appactivityday_Event"] [class*="appactivityday_EventBody"]{
+    background: transparent;
+    box-shadow: none;
+}
+
+[class*="comment_thread_RatingBar"], [class*="comment_thread_ActivityCommentThreadMinimized"]{
     opacity: 1;
 }
 
-[class*="comment_thread_RatingBar"] [class*="Button_"]{
+[class*="comment_thread_RatingBar"] [class*="Button_"], [class*="comment_thread_RatingBar"] [class*="Reactions"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright);
+    border: var(--Outset);
 }
 
-[class*="comment_thread_RatingBar"] [class*="LikeButton"][class*="CanClick"] path, [class*="comment_thread_RatingBar"] [class*="LikeButton"][class*="CanClick"] [class*="Count"]{
+[class*="comment_thread_RatingBar"] [class*="LikeButton"][class*="CanClick"] [class*="Count"], [class*="comment_thread_RatingBar"] [class*="LikeButton"][class*="CanClick"] path{
     color: var(--DimListText);
-    fill: var(--DimListText) !important;
 }
 
-[class*="comment_thread_RatingBar"] [class*="LikeButton"] path, [class*="comment_thread_RatingBar"] [class*="LikeButton"] [class*="Count"]{
+[class*="comment_thread_RatingBar"] [class*="LikeButton"] [class*="Count"], [class*="comment_thread_RatingBar"] [class*="LikeIcon"] path{
     color: var(--Maize);
-    fill: var(--Maize) !important;
 }
 
-[class*="comment_thread_RatingBar"] [class*="Count"]{
+[class*="comment_thread_RatingBar"] [class*="CommentCount"], [class*="comment_thread_RatingBar"] [class*="ReactionCount"], [class*="comment_thread_RatingBar"] [class*="CommentIcon"] path, [class*="comment_thread_RatingBar"] [class*="ReactionIcon"] path{
     color: var(--DimListText);
 }
 
 [class*="comment_thread_RatingBar"] path{
-    fill: var(--DimListText) !important;
-    color: var(--DimListText) !important;
+    fill: currentColor !important;
 }
 
+[class*="comment_thread_BackgroundEffects"]{
+    background-image: radial-gradient(circle, var(--Maize) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, var(--Maize) 20%, transparent 30%),
+    radial-gradient(circle, var(--Maize) 20%, transparent 20%),
+    radial-gradient(circle, var(--Maize) 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, var(--Maize) 15%, transparent 20%),
+    radial-gradient(circle, var(--Maize) 20%, transparent 20%),
+    radial-gradient(circle, var(--Maize) 20%, transparent 20%),
+    radial-gradient(circle, var(--Maize) 20%, transparent 20%),
+    radial-gradient(circle, var(--Maize) 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, var(--Maize) 20%, transparent 30%);
+}
 
+[class*="appactivityday_ReviewIconThumbsUpColor"], [class*="appdetailsreviewsection_ReviewIconThumbsUpColor"], [class*="appactivityday_ReviewIconThumbsDownColor"], [class*="appdetailsreviewsection_ReviewIconThumbsDownColor"]{
+    fill: var(--Maize);
+}
 
-/* Side Button???????????????????????????????????? */
+[class*="appactivityday_ReviewIconThumbsUp"], [class*="appdetailsreviewsection_ReviewIconThumbsUp"], [class*="appactivityday_ReviewIconThumbsDown"], [class*="appdetailsreviewsection_ReviewIconThumbsDown"]{
+    background: var(--LightGreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
 [class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"]:active{
     background-color: var(--DarkGreenBG);
-    border: 1px inset var(--BorderBright);
+    border: var(--Inset);
 }
 
 /* Achievements */
-[class*="appdetailsachievementssection_AchievementProgress"]{
+[class*="appdetailsachievementssection_AchievementProgress"], [class*="appdetailsplaysection_DetailsProgressContainer"], [class*="appdetailsplaysection_DetailsProgressBar"]{
     border-radius: 0% !important;
 }
 
-[class*="appdetailsachievementssection_AchievementProgressContainer"]{
-    border: 1px inset var(--BorderBright);
+[class*="appdetailsachievementssection_AchievementProgressContainer"], [class*="appdetailsplaysection_DetailsProgressContainer"]{
+    border: var(--Inset);
 }
 [class*="appdetailsachievementssection_RemainderText"]{
     text-shadow: none;
 }
 
-[class*="appdetailsachievementssection_AchievementProgress_"]{
+[class*="appdetailsachievementssection_AchievementProgress_"], [class*="appdetailsplaysection_DetailsProgressContainer"] [class*="appdetailsplaysection_DetailsProgressBar"]{
     background-color: var(--Maize) !important;
 }
 
@@ -239,8 +361,243 @@
 
 [class*="achievementiconbase_Icon"], [class*="appdetailsachievementssection_RemainderContainer"], [class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"]{
     background-color: var(--GreenBG) !important;
-    border: 1px outset var(--BorderBright) !important;
+    border: var(--Outset) !important;
     border-radius: 0% !important;
     box-shadow: none;
+    color: var(--OffWhite);
+    transition: none;
+}
+
+
+/* Workshop */
+[class*="appdetailsworkshopsection_WorkshopContainer"]{
+    /* background: repeating-linear-gradient(
+        to right, 
+        transparent, 
+        transparent 10px, 
+        var(--LightGreenBG) 10px, 
+        var(--LightGreenBG) 11px
+    ), repeating-linear-gradient(
+        to bottom, 
+        transparent, 
+        transparent 10px, 
+        var(--LightGreenBG) 10px, 
+        var(--LightGreenBG) 11px
+    ), transparent; */
+    background: transparent;
+}
+
+[class*="appdetailsworkshopsection_SubscribedItemsMessage"]{
+    color: var(--OffWhite);
+}
+
+[class*="appdetailssection_Highlight"]{
+    background: transparent;
+    box-shadow: none;
+}
+
+[class*="appdetailsworkshopsection_FeaturedItem"] [class*="appdetailsworkshopsection_FeaturedItemDetailsContainer"] [class*="appdetailsworkshopsection_FeaturedItemHeader"]{
+    color: var(--Maize);
+}
+
+[class*="appdetailsworkshopsection_FeaturedItem"] [class*="appdetailsworkshopsection_FeaturedItemHideButton"]{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
+[class*="appdetailsworkshopsection_FeaturedItem"] [class*="appdetailsworkshopsection_FeaturedItemHideButton"] [class*="SVGIcon"] line{
+    stroke: var(--OffWhite);
+}
+
+/* Community Content */
+[class*="appdetailscommunityfeed_HeaderStyles"]{
+    text-transform: none;
+    background: transparent;
+    color: var(--Maize);
+}
+[class*="appdetailscommunityfeed_HeaderStyles"] [class*="infoicon_MoreInfoIcon"]{
+    display: none;
+}
+
+[class*="appdetailssection_AppDetailsSection_"][class*="appdetailscommunityfeed_CommunityContentContainer"] [class*="appdetailssection_AppDetailsSectionContainer_"]{
+    background: transparent !important;
+    border: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+[class*="appdetailscommunityfeed_LoadContentButton"]{
+    margin: 0 0 0 20px;
+    border: var(--Outset);
+    background-color: var(--GreenBG);
+    color: var(--OffWhite);
+    border-radius: 0%;
+}
+
+[class*="appdetailscommunityfeed_TopSection_"]{
+    padding: 0 5px;
+}
+
+[class*="appdetailscommunityfeed_CommunityItem"]{
+    border-radius: 0%;
+    background-color: var(--GreenBG);
+    box-shadow: none;
+    border: var(--Outset);
+    transition: none;
+}
+
+[class*="appdetailscommunityfeed_CommunityItem"]:hover {
+    box-shadow: none;
+}
+
+[class*="appdetailscommunityfeed_Guide"] [class*="appdetailscommunityfeed_GuideTitle"]{
+    color: var(--Maize);
+    text-transform: none;
+}
+
+[class*="appdetailscommunityfeed_Guide"] [class*="appdetailscommunityfeed_TopSectionInner"]{
+    background: transparent;
+}
+
+[class*="appdetailscommunityfeed_AuthorSection"]{
+    background: transparent;
+}
+
+/* News Overlay */
+[class*="apppartnereventspage_PartnerEvent"]{
+    border: var(--Outset);
+    border-radius: 0%;
+    background: var(--GreenBG);
+    box-shadow: none;
+}
+
+[class*="partnereventdisplay_InLibraryView"] [class*="partnereventdisplay_EventDetailTitleContainer"], [class*="partnereventdisplay_LibraryEventTitleContainer"]{
+    background: transparent;
+    box-shadow: none;
+}
+
+[class*="partnereventdisplay_LibraryEventBodyContainer"]{
+    padding: 0 24px 24px;
+}
+
+[class*="apppartnereventspage_EventTypeAndTimeRow"] [class*="apppartnereventspage_TimeandPostedBy"] [class*="apppartnereventspage_EventType"]{
+    color: var(--Maize);
+}
+
+[class*="apppartnereventspage_EventTypeAndTimeRow"] [class*="apppartnereventspage_TimeandPostedBy"] [class*="localdateandtime_RightSideTitles"], [class*="apppartnereventspage_EventTypeAndTimeRow"] [class*="apppartnereventspage_TimeandPostedBy"] [class*="localdateandtime_ShortDateAndTime"]{
+    color: var(--OffWhite);
+}
+
+[class*="localdateandtime_ActiveEvent"] [class*="localdateandtime_ActiveEventCallOut"]{
+    background-color: var(--Maize);
+    color: black;
+}
+
+[class*="discussionwidget_InnerContainer"] > div, [class*="discussionwidget_ShareContainer"]{
+    padding: 0;
+    background-color: transparent;
+}
+
+[class*="discussionwidget_VoteCount"], [class*="discussionwidget_DiscussionCount"]{
+    color: var(--Maize);
+}
+[class*="discussionwidget_VoteCount"] svg, [class*="discussionwidget_DiscussionCount"] svg{
+    fill: currentColor;
+}
+
+[class*="discussionwidget_Container"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    margin: 0 20px 20px;
+    padding: 10px;
+}
+
+[class*="partnereventshared_Button"][class*="partnereventshared_Icon"]{
+    border: var(--Outset);
+    background-color: var(--GreenBG);
+    border-radius: 0%;
+    box-shadow: none;
+    transition: none;
+}
+
+[class*="partnereventshared_Button"][class*="partnereventshared_Icon"]:hover{
+    background-color: var(--GreenBG);
+    color: var(--Maize);
+    box-shadow: none;
+}
+
+[class*="partnereventshared_Button"][class*="partnereventshared_Icon"]:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+    box-shadow: none;
+}
+
+[class*="partnereventshared_Button"][class*="partnereventshared_Icon"] > svg{
+    fill: currentColor;
+}
+
+[class*="discussionwidget_ShareContainer"] [class*="discussionwidget_DiscussionButtonText"]{
+    display: none;
+}
+
+[class*="discussionwidget_ShareContainer"] svg{
+    margin: 0;
+}
+
+[class*="apppartnereventspage_ControlSection"] [class*="apppartnereventspage_ControlSectionWidth"] [class*="apppartnereventspage_ControlSectionRightSide"] > div{
+    background: var(--LightGreenBG);
+    border-radius: 0%;
+    border: var(--Outset);
+    box-shadow: none;
+}
+
+[class*="apppartnereventspage_ControlSection"] [class*="apppartnereventspage_ControlSectionWidth"] [class*="apppartnereventspage_ControlSectionRightSide"] > div:hover{
+    background: var(--LightGreenBG);
+    border: var(--Outset);
+    color: var(--Maize);
+}
+
+[class*="apppartnereventspage_ControlSection"] [class*="apppartnereventspage_ControlSectionWidth"] [class*="apppartnereventspage_ControlSectionRightSide"] > div:active{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="apppartnereventspage_ControlSectionRightSide"] .SVGIcon_Button line, [class*="apppartnereventspage_ControlSectionRightSide"] .SVGIcon_Button polygon{
+    fill: currentColor !important;
+    stroke: currentColor !important;
+}
+
+[class*="apppartnereventspage_AnimIn"]{
+    animation: none;
+}
+[class*="apppartnereventspage_AnimIn"]:active svg{
+    transform: scale(1);
+}
+
+/* Share popup */
+[class*="partnereventshared_FlexColumnContainer"]{
+    background-color: transparent;
+}
+
+[class*="partnereventshared_Divider"]{
+    display: none;
+}
+
+[class*="discussionwidget_LinkInput_"]{
+    border-radius: 0%;
+    border: var(--Inset);
+    background-color: var(--DarkGreenBG);
+    color: var(--OffWhite);
+}
+[class*="partnereventshared_Button"], [class*="partnereventshared_Button"]:hover{
+    border-radius: 0%;
+    border: var(--Outset);
+    background-color: var(--GreenBG);
     color: white;
+    box-shadow: none;
+}
+[class*="partnereventshared_Button"]:active{
+    border: var(--Inset);
+    background-color: var(--DarkGreenBG);
 }
