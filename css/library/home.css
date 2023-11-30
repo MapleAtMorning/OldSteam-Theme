@@ -1,21 +1,253 @@
 /* Disable tilt on hover */
-[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox"]:hover:not([class*="Landscape"]){
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"]:hover:not([class*="Landscape"]){
     transform: rotateX(0deg) translateZ(0px);
     box-shadow: none;
     filter: brightness(1) contrast(1) saturate(1);
 }
 
 /* Disable zoom */
-[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox"]:hover:not([class*="Portrait"]) img{
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"]:hover:not([class*="Portrait"]) img{
     transform: scale(1) !important;
     filter: brightness(1) contrast(1) saturate(1) !important;
 }
 
-[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox"]{
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"]{
     border: var(--Inset);
     box-shadow: none;
 }
 
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBoxSubscript"]{
+    border: var(--Outset);
+    border-radius: 0%;
+    background-color: var(--GreenBG);
+    transition: none;
+    transform: translateY(-3px);
+    box-shadow: none;
+}
+
+/* Backgrounds  */
 [class*="libraryhome_LibraryHome"]{
     background: var(--DarkGreenBG);
+}
+
+[class*="libraryhome_UpdatesContainer"]{
+    background: var(--DarkGreenBG);
+}
+
+/* What's New Section */
+
+[class*="pageablecontainer_HeaderPageControls"]{
+    margin-bottom: 5px;
+}
+
+[class*="pageablecontainer_HeaderPageControls"] [class*="pageablecontainer_Name"]{
+    color: var(--OffWhite);
+    text-transform: none;
+    margin-right: 3px;
+    line-height: 28px;
+}
+
+[class*="boxcarousel_BoxCarouselContents"] > [class*="libraryhomenewupdates_PartnerEventRowCapsule_"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    padding: 5px;
+    height: auto;
+}
+
+[class*="libraryhomenewupdates_EventTime"]{
+    color: var(--Label);
+}
+
+[class*="libraryhomenewupdates_Event_Title"] div[class*="libraryhomenewupdates_PartnerEventRowCapsule_TextTitle"]{
+    color: var(--OffWhite);
+}
+
+
+[class*="libraryhomenewupdates_GameIconAndName"], [class*="libraryhomenewupdates_GameIconAndName"]:hover{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+}
+
+[class*="libraryhomenewupdates_GameIconAndName"] [class*="libraryhomenewupdates_GameName"]{
+    color: var(--OffWhite);
+}
+
+[class*="libraryhomenewupdates_GameIconAndName"]:hover [class*="libraryhomenewupdates_GameName"]{
+    color: var(--Maize);
+}
+
+[class*="libraryhomenewupdates_GameIcon_"]{
+    padding: 2px 0 2px 2px;
+    width: 16px;
+    height: 16px;
+}
+
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_Container"] [class*="libraryhomenewupdates_EventTimeSpan"]{
+    background: var(--LightGreenBG);
+    border: var(--Outset);
+    z-index: 10;
+}
+
+[class*="libraryhomenewupdates_GameIconAndName"]:hover [class*="libraryhomenewupdates_GameIcon"]{
+    filter: brightness(1);
+}
+
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"][class*="libraryhomenewupdates_HoversEnabled"]:hover [class*="libraryhomenewupdates_EventSummaryContainer"]{
+    background-color: rgba(145, 134, 60, .3)
+}
+
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"][class*="libraryhomenewupdates_HoversEnabled"] [class*="libraryhomenewupdates_EventSummaryContainer"] [class*="libraryhomenewupdates_EventSummaryType"]{
+    text-transform: none;
+}
+
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"][class*="libraryhomenewupdates_HoversEnabled"]:hover [class*="libraryhomenewupdates_EventSummaryContainer"] [class*="libraryhomenewupdates_EventSummaryType"]{
+    color: var(--Maize);
+}
+
+[class*="pageablecontainer_HeaderPageControls"] [class*="libraryhomenewupdates_SettingsButton"]{
+    margin: 4px;
+    height: 18px;
+    width: 18px;
+}
+
+[class*="pageablecontainer_HeaderPageControls"] [class*="libraryhomenewupdates_SettingsButton"] svg path{
+    stroke: var(--OffWhite);
+    fill: var(--OffWhite);
+    transition: none;
+}
+
+[class*="pageablecontainer_HeaderPageControls"] [class*="libraryhomenewupdates_SettingsButton"]:hover svg path{
+    stroke: var(--Maize);
+    fill: var(--Maize);
+}
+
+[class*="pageablecontainer_HeaderPageControls"] > div:not([class*="pageablecontainer"]){
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+}
+
+[class*="pageablecontainer_PageClickContainer"] [class*="pageablecontainer_PageLeft"], [class*="pageablecontainer_PageClickContainer"] [class*="pageablecontainer_PageRight"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    opacity: 1;
+    padding: 3px;
+}
+
+[class*="pageablecontainer_PageClickContainer"] [class*="pageablecontainer_PageLeft"]:not([class*="Disabled"]):active, [class*="pageablecontainer_PageClickContainer"] [class*="pageablecontainer_PageRight"]:not([class*="Disabled"]):active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="pageablecontainer_PageClickContainer"] [class*="pageablecontainer_PageLeft"] polyline, [class*="pageablecontainer_PageClickContainer"] [class*="pageablecontainer_PageRight"] polyline{
+    stroke: var(--OffWhite);
+    transform: translateX(40px);
+}
+
+[class*="pageablecontainer_PageClickContainer"] [class*="pageablecontainer_PageLeft"]:not([class*="Disabled"]):hover polyline, [class*="pageablecontainer_PageClickContainer"] [class*="pageablecontainer_PageRight"]:not([class*="Disabled"]):hover polyline{
+    stroke: var(--Maize);
+}
+
+[class*="libraryhomenewupdates_EventOptions_"]>div{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
+/* What's New Popup Settings */
+[class*="libraryhomenewupdates_WhatsNewSettingsContainer"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+}
+
+.DialogLabel[class*="libraryhomenewupdates_WhatsNewHeaderText"]{
+    color: var(--OffWhite);
+}
+
+._DialogInputContainer[class*="libraryhomenewupdates_WhatsNewPriorityContainer"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0%;
+}
+
+._DialogInputContainer [class*="libraryhomenewupdates_DialogSoftLabel"]{
+    color: var(--Label);
+}
+
+[class*="libraryhomenewupdates_WhatsNewGameListSection"] [class*="libraryhomenewupdates_WhatsNewGameListRow"]{
+    width: fit-content;
+    background: var(--GreenBG);
+    border: var(--Outset);
+    padding: 0 3px;
+}
+[class*="libraryhomenewupdates_WhatsNewGameListSection"] [class*="libraryhomenewupdates_WhatsNewGameListRow"]:not(:last-of-type){
+    margin-bottom: 6px;
+}
+
+
+[class*="libraryhomenewupdates_WhatsNewGameListSection"] [class*="libraryhomenewupdates_WhatsNewGameListRow"] .DialogToggle_Description{
+    color: var(--OffWhite);
+}
+
+[class*="libraryhomenewupdates_WhatsNewGameListSection"] [class*="libraryhomenewupdates_WhatsNewGameListRow"] [class*="libraryhomenewupdates_WhatsNewSettingsUndoButton"]{
+    margin: 0 0 0 6px;
+    background-color: transparent !important;
+}
+
+[class*="libraryhomenewupdates_WhatsNewGameListSection"] [class*="libraryhomenewupdates_WhatsNewGameListRow"] [class*="libraryhomenewupdates_WhatsNewSettingsUndoButton"] line{
+    stroke: var(--OffWhite);
+}
+
+[class*="libraryhomenewupdates_WhatsNewGameListSection"] [class*="libraryhomenewupdates_WhatsNewGameListRow"] [class*="libraryhomenewupdates_WhatsNewSettingsUndoButton"]:hover line{
+    stroke: var(--Maize);
+}
+
+[class*="libraryhomenewupdates_WhatsNewSettings_"] ._DialogInputContainer{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-top: none;
+    border-radius: 0%;
+}
+
+[class*="libraryhomenewupdates_WhatsNewSettings_"] .DialogToggleField{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-bottom: none;
+    border-radius: 0%;
+    margin-bottom: 0;
+}
+
+[class*="toggle_Toggle_"] > div{
+    box-shadow: none !important;
+    transition: none !important;
+}
+
+[class*="toggle_Toggle_"] [class*="toggle_ToggleRail_"]{
+    border-radius: 0%;    
+    height: 16px;
+    top: 0;
+    left: 0;
+    border: var(--Inset);
+    background: var(--DarkGreenBG)
+}
+[class*="toggle_Toggle_"] [class*="toggle_ToggleRail_"][class*="On"]{
+    background: var(--MaizeBG)
+}
+
+[class*="toggle_Toggle_"] [class*="toggle_ToggleSwitch_"][class*="Off"]{
+    border-radius: 0%;
+    transition: none;
+    border: var(--Outset);
+    background: var(--GreenBG);
+}
+[class*="toggle_Toggle_"] [class*="toggle_ToggleSwitch_"][class*="On"]{
+    border-radius: 0%;
+    transition: none;
+    border: var(--Outset);
+    background: var(--Maize);
+    transform: translateX(20px);
+}
+
+/* Shelves */
+[class*="DialogDropDown_CurrentDisplay"]{
+    color: var(--OffWhite);
 }

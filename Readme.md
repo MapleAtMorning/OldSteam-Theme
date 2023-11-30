@@ -1,4 +1,5 @@
 # This is just a todo list for now. Mostly for myself.
+this has become so much more detailed than I thought, so cluttered. sorry not sorry.
 
 ## Downloads Page
 
@@ -38,15 +39,19 @@
 - [x] Unable to sync alert
 - [X] CATEGORIZE CSS
 - [x] Stop game alert
+- [ ] Game Install window
+- [ ] Featured box
 
 ### Library Home Page
 
 - [x] Disable tilt on hover
 - [ ] Rearrange / drag page
 - [ ] Dropdown
-- [ ] Disable Glint on hover
+- [x] Disable Glint on hover
 - [x] Disable zoom on hover for landscape
-- [ ] What's new section
+- [x] What's new section
+- [ ] Game hover
+- [ ] Landscape styling
 
 ### Library Collections Page
 
@@ -64,6 +69,7 @@
 - [x] Fix the notifications color SVG
 - [x] Finish user account styling for navbar
 - [x] More padding on steam outer layer
+- [ ] Notfications box after clicking the button
 - [ ] Back/Forward arrow need to be white
 - [x] Scrollbar
 - [x] Window management buttons (- □ x)

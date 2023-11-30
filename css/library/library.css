@@ -90,6 +90,12 @@
     color: var(--Maize);
 }
 
+[class*="appactionbutton_ButtonChild"][class*="appactionbutton_StreamingSelector"], [class*="appactionbutton_Green"] > [class*="appactionbutton_ButtonChild"][class*="appactionbutton_StreamingSelector"], [class*="appactionbutton_ButtonChild"][class*="appactionbutton_StreamingSelector"]:hover, [class*="appactionbutton_Green"] > [class*="appactionbutton_ButtonChild"][class*="appactionbutton_StreamingSelector"]:hover{
+    background: var(--LightGreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
 [class^="appdetailsplaysection_PlayBar_"]{
     background: var(--DarkGreenBG) !important;
 }
@@ -590,6 +596,7 @@
     background-color: var(--DarkGreenBG);
     color: var(--OffWhite);
 }
+
 [class*="partnereventshared_Button"], [class*="partnereventshared_Button"]:hover{
     border-radius: 0%;
     border: var(--Outset);
@@ -597,6 +604,7 @@
     color: white;
     box-shadow: none;
 }
+
 [class*="partnereventshared_Button"]:active{
     border: var(--Inset);
     background-color: var(--DarkGreenBG);

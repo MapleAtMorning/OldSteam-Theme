@@ -1,3 +1,9 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+sleep(5000).then(() => {
+
 const rootMenuNav = document.getElementsByClassName("steamdesktop_TitleBar_39oUC")[0]
 const accountNewsMore = document.getElementsByClassName("steamdesktop_TitleBarControls_1-9si")[0]
 // const windowControls = document.getElementsByClassName("steamdesktop_WindowControls_qP17e")[0]
@@ -33,3 +39,4 @@ if (vrMode != undefined){
 
 // This breaks things. it stays in the corner. Edit: Do i even need this?
 // topBar.appendChild(windowControls)
+});

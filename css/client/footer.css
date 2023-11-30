@@ -26,6 +26,7 @@
 
 [class^="bottombar_DetailedDownloadProgress_"] [class^="bottombar_ProgressBarWrapper_"] [class^="progressbar_ProgressBar"]{
     --color-progress-bar-foreground: var(--Maize) !important;
+    border: var(--Inset);
 }
 
 [class^="bottombar_Status_"]{
