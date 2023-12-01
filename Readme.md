@@ -47,7 +47,7 @@ this has become so much more detailed than I thought, so cluttered. sorry not so
 - [x] Disable tilt on hover
 - [ ] Rearrange / drag page
 - [ ] Dropdown
-- [x] Disable Glint on hover
+- [ ] Disable Glint on hover
 - [x] Disable zoom on hover for landscape
 - [x] What's new section
 - [ ] Game hover
@@ -76,4 +76,4 @@ this has become so much more detailed than I thought, so cluttered. sorry not so
 - [x] All nav buttons white
 - [x] Input radio buttons
 - [x] Actually connect the footer with the content
-- [ ] Replace the logo link with this repo.
+- [x] Replace the logo link with this repo.

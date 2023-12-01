@@ -17,7 +17,7 @@ var vrMode = document.getElementsByClassName("titlebarcontrols_VRToggle_3lRfT")[
 
 const steamLogoContainer = document.getElementsByClassName("rootmenu_SteamButton_bSKGl")[0]
 const newLogo = document.createElement("img")
-newLogo.src = "https://raw.githubusercontent.com/ungstein/OG-Steam-Library/main/steamui/images/icon_steam.png"
+newLogo.src = "https://raw.githubusercontent.com/MapleAtMorning/Green-Steam-Theme/main/icon_steam.png"
 
 // Moving all the big parts
 outerFrame.insertBefore(rootMenuNav, outerFrame.firstChild) 
