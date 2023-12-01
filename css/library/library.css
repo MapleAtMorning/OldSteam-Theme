@@ -291,6 +291,24 @@
     box-shadow: none;
 }
 
+[class*="appdetailsactivitysection_ActivityFeedContainer"][class*="appdetailsactivitysection_Rollup"] .Panel > [class*="appactivityday_Event_"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    padding: 10px;
+}
+
+[class*="appactivityday_Event_"] [class*="appactivityday_PartnerEventFeatured_"]{
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+[class*="appactivityday_Event"] [class*="appactivityday_PartnerEventFeaturedHeader"]{
+    background: transparent;
+    box-shadow: none;
+    text-transform: none;
+}
+
 [class*="comment_thread_RatingBar"], [class*="comment_thread_ActivityCommentThreadMinimized"]{
     opacity: 1;
 }

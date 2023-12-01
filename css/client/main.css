@@ -134,11 +134,11 @@ input[type="radio"]:focus{
     border: var(--Inset);
 }
 
-.DesktopUI .window-controls > div [class*="SVGIcon"] line, .DesktopUI .window-controls > div [class*="SVGIcon"] rect, .ModalPosition_Dismiss .closeButton line{
+.DesktopUI .window-controls > div [class*="SVGIcon"] line, .DesktopUI .window-controls > div [class*="SVGIcon"] rect, .DesktopUI .window-controls > div [class*="SVGIcon"] polyline,  .ModalPosition_Dismiss .closeButton line{
     stroke: var(--OffWhite) !important;
 }
 
-.DesktopUI .window-controls > div:hover [class*="SVGIcon"] line, .DesktopUI .window-controls > div:hover [class*="SVGIcon"] rect, .ModalPosition_Dismiss .closeButton:hover line{
+.DesktopUI .window-controls > div:hover [class*="SVGIcon"] line, .DesktopUI .window-controls > div:hover [class*="SVGIcon"] rect, .DesktopUI .window-controls > div:hover [class*="SVGIcon"] polyline, .ModalPosition_Dismiss .closeButton:hover line{
     stroke: var(--Maize) !important;
 }
 
