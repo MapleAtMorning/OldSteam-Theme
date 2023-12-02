@@ -1,3 +1,5 @@
+Requires [SFP](https://github.com/PhantomGamers/SFP)
+
 # This is just a todo list for now. Mostly for myself.
 this has become so much more detailed than I thought, so cluttered. sorry not sorry.
 
