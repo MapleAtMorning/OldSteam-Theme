@@ -11,20 +11,6 @@
     filter: brightness(1) contrast(1) saturate(1) !important;
 }
 
-[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"]{
-    border: var(--Inset);
-    box-shadow: none;
-}
-
-[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBoxSubscript"]{
-    border: var(--Outset);
-    border-radius: 0%;
-    background-color: var(--GreenBG);
-    transition: none;
-    transform: translateY(-3px);
-    box-shadow: none;
-}
-
 /* Backgrounds  */
 [class*="libraryhome_LibraryHome"]{
     background: var(--DarkGreenBG);
@@ -52,6 +38,11 @@
     border: var(--Outset);
     padding: 5px;
     height: auto;
+}
+
+[class*="boxcarousel_BoxCarouselContents"][class*="boxcarousel_MaskRight"]{
+    -webkit-mask-image: none;
+    mask-image: none;
 }
 
 [class*="libraryhomenewupdates_EventTime"]{
@@ -248,6 +239,129 @@
 }
 
 /* Shelves */
+
+[class*="appportrait_AppPortraitBanner_"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    text-transform: none;
+    box-shadow: none;
+}
+
+[class*="Draggable"][class*="HoversEnabled"]:not([class*="appportrait_Soundtrack"]):hover [class*="appportrait_AppPortraitBannerContainer"]{
+    transform: translateZ(0);
+}
+
+[class*="libraryhomeshowcases_ShowcaseHeader"] [class*="libraryhomeshowcases_Rule"]{
+    transition: none;
+    background-color: var(--GreenBG);
+}
+
+[class*="libraryhomeshowcases_ShowcaseHeader"]:hover [class*="libraryhomeshowcases_Rule"]{
+    border: var(--Outset);
+}
+
+[class*="libraryhomeshowcases_ShowcaseHeader"] .SVGIcon_ReadyToPlay circle{
+    stroke: var(--Maize);
+}
+
+[class*="libraryhomeshowcases_ShowcaseHeader"] .SVGIcon_ReadyToPlay path{
+    fill: var(--Maize);
+}
+
+[class*="appgrid_SortingDropDown"] [class*="appgrid_SortingDropDownLabel"]{
+    text-transform: none;
+    color: var(--Label)
+}
+
 [class*="DialogDropDown_CurrentDisplay"]{
     color: var(--OffWhite);
+}
+
+[class*="appgrid_SortingDropDown_"] .DialogDropDown{
+    border: var(--Outset);
+}
+
+[class*="appgrid_SortingDropDown_"] .DialogDropDown > div{
+    border-radius: none;
+    background-color: var(--GreenBG);
+}
+
+.DesktopUI [class*="appgrid_SortingDropDownContainer"]>div, .DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer"].DialogMenuPosition [class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer{
+    background: var(--GreenBG) !important;
+    border: var(--Outset);
+    box-shadow: none !important;
+}
+
+.DesktopUI [class*="appgrid_SortingDropDownContainer"]>div>div{
+    background: transparent !important;
+}
+
+.DesktopUI [class*="appgrid_SortingDropDownContainer"]>div>div:hover, .DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer"].DialogMenuPosition >div>div:hover{
+    color: var(--Maize) !important;
+    background: transparent !important;
+}
+
+
+/* Game Cards */
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"][class*="Portrait"]{
+    border: var(--Inset);
+    box-shadow: none;
+}
+
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"][class*="Landscape"]{
+    box-shadow: none;
+}
+
+[class*="appportrait_PortraitImage"] [class*="Landscape"]{
+    border: var(--Inset);
+    border-bottom: none;
+}
+
+[class*="appportrait_FooterBlurImageContainer"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    filter: blur(0);
+}
+
+[class*="appportrait_FooterBlurImageContainer"] > img{
+    display: none;
+}
+
+[class*="appportrait_RecentGameFooter"] > [class*="appportrait_PlaytimeDetails"] > div{
+    color: var(--OffWhite);
+}
+
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBoxSubscript"]{
+    border: var(--Outset);
+    border-radius: 0%;
+    background-color: var(--GreenBG);
+    transition: none;
+    transform: translateY(-3px);
+    box-shadow: none;
+}
+
+[class*="appportrait_LibraryItemActionButton"][class*="Play"]:not([class*="Disabled"]), [class*="appportrait_LibraryItemActionButton"][class*="Download"]:not([class*="Disabled"]){
+    background: var(--LightGreenBG);
+    box-shadow: none;
+    border-radius: 0%;
+    border: var(--Outset);
+}
+
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemActionButton"][class*="Play"]:not([class*="Disabled"]):hover, [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemActionButton"][class*="Download"]:not([class*="Disabled"]):not([class*="Play"]):hover{
+    background: var(--LightGreenBG);
+}
+
+[class*="appportrait_LibraryItemActionButton"][class*="Play"]:not([class*="Disabled"]) svg, [class*="appportrait_LibraryItemActionButton"][class*="Download"]:not([class*="Disabled"]) svg{
+    fill: var(--OffWhite);
+    transition: none;
+}
+
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemActionButton"][class*="Play"]:not([class*="Disabled"]):hover svg{
+    fill: var(--Maize);
+    transform: scale(1);
+}
+
+[class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemActionButton"][class*="Download"]:not([class*="Disabled"]):not([class*="Play"]):hover svg{
+    color: var(--Maize);
+    transform: scale(0.9);
 }

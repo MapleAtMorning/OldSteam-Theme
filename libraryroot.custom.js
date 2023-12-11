@@ -19,6 +19,8 @@ const steamLogoContainer = document.getElementsByClassName("rootmenu_SteamButton
 const newLogo = document.createElement("img")
 newLogo.src = "https://raw.githubusercontent.com/MapleAtMorning/Green-Steam-Theme/main/icon_steam.png"
 
+
+
 // Moving all the big parts
 outerFrame.insertBefore(rootMenuNav, outerFrame.firstChild) 
 contentFrame.insertBefore(topBar, contentFrame.firstChild) 

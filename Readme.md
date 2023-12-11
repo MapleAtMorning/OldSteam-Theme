@@ -42,18 +42,18 @@ this has become so much more detailed than I thought, so cluttered. sorry not so
 - [X] CATEGORIZE CSS
 - [x] Stop game alert
 - [ ] Game Install window
-- [ ] Featured box
+- [x] Featured box
 
 ### Library Home Page
 
 - [x] Disable tilt on hover
 - [ ] Rearrange / drag page
-- [ ] Dropdown
+- [x] Dropdown
 - [ ] Disable Glint on hover
 - [x] Disable zoom on hover for landscape
 - [x] What's new section
 - [ ] Game hover
-- [ ] Landscape styling
+- [x] Landscape styling
 
 ### Library Collections Page
 

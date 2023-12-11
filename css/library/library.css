@@ -46,6 +46,25 @@
     color: var(--Maize);
 }
 
+[class*="appdetailscontrollersupport_PurchaseNoticeContainer"]{
+    box-shadow: none;
+    border-radius: 0%;
+    border: var(--Outset);
+}
+
+[class*="appdetailscontrollersupport_PurchaseNoticeImageContainer"]{
+    border-radius: 0%;
+    background-color: var(--Maize);
+}
+
+[class*="appdetailscontrollersupport_PurchaseNoticeLabel"]{
+    box-shadow: none;
+    border-radius: 0%;
+    background: var(--DarkGreenBG);
+    opacity: 1;
+    text-shadow: none;
+}
+
 
 /* Mcdonalds Play Place & Info*/
 [class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"], [class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"]:hover{

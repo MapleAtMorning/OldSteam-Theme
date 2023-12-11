@@ -227,3 +227,7 @@
     box-shadow: none !important;
     border-radius: 0% !important;
 }
+
+[class*="gamelistentry_FriendIsPlaying"] svg path, [class*="gamelistentry_FriendIsPlaying"] svg circle{
+    fill: var(--Maize);
+}
