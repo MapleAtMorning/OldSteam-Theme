@@ -59,9 +59,11 @@
 }
 
 [class*="contextmenu_contextMenu_"]{
-    background: var(--DarkGreenBG) !important;
-    border: 1px solid var(--GreenBG);
+    background: var(--GreenBG) !important;
+    border: var(--Outset);
     border-radius: 0%;
+    box-shadow: none !important;
+
 }
 
 [class*="contextmenu_contextMenu_"] .DialogCheckbox{
@@ -230,4 +232,25 @@
 
 [class*="gamelistentry_FriendIsPlaying"] svg path, [class*="gamelistentry_FriendIsPlaying"] svg circle{
     fill: var(--Maize);
+}
+/* Right Click Menu */
+.DesktopUI [class*="library_ContextMenuAction"]{
+    background: var(--LightGreenBG) !important;
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
+.DesktopUI [class*="library_ContextMenuAction"]:hover{
+    background: var(--LightGreenBG) !important;
+    color: var(--Maize);
+}
+
+.DesktopUI [class*="contextMenuItem"]:hover, .DesktopUI [class*="contextMenuItem"][class*="active"]{
+    color: var(--Maize);
+    background: transparent;
+}
+
+[class*="gamelistentry_HasContextMenuOpen"]{
+    border: var(--Inset);
+    background: var(--GreenBG);
 }

@@ -23,6 +23,7 @@ this has become so much more detailed than I thought, so cluttered. sorry not so
 - [x] Fix background for titles that overflow
 - [x] Fix weird box showing up on games that have updates
 - [x] Checkbox oldifying
+- [x] Right click play / bg change
 
 ### Library Game Page
 
@@ -41,7 +42,7 @@ this has become so much more detailed than I thought, so cluttered. sorry not so
 - [x] Unable to sync alert
 - [X] CATEGORIZE CSS
 - [x] Stop game alert
-- [ ] Game Install window
+- [x] Game Install window
 - [x] Featured box
 
 ### Library Home Page
@@ -52,7 +53,7 @@ this has become so much more detailed than I thought, so cluttered. sorry not so
 - [ ] Disable Glint on hover
 - [x] Disable zoom on hover for landscape
 - [x] What's new section
-- [ ] Game hover
+- [ ] Game hover popout
 - [x] Landscape styling
 
 ### Library Collections Page

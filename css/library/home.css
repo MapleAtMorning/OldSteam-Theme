@@ -1,17 +1,17 @@
-/* Disable tilt on hover */
+/* Disable tilt on hover =====================================================================*/
 [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"]:hover:not([class*="Landscape"]){
     transform: rotateX(0deg) translateZ(0px);
     box-shadow: none;
     filter: brightness(1) contrast(1) saturate(1);
 }
 
-/* Disable zoom */
+/* Disable zoom =====================================================================*/
 [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"]:hover:not([class*="Portrait"]) img{
     transform: scale(1) !important;
     filter: brightness(1) contrast(1) saturate(1) !important;
 }
 
-/* Backgrounds  */
+/* Backgrounds  =====================================================================*/
 [class*="libraryhome_LibraryHome"]{
     background: var(--DarkGreenBG);
 }
@@ -20,7 +20,7 @@
     background: var(--DarkGreenBG);
 }
 
-/* What's New Section */
+/* What's New Section =====================================================================*/
 
 [class*="pageablecontainer_HeaderPageControls"]{
     margin-bottom: 5px;
@@ -144,7 +144,7 @@
     border-radius: 0%;
 }
 
-/* What's New Popup Settings */
+/* What's New Popup Settings =====================================================================*/
 [class*="libraryhomenewupdates_WhatsNewSettingsContainer"]{
     background: var(--GreenBG);
     border: var(--Outset);
@@ -238,7 +238,7 @@
     transform: translateX(20px);
 }
 
-/* Shelves */
+/* Shelves =====================================================================*/
 
 [class*="appportrait_AppPortraitBanner_"]{
     background: var(--GreenBG);
@@ -302,7 +302,7 @@
 }
 
 
-/* Game Cards */
+/* Game Cards =====================================================================*/
 [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"][class*="Portrait"]{
     border: var(--Inset);
     box-shadow: none;
@@ -364,4 +364,54 @@
 [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemActionButton"][class*="Download"]:not([class*="Disabled"]):not([class*="Play"]):hover svg{
     color: var(--Maize);
     transform: scale(0.9);
+}
+
+/* Card Hover Popout =====================================================================*/
+[class*="appportraithover_AppPortraitHover"]{
+    background-color: var(--GreenBG);
+    box-shadow: none;
+    border: var(--Outset);
+}
+[class*="appportraithover_CapsuleBackground"]{
+    /* background: var(--GreenBG); */
+    opacity: 1;
+    filter: blur(0);
+}
+
+[class*="appportraithover_CapsuleBackground"] img[class*="Vis"]{
+    opacity: 0;
+}
+
+[class*="appportraithover_Screenshot"]{
+    -webkit-mask-image: none;
+    mask-image: none;
+    background-color: transparent !important;
+    margin: 0 6px;
+}
+
+[class*="appportraithover_PlaytimeDetails"] [class*="appportraithover_Header"]{
+    text-transform: none;
+}
+
+[class*="appportraithover_AppTitle"]{
+    text-shadow: none;
+}
+
+[class*="appportraithover_Header_"]{
+    padding-top: 15px;
+}
+
+[class*="appportraithover_PlaytimeDetails"] > div{
+    color: var(--Label);
+}
+
+[class*="appportraithover_AppStatus"]{
+    display: inline;
+    bottom: 0;
+    position: absolute;
+    width: max-content;
+    height: auto;
+    padding: 3px;
+    background-color: var(--LightGreenBG);
+    border: var(--Outset);
 }

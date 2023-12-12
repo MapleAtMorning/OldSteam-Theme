@@ -10,9 +10,7 @@
     background-color: transparent !important;
 }
 
-/* Game page for single game ===================================================================== */
-
-/* General Background and stuff */
+/* General Background and stuff ===================================================================== */
 [class*="appdetailsoverview_Container"]{
     background-color: var(--DarkGreenBG);
 }
@@ -46,6 +44,14 @@
     color: var(--Maize);
 }
 
+[class*="personanameandstatus_richPresenceLabel"]{
+    color: var(--DimListText) !important;
+}
+
+[class*="appdetailsfriendssection_AvatarAndLabel"]:hover{
+    background-color: transparent;
+}
+
 [class*="appdetailscontrollersupport_PurchaseNoticeContainer"]{
     box-shadow: none;
     border-radius: 0%;
@@ -66,7 +72,7 @@
 }
 
 
-/* Mcdonalds Play Place & Info*/
+/* Mcdonalds Play Place & Info =====================================================================*/
 [class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"], [class*="appactionbutton_PlayButtonContainer_"] [class*="appactionbutton_PlayButton_"]:hover{
     transition: none;
     background: var(--DarkGreenBG);
@@ -188,7 +194,7 @@
     color: var(--OffWhite);
 }
 
-/* You've played X hours, review popup */
+/* You've played X hours, review popup ===================================================================== */
 [class^="appdetailsspotlight_ReviewContainer"], [class^="appdetailsspotlight_ReviewContainer"] button{
     background: var(--GreenBG) !important;
     border: var(--Outset) !important;
@@ -200,7 +206,7 @@
     fill: var(--Maize);
 }
 
-/* Activity*/
+/* Activity =====================================================================*/
 
 [class*="appdetailssectionheader_LabelText"]{
     color: var(--OffWhite);
@@ -381,7 +387,7 @@
     border: var(--Inset);
 }
 
-/* Achievements */
+/* Achievements =====================================================================*/
 [class*="appdetailsachievementssection_AchievementProgress"], [class*="appdetailsplaysection_DetailsProgressContainer"], [class*="appdetailsplaysection_DetailsProgressBar"]{
     border-radius: 0% !important;
 }
@@ -412,7 +418,7 @@
 }
 
 
-/* Workshop */
+/* Workshop =====================================================================*/
 [class*="appdetailsworkshopsection_WorkshopContainer"]{
     /* background: repeating-linear-gradient(
         to right, 
@@ -453,7 +459,7 @@
     stroke: var(--OffWhite);
 }
 
-/* Community Content */
+/* Community Content =====================================================================*/
 [class*="appdetailscommunityfeed_HeaderStyles"]{
     text-transform: none;
     background: transparent;
@@ -507,7 +513,7 @@
     background: transparent;
 }
 
-/* News Overlay */
+/* News Overlay =====================================================================*/
 [class*="apppartnereventspage_PartnerEvent"]{
     border: var(--Outset);
     border-radius: 0%;
@@ -618,7 +624,7 @@
     transform: scale(1);
 }
 
-/* Share popup */
+/* Share popup ===================================================================== */
 [class*="partnereventshared_FlexColumnContainer"]{
     background-color: transparent;
 }
@@ -645,4 +651,16 @@
 [class*="partnereventshared_Button"]:active{
     border: var(--Inset);
     background-color: var(--DarkGreenBG);
+}
+
+/* Install popup =====================================================================*/
+.DesktopUI [class*="installrequest_FolderOption"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+}
+
+.DesktopUI [class*="installrequest_FolderOption"][class*="Active"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset); 
+    color: var(--Maize);
 }
