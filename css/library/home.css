@@ -301,6 +301,24 @@
     background: transparent !important;
 }
 
+[class*="libraryhomeshowcases_ShowcaseHeader"][class*="libraryhomeshowcases_Reordering"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+}
+
+[class*="libraryhomeshowcases_Reordering"] [class*="appgrid_SortingDropDown"] ._DialogInputContainer [class*="DialogDropDown_CurrentDisplay"]{
+    border-radius: 0;
+    background: var(--GreenBG);
+    color: var(--OffWhite);
+}
+
+[class*="libraryhomeshowcases_DragElement"] [class*="libraryhomeshowcases_ShowcaseHeader"]{
+    box-shadow: none;
+}
+
+button.DialogButton[class*="libraryhomeshowcases_DoneReordering"]::before{
+    box-shadow: none;
+}
 
 /* Game Cards =====================================================================*/
 [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"][class*="Portrait"]{
@@ -373,7 +391,6 @@
     border: var(--Outset);
 }
 [class*="appportraithover_CapsuleBackground"]{
-    /* background: var(--GreenBG); */
     opacity: 1;
     filter: blur(0);
 }
@@ -407,11 +424,10 @@
 
 [class*="appportraithover_AppStatus"]{
     display: inline;
-    bottom: 0;
+    bottom: 69px;
     position: absolute;
     width: max-content;
     height: auto;
-    padding: 3px;
     background-color: var(--LightGreenBG);
     border: var(--Outset);
 }
