@@ -1,0 +1,84 @@
+[class*="allcollections_ScrollContainer"]{
+    background: var(--DarkGreenBG);
+}
+
+[class*="allcollections_ScrollContainer"] [class*="allcollections_Header"] [class*="allcollections_Label"]{
+    text-transform: none;
+    color: var(--OffWhite);
+    font-weight: 400;
+}
+
+[class*="allcollections_ScrollContainer"] [class*="allcollections_Header"] [class*="allcollections_Rule"]{
+    background: var(--GreenBG)
+}
+
+[class*="allcollections_ScrollContainer"] [class*="allcollections_Header"] [class*="infoicon_MoreInfoIcon"]{
+    display: none;
+}
+
+[class*="allcollections_Collection_"][class*="allcollections_NewCollection_"], [class*="allcollections_Collection_"]{
+    border-radius: 0;
+    border: var(--Outset);
+    background: var(--GreenBG);
+    box-shadow: none;
+    transition: none;
+}
+
+[class*="allcollections_Collection_"][class*="allcollections_NewCollection_"]:hover, [class*="allcollections_Collection_"][class*="allcollections_NewCollection_"]:focus, [class*="allcollections_Collection_"]:hover, [class*="allcollections_Collection_"]:focus{
+    border-radius: 0;
+    border: var(--Outset);
+    background: var(--GreenBG);
+    box-shadow: none;
+}
+
+[class*="allcollections_Collection_"][class*="allcollections_NewCollection_"]:active, [class*="allcollections_Collection_"]:active{
+    border: var(--Inset);
+    background: var(--DarkGreenBG);
+}
+
+
+[class*="allcollections_Collection_"][class*="allcollections_NewCollection_"]:hover [class*="allcollections_BigPlus"], [class*="allcollections_Collection_"][class*="allcollections_NewCollection_"]:focus [class*="allcollections_BigPlus"]{
+    color: var(--Maize);
+    transform: scale(1);
+}
+[class*="allcollections_Collection_"][class*="allcollections_NewCollection_"]:hover [class*="allcollections_CollectionLabel"], [class*="allcollections_Collection_"][class*="allcollections_NewCollection_"]:focus [class*="allcollections_CollectionLabel"], [class*="allcollections_Collection_"]:hover [class*="allcollections_CollectionLabel"], [class*="allcollections_Collection_"]:focus [class*="allcollections_CollectionLabel"]{
+    color: var(--Maize);
+}
+
+[class*="allcollections_Collection"] [class*="allcollections_CollectionLabel"]{
+    text-shadow: none !important;
+}
+
+[class*="allcollections_Collection_"]:not([class*="allcollections_NewCollection_"]) [class*="allcollections_CollectionLabel_"]{
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+[class*="allcollections_Collection"] [class*="allcollections_CollectionImage"] [class*="allcollections_DisplayCaseContainerBounds"]{
+    display: none;
+}
+
+/* New Collection Popup */
+[class*="savecollectiondialog_TwoOptionsContainer"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="savecollectiondialog_Description"]{
+    background: none;
+}
+
+[class*="savecollectiondialog_TwoOptionsContainer"] [class*="savecollectiondialog_Option"] [class*="savecollectiondialog_ActionLabel"]{
+    color: var(--OffWhite);
+    transition: none;
+}
+[class*="savecollectiondialog_TwoOptionsContainer"] [class*="savecollectiondialog_Option"][class*="Disabled"] [class*="savecollectiondialog_ActionLabel"]{
+    background: var(--DarkGreenBG) !important;
+    filter: saturate(1);
+    color: var(--DisabledText1);
+}

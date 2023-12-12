@@ -48,22 +48,13 @@ this has become so much more detailed than I thought, so cluttered. sorry not so
 ### Library Home Page
 
 - [x] Disable tilt on hover
-- [ ] Rearrange / drag page
+- [x] Rearrange / drag page
 - [x] Dropdown
 - [ ] Disable Glint on hover
 - [x] Disable zoom on hover for landscape
 - [x] What's new section
-- [ ] Game hover popout
+- [x] Game hover popout
 - [x] Landscape styling
-
-### Library Collections Page
-
-- [ ] Disable zoom thing on hover
-
-### Library Collection Overview Page
-
-- [ ] Disable tilt on hover
-- [ ] Disable shadows
 
 
 ## Client UI

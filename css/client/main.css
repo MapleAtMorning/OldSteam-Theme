@@ -86,7 +86,7 @@ input[type="radio"]:focus{
     background-color: transparent !important;
     box-shadow: none !important;
     border-radius: 0% !important;
-    border: 1px solid var(--GreenBG);
+    border: var(--Inset);
 }
 
 .DialogInput:hover, .DialogInput:focus{
@@ -95,8 +95,12 @@ input[type="radio"]:focus{
 
 .DialogLabel{
     color: var(--Label);
+    text-transform: none;
 }
 
+.DialogLabel[class*="savecollectiondialog_Required"]{
+    color: var(--Maize);
+}
 
 .ModalPosition_Content{
     box-shadow: none !important;
