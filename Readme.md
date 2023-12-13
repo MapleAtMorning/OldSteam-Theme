@@ -50,7 +50,7 @@ this has become so much more detailed than I thought, so cluttered. sorry not so
 - [x] Disable tilt on hover
 - [x] Rearrange / drag page
 - [x] Dropdown
-- [ ] Disable Glint on hover
+- [x] Disable Glint on hover
 - [x] Disable zoom on hover for landscape
 - [x] What's new section
 - [x] Game hover popout

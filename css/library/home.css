@@ -5,10 +5,14 @@
     filter: brightness(1) contrast(1) saturate(1);
 }
 
-/* Disable zoom =====================================================================*/
+/* Disable zoom & shine =====================================================================*/
 [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"]:hover:not([class*="Portrait"]) img{
     transform: scale(1) !important;
     filter: brightness(1) contrast(1) saturate(1) !important;
+}
+
+[class*="appportrait_LibraryItemBoxShine"]{
+    display: none;
 }
 
 /* Backgrounds  =====================================================================*/
@@ -279,6 +283,7 @@
 
 [class*="appgrid_SortingDropDown_"] .DialogDropDown{
     border: var(--Outset);
+    border-radius: 0;
 }
 
 [class*="appgrid_SortingDropDown_"] .DialogDropDown > div{
@@ -430,4 +435,17 @@ button.DialogButton[class*="libraryhomeshowcases_DoneReordering"]::before{
     height: auto;
     background-color: var(--LightGreenBG);
     border: var(--Outset);
+}
+
+[class*="appportraithover_FriendsContainer"]{
+    background: transparent;
+}
+
+[class*="appportraithover_FriendsContainer"] [class*="appportraithover_FriendsHeader"] [class*="appportraithover_FriendsCircle"], [class*="appportrait_FriendsBar"] [class*="appportrait_SummaryLeader"]{
+    background: var(--Maize);
+    box-shadow: none;
+}
+
+[class*="appportraithover_FriendsContainer"] [class*="appportraithover_FriendsHeader"] [class*="appportraithover_FriendsLabel"]{
+    color: var(--Maize);
 }

@@ -59,7 +59,7 @@
     transform: translateY(-50%);
 }
 
-[class*="allcollections_Collection"] [class*="allcollections_CollectionImage"] [class*="allcollections_DisplayCaseContainerBounds"]{
+[class*="allcollections_Collection"] [class*="allcollections_CollectionImage"]{
     display: none;
 }
 

@@ -1,0 +1,25 @@
+[class*="collectionview_OuterContainer"]{
+    background: var(--DarkGreenBG);
+}
+
+[class*="collectionview_Container"] [class*="collectionview_Header"] [class*="collectionview_CollectionName"]{
+    text-transform: none;
+    color: var(--OffWhite);
+    font-weight: 400;
+}
+
+[class*="collectionview_Container"] [class*="collectionview_Header"] [class*="collectionview_SectionCount"]{
+    color: var(--Label);
+}
+
+[class*="collectionview_Container"] [class*="collectionview_Header"] [class*="collectionview_Rule"]{
+    background: var(--GreenBG)
+}
+
+[class*="appgrid_CollectionOptionsRightJustified_3t1pL"] [class*="appgrid_ShowingReadyToPlay"]{
+    color: var(--Maize);
+}
+
+[class*="appgrid_LibraryImageBackgroundGlow"]{
+    display: none;
+}
