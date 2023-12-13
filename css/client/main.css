@@ -86,6 +86,7 @@ input[type="radio"]:focus{
     background-color: transparent !important;
     box-shadow: none !important;
     border-radius: 0% !important;
+    text-transform: none !important;
     border: var(--Inset);
 }
 

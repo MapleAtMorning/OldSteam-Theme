@@ -47,6 +47,8 @@
 
 [class*="allcollections_Collection"] [class*="allcollections_CollectionLabel"]{
     text-shadow: none !important;
+    text-transform: none !important;
+    font-weight: 300 !important;
 }
 
 [class*="allcollections_Collection_"]:not([class*="allcollections_NewCollection_"]) [class*="allcollections_CollectionLabel_"]{
