@@ -1,0 +1,47 @@
+[class*="downloads_DownloadsPage"]{
+    background: var(--GreenBG)
+}
+
+/* Graph & Stats */
+[class*="downloadgraph_GraphAndStats"]{
+    background: var(--DarkGreenBG)
+}
+
+[class*="downloads_TopBar"]{
+    background: var(--Maize)
+}
+
+[class*="downloadgraph_HeroAndLogo"][class*="downloadgraph_Empty"]{
+    background: transparent;
+}
+
+[class*="downloadgraph_DownloadGraph"] [class*="downloadgraph_GraphLine"]{
+    stroke: var(--LightGreenBG);
+}
+
+[class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_Disk"] {
+    background: var(--Maize)
+}
+
+[class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_LegendText"] {
+    color: var(--OffWhite);
+    text-transform: none;
+}
+
+[class*="downloadgraph_StatsPanel"] [class*="downloadgraph_Label"]{
+    text-transform: none;
+}
+
+/* Up Next */
+
+[class*="downloads_SectionTitle"] [class*="TitleAndCount"] [class*="Title"], [class*="downloads_SectionJumpBar"] [class*="TitleAndCount"] [Class*="Title"]{
+    color: var(--OffWhite);
+}
+
+[class*="downloads_SectionTitle"] [class*="downloads_Count"], [class*="downloads_AutoUpdateHours"], [class*="downloads_Text_"]{
+    color: var(--Label);
+}
+
+[class*="downloads_SectionTitle"] [class*="downloads_Rule"]{
+    background: var(--Label)
+}
