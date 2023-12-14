@@ -31,6 +31,15 @@
     stroke: var(--Maize) !important;
 }
 
+/* Disconnected message */
+.ConnectionTroubleContent{
+    background: var(--LightGreenBG)
+}
+
+.title-area-highlight{
+    display: none;
+}
+
 /* Header / Favorites / You */
 
 .friendListHeaderContainer {
@@ -193,4 +202,16 @@
 
 .chatRoomListContainer{
     background: var(--DarkGreenBG)
+}
+
+.ChatRoomListGroupItem:hover .ChatRoomListGroupItem_header{
+    background: transparent;
+}
+
+.ChatRoomListGroupItem .groupNameStatusContainer .chatRoomName{
+    color: var(--OffWhite);
+}
+
+.ChatRoomListGroupItem .ChatRoomListGroupItem_header:hover .groupNameStatusContainer .chatRoomName{
+    color: var(--Maize);
 }

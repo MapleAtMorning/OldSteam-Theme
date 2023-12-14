@@ -1,18 +1,19 @@
 # Requires [SFP](https://github.com/PhantomGamers/SFP)
 
-### This is just a todo list for now. Mostly for myself.
+### Many things are unfinished or overall buggy. 
+#### If you find something broken that isn't listed here, please create an [issue](https://github.com/MapleAtMorning/Green-Steam-Theme/issues/new) for it.
 
-## Downloads Page
-
-- [ ] Queued Downloads
-- [ ] Download speeds
-
-## Settings Page
-
-- [ ] General window style
-
-## Client UI
+## Todo:
+- Finish Downloads section
+- Chats & Group chats
+- Game overlay
+- Settings page
+- Add a non-steam game
 
 
-- [ ] Notfications box after clicking the button
-- [ ] Back/Forward arrow need to be white
+## Possible Todo:
+- Store page
+- Community pages
+
+## Won't do:
+- Profile pages

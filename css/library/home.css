@@ -99,6 +99,11 @@
     color: var(--Maize);
 }
 
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"][class*="libraryhomenewupdates_HoversEnabled"]:hover [class*="MainImageContainer"] > img{
+    transform: scale(1);
+    filter: blur(0) brightness(1);
+}
+
 [class*="pageablecontainer_HeaderPageControls"] [class*="libraryhomenewupdates_SettingsButton"]{
     margin: 4px;
     height: 18px;
