@@ -38,7 +38,4 @@ if (vrMode != undefined){
     vrMode = vrMode.parentNode
     accountNewsMore.insertBefore(vrMode, accountNewsMore.firstChild)
 }
-
-// This breaks things. it stays in the corner. Edit: Do i even need this?
-// topBar.appendChild(windowControls)
 });

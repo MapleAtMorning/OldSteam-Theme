@@ -354,6 +354,10 @@ button.DialogButton[class*="libraryhomeshowcases_DoneReordering"]::before{
     color: var(--OffWhite);
 }
 
+[class*="marquee_Content"]{
+    text-transform: none;
+}
+
 [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBoxSubscript"]{
     border: var(--Outset);
     border-radius: 0%;

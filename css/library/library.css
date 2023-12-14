@@ -407,6 +407,14 @@
     background: transparent;
     box-shadow: none;
 }
+[class*="appdetailsachievementssection_AllAchieved"] svg path{
+    stroke: var(--Maize);
+    fill: var(--Maize);
+}
+[class*="appdetailsachievementssection_AllAchieved"] svg circle{
+    stroke: var(--MaizeBG);
+    fill: var(--MaizeBG);
+}
 
 [class*="achievementiconbase_Icon"], [class*="appdetailsachievementssection_RemainderContainer"], [class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"]{
     background-color: var(--GreenBG) !important;

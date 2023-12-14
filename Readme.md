@@ -1,6 +1,6 @@
-Requires [SFP](https://github.com/PhantomGamers/SFP)
+# Requires [SFP](https://github.com/PhantomGamers/SFP)
 
-# This is just a todo list for now. Mostly for myself.
+### This is just a todo list for now. Mostly for myself.
 
 ## Downloads Page
 
