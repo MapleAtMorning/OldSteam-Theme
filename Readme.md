@@ -9,7 +9,9 @@
 - Game overlay
 - Settings page
 - Add a non-steam game
-
+- Post-game summary
+- Screenshot manager
+- Achievements overview
 
 ## Possible Todo:
 - Store page
