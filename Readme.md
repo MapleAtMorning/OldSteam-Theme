@@ -12,6 +12,7 @@
 - Post-game summary
 - Screenshot manager
 - Achievements overview
+- Awards on your review
 
 ## Possible Todo:
 - Store page
