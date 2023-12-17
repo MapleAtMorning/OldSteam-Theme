@@ -13,6 +13,8 @@
 - Screenshot manager
 - Achievements overview
 - Awards on your review
+- Eula on install (how do i even test this)
+- Game search not found 
 
 ## Possible Todo:
 - Store page
