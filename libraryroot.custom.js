@@ -2,7 +2,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-sleep(5000).then(() => {
+sleep(4500).then(() => {
 
 const rootMenuNav = document.getElementsByClassName("steamdesktop_TitleBar_39oUC")[0]
 const accountNewsMore = document.getElementsByClassName("steamdesktop_TitleBarControls_1-9si")[0]

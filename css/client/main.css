@@ -149,12 +149,15 @@ input[type="radio"]:focus{
     stroke: var(--Maize) !important;
 }
 
-[class*="contextmenu_contextMenu_"]{
-    background: var(--GreenBG) !important;
+[class*="contextmenu_contextMenu_"] [class*="contextmenu_contextMenuContents_"]{ 
     border: var(--Outset);
     border-radius: 0%;
-    box-shadow: none !important;
+    box-sizing: border-box;
+}
 
+[class*="contextmenu_contextMenu_"]{
+    background: var(--GreenBG) !important;
+    box-shadow: none !important;
 }
 
 [class*="contextmenu_contextMenu_"] .DialogCheckbox{
