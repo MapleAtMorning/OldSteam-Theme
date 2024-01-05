@@ -1,4 +1,9 @@
 /* Window Buttons */
+
+.friendsui-container .window-controls{
+    padding: 5px 5px 0 0;
+}
+
 .friendsui-container .title-area-icon{
     width: 28px;
 }
@@ -47,9 +52,11 @@
     background: var(--GreenBG);
 }
 
-.currentUserContainer{
+.currentUserContainer, .quickAccessFriends{
     border: none;
+    padding: 0 5px;
 }
+
 
 .statusHeaderGlow, .chatTitleBar .title-area-highlight, .singleWindowFocusBar.chatSingleWindowFocusBar{
     display: none;
@@ -86,8 +93,6 @@
 
 .activeTab{
     background: var(--GreenBG);
-    border: var(--Outset);
-    border-top: none;
     box-shadow: none;
     color: var(--OffWhite);
     text-transform: none;
@@ -125,8 +130,14 @@
     border-radius: 0% !important;
 }
 
+.FriendsListContent{
+    background: var(--GreenBG)
+}
+
 .friendlistListContainer{
     background: var(--DarkGreenBG);
+    margin: 0 5px;
+    border: var(--Inset);
 }
 
 [class*="insetshadow_FriendListInsetShadow"]{
@@ -161,6 +172,10 @@
     background: var(--Maize)
 }
 
+[class*="personastatusicons_PersonaStatusIcon"].online .SVGIcon_MobilePhone path{
+    fill: currentColor;
+}
+
 [class*="friendsnooze_SnoozeContainer"][class*="Dim"].online [class*="friendsnooze_SnoozeZ"], [class*="friendsnooze_SnoozeContainer"].online [class*="friendsnooze_SnoozeZ"]{
     color: var(--OffWhite);
     text-shadow: none;
@@ -187,7 +202,6 @@
 /* Group chats */
 .friendsListSectionTitle, .friendsListSectionTitle.chatSectionTitle:hover, .friendListFooter {
     background: var(--GreenBG);
-    border: var(--Outset);
     box-shadow: none;
     color: var(--OffWhite);
     text-transform: none;
@@ -201,7 +215,9 @@
 }
 
 .chatRoomListContainer{
-    background: var(--DarkGreenBG)
+    background: var(--DarkGreenBG);
+    margin: 0 5px;
+    border: var(--Inset);
 }
 
 .ChatRoomListGroupItem:hover .ChatRoomListGroupItem_header{
@@ -213,5 +229,17 @@
 }
 
 .ChatRoomListGroupItem .ChatRoomListGroupItem_header:hover .groupNameStatusContainer .chatRoomName{
+    color: var(--Maize);
+}
+
+/* Right click popup */
+[class*="contextmenu_contextMenu_"]{
+    color: var(--OffWhite) !important;
+    background: var(--GreenBG) !important;
+    border: var(--Outset) !important;
+    border-radius: 0%;
+}
+.contextMenuItem:hover, .contextMenuItem[class*="active"]{
+    background: var(--GreenBG) !important;
     color: var(--Maize);
 }

@@ -407,11 +407,11 @@
     background: transparent;
     box-shadow: none;
 }
-[class*="appdetailsachievementssection_AllAchieved"] svg path{
+[class*="appdetailsachievementssection_AllAchieved"] svg path, [class*="appdetailsachievementssection_AllAchieved"] svg path, [class*="appdetailsplaysection_AchievementSVG"] svg path:first-of-type:not([fill-rule="evenodd"]){
     stroke: var(--Maize);
     fill: var(--Maize);
 }
-[class*="appdetailsachievementssection_AllAchieved"] svg circle{
+[class*="appdetailsachievementssection_AllAchieved"] svg circle, [class*="appdetailsplaysection_AchievementSVG"] svg circle{
     stroke: var(--MaizeBG);
     fill: var(--MaizeBG);
 }
@@ -630,6 +630,38 @@
 }
 [class*="apppartnereventspage_AnimIn"]:active svg{
     transform: scale(1);
+}
+
+/* Achievement Overview Overlay =====================================================================*/
+[class*="apppartnereventspage_PartnerEvent"]{
+    border: var(--Outset);
+    border-radius: 0%;
+    background: var(--GreenBG);
+    box-shadow: none;
+}
+[class*="gamepadpage_GamepadPage"] [class*="gamepadpage_Flexed"]
+
+[class*="library_AchievementsOverlayContainer"] [class*="library_AchievementsPageContainer"] [class*="library_CloseButton"]{
+    background: var(--LightGreenBG);
+    border-radius: 0%;
+    border: var(--Outset);
+    box-shadow: none;
+}
+
+[class*="library_AchievementsOverlayContainer"] [class*="library_AchievementsPageContainer"] [class*="library_CloseButton"]:hover{
+    background: var(--LightGreenBG);
+    border: var(--Outset);
+    color: var(--Maize);
+}
+
+[class*="library_AchievementsOverlayContainer"] [class*="library_AchievementsPageContainer"] [class*="library_CloseButton"]:active{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="library_AchievementsPageContainer"] .SVGIcon_Button line{
+    fill: currentColor !important;
+    stroke: currentColor !important;
 }
 
 /* Share popup ===================================================================== */

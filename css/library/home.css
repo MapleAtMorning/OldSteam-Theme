@@ -87,8 +87,12 @@
     filter: brightness(1);
 }
 
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"][class*="libraryhomenewupdates_HoversEnabled"] [class*="libraryhomenewupdates_EventSummary"]{
+    transition: none;
+}
+
 [class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"][class*="libraryhomenewupdates_HoversEnabled"]:hover [class*="libraryhomenewupdates_EventSummaryContainer"]{
-    background-color: rgba(145, 134, 60, .3)
+    background-color: rgba(145, 134, 60, .45)
 }
 
 [class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"][class*="libraryhomenewupdates_HoversEnabled"] [class*="libraryhomenewupdates_EventSummaryContainer"] [class*="libraryhomenewupdates_EventSummaryType"]{
@@ -148,8 +152,9 @@
 }
 
 [class*="libraryhomenewupdates_EventOptions_"]>div{
-    background-color: var(--GreenBG);
+    background-color: var(--GreenBG) !important;
     border: var(--Outset);
+    box-shadow: none;
     border-radius: 0%;
 }
 

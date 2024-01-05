@@ -56,7 +56,7 @@
     background-color: var(--GreenBG);
 }
 [class*="menu_MenuItem"]:hover{
-    background-color: var(--LightGreenBG) !important;
+    background-color: var(--GreenBG) !important;
 }
 
 /* Account & News & More ======================================================================= */

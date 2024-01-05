@@ -1,9 +1,3 @@
-[class^="gamelistbar"], [class^="gamelist_Container"]{
-    background-color: var(--DarkGreenBG);
-    border-radius: 0%;
-    box-shadow: none;
-}
-
 [class*="library_LeftListSizableContainer_"]{
     border: var(--Inset);
 }
@@ -56,22 +50,6 @@
     border: 1px solid var(--GreenBG);
     border-radius: 0%;
     text-transform: none ;
-}
-
-[class*="contextmenu_contextMenu_"]{
-    background: var(--GreenBG) !important;
-    border: var(--Outset);
-    border-radius: 0%;
-    box-shadow: none !important;
-
-}
-
-[class*="contextmenu_contextMenu_"] .DialogCheckbox{
-    box-shadow: none !important;
-}
-
-[class*="contextmenu_contextMenu_"] svg{
-    stroke: var(--Maize) !important;
 }
 
 [class^="gamelistdropdown_Bar_"] [class^="gamelistdropdown_Menu"]:hover{
@@ -140,6 +118,10 @@
     height: 34px;
 }
 
+[class^="gamelistsearchbar_Container_"] [class*="SearchInput"] input{
+    border: none;
+}
+
 [class^="gamelistsearchbar_AdvancedSearchButton_"]{
     background-color: var(--GreenBG) !important;
     border: var(--Outset);
@@ -200,32 +182,35 @@
 }
 
 /* Games ======================================================================= */
-[class^="gamelistentry_"][class*="Selected"]:hover, [class^="gamelistentry_"][class*="Selected"]:hover > [class^="gamelistentry"]{
+[class^="gamelistbar"], [class*="gamelist_Container"] [class*="ReactVirtualized__Grid"]{
+    background: var(--DarkGreenBG);
+    margin: 0;
+    border-radius: 0%;
+    box-shadow: none;
+}
+
+[class*="gamelistentry_Selected"][class*="gamelistentry_Container"] [class*="CloudError"]{
+    background: transparent;
+}
+
+[class*="gamelistentry_GameListEntryLabels"], [class*="gamelistentry_GameListEntryLabels"] *{
+    background: transparent !important;
+}
+
+[class^="gamelistentry_Container_"]:hover, [class^="gamelistentry_Container_"][class*="Selected"], [class^="gamelistentry_Container_"][class*="Selected"]:hover, [class^="gamelistentry_Container_"][class*="Selected"]:hover [class^="gamelistentry_GameListEntryContainer_"]{
     background-color: var(--GreenBG);
 }
 
-[class^="gamelistentry_"][class*="Selected"]:hover *{
-    background-color: transparent;
-}
-
-[class^="gamelistentry_"]:hover{
-    background-color: transparent;
-}
-
-[class*="gamelistentry_Running"] span{
-    color: var(--Maize);
-}
-
-[class*="gamelistentry_Updating_"], [class*="gamelistentry_DownloadProgress_"]{
+[class*="gamelistentry_Updating_"], [class*="gamelistentry_DownloadProgress_"], [class*="gamelistentry_Container"][class*="gamelistentry_CloudOutOfDate"] span, [class*="gamelistentry_Running"] span{
     color: var(--Maize) !important;
 }
 
-[class*="gamelistentry_Updating_"] circle{
+[class*="gamelistentry_Updating_"] circle, [class*="gamelistentry_CloudOutOfDate"] circle{
     stroke: var(--Maize) !important;
 }
 
 [class*="gamelistentry_HoverOverlay_"]{
-    background-color: var(--LightGreenBG) !important;
+    background-color: var(--GreenBG) !important;
     box-shadow: none !important;
     border-radius: 0% !important;
 }
@@ -238,6 +223,10 @@
     background: var(--LightGreenBG) !important;
     border: var(--Outset);
     border-radius: 0%;
+}
+
+.DesktopUI [class*="library_ContextMenuAction"].Play{
+    text-transform: none;
 }
 
 .DesktopUI [class*="library_ContextMenuAction"]:hover{

@@ -1,0 +1,21 @@
+[class*="addnonsteamgamedialog_AddNonSteamGameDialogContent"] [class*="addnonsteamgamedialog_Header"]{
+    background: var(--GreenBG);
+    border: var(--Inset);
+    border-bottom: none;
+    color: var(--OffWhite);
+}
+
+[class*="addnonsteamgamedialog_AddNonSteamGameDialogContent"] [class*="addnonsteamgamedialog_GameList"]{
+    border: var(--Inset);
+    border-top: none;
+    background-color: var(--DarkGreenBG);
+    box-shadow: none;
+}
+
+[class*="addnonsteamgamedialog_AddNonSteamGameDialogContent"] [class*="addnonsteamgamedialog_GameRow"]:hover{
+    background: var(--LightGreenBG);
+}
+
+[class*="addnonsteamgamedialog_AddNonSteamGameDialogContent"] [class*="addnonsteamgamedialog_Footer"] button.DialogButton:hover::before {
+    display: none;
+}

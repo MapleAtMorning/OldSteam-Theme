@@ -6,7 +6,9 @@
 @import url(css/library/collection.css);
 @import url(css/library/allcollections.css);
 @import url(css/library/downloads.css);
-@import url(css/library/launchopt.css);
+
+@import url(css/misc/launchopt.css);
+@import url(css/misc/nonsteamgame.css);
 
 @import url(css/client/navbar.css);
 @import url(css/client/main.css);

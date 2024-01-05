@@ -52,7 +52,7 @@ input[type="radio"]:focus{
 .DialogCheckbox{
     box-shadow: none;
     border-radius: 0%;
-    background: var(--DarkGreenBG);
+    background: var(--DarkGreenBG) !important;
     border: var(--Inset);
 }
 
@@ -62,10 +62,12 @@ input[type="radio"]:focus{
     border-radius: 0% !important;
     border: var(--Outset) !important;
     color: var(--OffWhite);
+    transition: none !important;
 }
 
 .DialogFooter .DialogButton::before{
     box-shadow: none;
+    display: none !important;
 }
 
 .DialogButton:hover{
@@ -147,6 +149,21 @@ input[type="radio"]:focus{
     stroke: var(--Maize) !important;
 }
 
+[class*="contextmenu_contextMenu_"]{
+    background: var(--GreenBG) !important;
+    border: var(--Outset);
+    border-radius: 0%;
+    box-shadow: none !important;
+
+}
+
+[class*="contextmenu_contextMenu_"] .DialogCheckbox{
+    box-shadow: none !important;
+}
+
+[class*="contextmenu_contextMenu_"] svg{
+    stroke: var(--Maize) !important;
+}
 
 [class*="emoticon_NewEmoticonIndicator"]{
 background: transparent;

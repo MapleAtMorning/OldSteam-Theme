@@ -20,22 +20,23 @@ const newLogo = document.createElement("img")
 newLogo.src = "https://raw.githubusercontent.com/MapleAtMorning/Green-Steam-Theme/main/icon_steam.png"
 
 
-
-// Moving all the big parts
-outerFrame.insertBefore(rootMenuNav, outerFrame.firstChild) 
-contentFrame.insertBefore(topBar, contentFrame.firstChild) 
-topBar.appendChild(accountNewsMore)
-contentFrame.appendChild(bottomBar)
-
-// Replace the logo with the old one
-steamLogoContainer.firstChild.remove()
-steamLogoContainer.insertBefore(newLogo, steamLogoContainer.firstChild)
-
-// Move the VR & Bigpicture buttons from the right of the account button to the left
-const bigPicture = document.getElementsByClassName("titlebarcontrols_GamepadUIToggle_3LKQ3")[0].parentNode
-accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
-if (vrMode != undefined){
-    vrMode = vrMode.parentNode
-    accountNewsMore.insertBefore(vrMode, accountNewsMore.firstChild)
+if (document.title == 'Steam'){
+    // Moving all the big parts
+    outerFrame.insertBefore(rootMenuNav, outerFrame.firstChild) 
+    contentFrame.insertBefore(topBar, contentFrame.firstChild) 
+    topBar.appendChild(accountNewsMore)
+    contentFrame.appendChild(bottomBar)
+    
+    // Replace the logo with the old one
+    steamLogoContainer.firstChild.remove()
+    steamLogoContainer.insertBefore(newLogo, steamLogoContainer.firstChild)
+    
+    // Move the VR & Bigpicture buttons from the right of the account button to the left
+    const bigPicture = document.getElementsByClassName("titlebarcontrols_GamepadUIToggle_3LKQ3")[0].parentNode
+    accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
+    if (vrMode != undefined){
+        vrMode = vrMode.parentNode
+        accountNewsMore.insertBefore(vrMode, accountNewsMore.firstChild)
+    }
 }
 });
