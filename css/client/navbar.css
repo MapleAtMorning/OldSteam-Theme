@@ -116,8 +116,7 @@
     font-weight: 100;
 }
 
-
-
 [class*="steamavatar_avatar"]{
     box-shadow: none;
+    border: none;
 }

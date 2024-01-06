@@ -1,0 +1,95 @@
+[class*="artworkmodal_ArtworkModal_"]{
+    border: var(--Outset);
+}
+
+[class*="artworkmodal_ModalBox"]{
+    box-shadow: none;
+    background: var(--DarkGreenBG);
+}
+
+[class*="artworkmodal_ArtworkModalContainer"]{
+    -webkit-mask-image: none;
+    mask-image: none;
+}
+
+[class*="artworkmodal_FileDetails"] [class*="artworkmodal_Caption"]{
+    color: var(--Maize);
+}
+
+[class*="artworkmodal_ArtworkContainer"], [class*="artworkmodal_ArtworkModal_"] [class*="comment_thread_ActivityCommentThread"]{
+    box-shadow: none;
+    border: var(--Outset);
+    background: var(--GreenBG);
+    border-radius: 0%;
+    position: relative;
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="comment_thread_RatingContainer"][class*="HasComments"]{
+    width: fit-content;
+    position: absolute;
+    right: 0;
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="comment_thread_MakeCommentsVisible"]{
+    margin: 0;
+    background-color: var(--GreenBG);
+    color: var(--DimListText);
+    border: var(--Outset);
+    min-height: 32px;
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="comment_thread_MakeCommentsVisible"]:hover{
+    color: var(--OffWhite);
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="comment_thread_MakeCommentsVisible"]:active{
+    color: var(--Maize);
+    border: var(--Inset);
+    background-color: var(--DarkGreenBG);
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentHeader"] [class*="CommentTime"]{
+    color: var(--Label);
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentText"]{
+    color: var(--OffWhite);
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentControls"] [class*="CommentRatingButton"] [class*="CommentRating"]{
+    color: inherit;
+} 
+
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentControls"] [class*="CommentRatingButton"]{
+    color: var(--DimListText);
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+    transition: none;
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentControls"] [class*="CommentRatingButton"]:hover{
+    color: var(--OffWhite);
+    background: var(--GreenBG);
+}
+
+/* Hopeful wishing that they eventually add :has support lol */
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentControls"] [class*="CommentRatingButton"]:has([class*="UserRated"]), [class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentControls"] [class*="CommentRatingButton"]:active{
+    color: var(--Maize);
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentControls"] [class*="CommentRatingButton"] [class*="UserRated"]{
+    color: var(--Maize);
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentControls"] [class*="CommentRating"] svg path{
+    fill: currentColor;
+    stroke: currentColor;
+    color: inherit;
+}
+
+[class*="comment_thread_ActivityCommentThread"] [class*="Comment"] [class*="CommentBody"] [class*="CommentControls"] [class*="CommentRating"] svg{
+    opacity: 1 !important;
+}

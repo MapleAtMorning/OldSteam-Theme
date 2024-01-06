@@ -94,7 +94,7 @@
     font-weight: 700 !important;
 }
 
-[class*="appdetailsplaysection_PlayBarLabel"] {
+[class*="appdetailsplaysection_PlayBarLabel"]{
     text-transform: none;
 }
 
@@ -343,6 +343,11 @@
     border: var(--Outset);
 }
 
+[class*="comment_thread_RatingBar"] [class*="LikeButton"]:not([class*="CanClick"]), [class*="comment_thread_RatingBar"] [class*="LikeButton"]:active {
+    border: var(--Inset);
+    background-color: var(--DarkGreenBG) !important;
+}
+
 [class*="comment_thread_RatingBar"] [class*="LikeButton"][class*="CanClick"] [class*="Count"], [class*="comment_thread_RatingBar"] [class*="LikeButton"][class*="CanClick"] path{
     color: var(--DimListText);
 }
@@ -407,7 +412,7 @@
     background: transparent;
     box-shadow: none;
 }
-[class*="appdetailsachievementssection_AllAchieved"] svg path, [class*="appdetailsachievementssection_AllAchieved"] svg path, [class*="appdetailsplaysection_AchievementSVG"] svg path:first-of-type:not([fill-rule="evenodd"]){
+[class*="appdetailsachievementssection_AllAchieved"] svg path, [class*="appdetailsplaysection_AchievementSVG"] svg path:first-of-type:not([fill-rule="evenodd"]){
     stroke: var(--Maize);
     fill: var(--Maize);
 }
@@ -513,12 +518,107 @@
     text-transform: none;
 }
 
-[class*="appdetailscommunityfeed_Guide"] [class*="appdetailscommunityfeed_TopSectionInner"]{
+[class*="appdetailscommunityfeed_Guide"] [class*="appdetailscommunityfeed_Title"]{
+    margin-top: 5px;
+}
+
+[class*="appdetailscommunityfeed_Guide"] [class*="appdetailscommunityfeed_Description"]{
+    color: var(--Label);
+}
+
+[class*="appdetailscommunityfeed_AuthorSection"], [class*="appdetailscommunityfeed_Guide"] [class*="appdetailscommunityfeed_TopSectionInner"]{
     background: transparent;
 }
 
-[class*="appdetailscommunityfeed_AuthorSection"]{
-    background: transparent;
+[class*="appdetailscommunityfeed_AuthorSection"] [class*="appdetailscommunityfeed_Avatar"], [class*="appdetailscommunityfeed_AuthorSection"] [class*="appdetailscommunityfeed_Avatar"]:hover{
+    filter: brightness(1);
+    transform: scale(1);
+}
+
+[class*="appdetailscommunityfeed_ArtItem"] [class*="appdetailscommunityfeed_BottomSection"]{
+    border-radius: 0%;
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-left: none;
+    box-shadow: none;
+}
+
+[class*="appdetailscommunityfeed_CommunityItem"] [class*="appdetailscommunityfeed_PreviewContainer"]{
+    border-radius: 0%;
+    border: none;
+    border-bottom: var(--Inset);
+}
+
+[class*="appdetailscommunityfeed_CommunityItem"] [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"] [class*="appdetailscommunityfeed_Count"]{
+    display: none;
+}
+
+[class*="appdetailscommunityfeed_CommunityItem"] [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"] svg path{
+    fill: currentColor;
+}
+
+[class*="appdetailscommunityfeed_Controls"]{
+    right: 0;
+    left: auto;
+    transform: translate(0, 0);
+    bottom: 10px;
+}
+
+[class*="appdetailscommunityfeed_CommunityItem"] [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"]{
+    opacity: 1;
+    transform: scale(1);
+    background-color: var(--GreenBG);
+    color: var(--DimListText);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
+[class*="appdetailscommunityfeed_CommunityItem"] [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"]:hover{
+    color: var(--OffWhite);
+}
+
+[class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Icon"]{
+    filter: brightness(0) saturate(100%) invert(52%) sepia(22%) saturate(374%) hue-rotate(49deg) brightness(93%) contrast(91%);
+}
+
+[class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"]:hover [class*="appdetailscommunityfeed_Icon"]{
+    filter: brightness(0) saturate(100%) invert(98%) sepia(10%) saturate(208%) hue-rotate(33deg) brightness(91%) contrast(91%);
+}
+
+[class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"] [class*="appdetailscommunityfeed_Icon"][class*="Selected"], [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"] [class*="appdetailscommunityfeed_Icon"]:active{
+    filter: brightness(0) saturate(100%) invert(75%) sepia(22%) saturate(895%) hue-rotate(15deg) brightness(90%) contrast(95%);
+}
+
+/* Hopeful wishing that they eventually add :has support lol */
+[class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"]:has([class*="Selected"]), [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"]:active{
+    border: var(--Inset);
+    background-color: var(--DarkGreenBG);
+}
+
+[class*="appdetailscommunityfeed_MenuButton"] svg, [class*="appdetailscommunityfeed_MenuButton"]:hover svg{
+    transition: none;
+    fill: currentColor;
+    color: inherit;
+}
+
+[class*="appdetailscommunityfeed_MenuButton"]{
+    opacity: 1;
+    transform: scale(1);
+    background-color: var(--GreenBG);
+    border-radius: 0%;
+    border: var(--Outset);
+    color: var(--DimListText);
+    transition: none;
+}
+
+[class*="appdetailscommunityfeed_MenuButton"]:hover{
+    background-color: var(--GreenBG);
+    color: var(--OffWhite);
+}
+
+[class*="appdetailscommunityfeed_MenuButton"]:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
 }
 
 /* News Overlay =====================================================================*/
@@ -538,12 +638,19 @@
     padding: 0 24px 24px;
 }
 
+[class*="partnereventdisplay_EventBackgroundBlur"]{
+    display: none;
+}
+
+
 [class*="apppartnereventspage_EventTypeAndTimeRow"] [class*="apppartnereventspage_TimeandPostedBy"] [class*="apppartnereventspage_EventType"]{
     color: var(--Maize);
+    text-transform: none;
 }
 
 [class*="apppartnereventspage_EventTypeAndTimeRow"] [class*="apppartnereventspage_TimeandPostedBy"] [class*="localdateandtime_RightSideTitles"], [class*="apppartnereventspage_EventTypeAndTimeRow"] [class*="apppartnereventspage_TimeandPostedBy"] [class*="localdateandtime_ShortDateAndTime"]{
     color: var(--OffWhite);
+    text-transform: none;
 }
 
 [class*="localdateandtime_ActiveEvent"] [class*="localdateandtime_ActiveEventCallOut"]{
@@ -559,6 +666,7 @@
 [class*="discussionwidget_VoteCount"], [class*="discussionwidget_DiscussionCount"]{
     color: var(--Maize);
 }
+
 [class*="discussionwidget_VoteCount"] svg, [class*="discussionwidget_DiscussionCount"] svg{
     fill: currentColor;
 }
@@ -632,14 +740,108 @@
     transform: scale(1);
 }
 
+[class*="library_AppDetailsOverlayTransitionGroup"] [class*="library_OverlayAppDetailsTransitionEntered"]{
+    backdrop-filter: blur(0px) brightness(0.35) saturate(0.75);
+}
+
 /* Achievement Overview Overlay =====================================================================*/
-[class*="apppartnereventspage_PartnerEvent"]{
+[class*="library_AchievementsOverlayContainer"] [class*="library_AchievementsPageContainer"] [class*="gamepadpage_GamepadPage"][class*="gamepadpage_Flexed"]{
     border: var(--Outset);
     border-radius: 0%;
     background: var(--GreenBG);
     box-shadow: none;
 }
-[class*="gamepadpage_GamepadPage"] [class*="gamepadpage_Flexed"]
+
+[class*="achievementspage_Background"] [class*="Blur"]{
+    backdrop-filter: brightness(100%) blur(0);
+    background: transparent;
+}
+
+[class*="achievementspage_Page"], [class*="achievementslist_AchievementList"]{
+    background: var(--GreenBG);
+}
+
+[class*="achievementsheader_StatsBlock"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
+[class*="achievementsheader_BigStat"] [class*="achievementsheader_ProgressLabel"] [class*="achievementsheader_Label"]{
+    text-transform: none;
+    columns: var(--OffWhite);
+    font-weight: 500;
+}
+
+[class*="progressbar_ProgressBar"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0%;
+}
+
+[class*="progressbar_ProgressBar"] [class*="progressbar_Percent"]{
+    transition: none !important;
+    background: var(--Maize) !important;
+    border-radius: 0%;
+}
+
+[class*="achievementsheader_BigStat"] svg path{
+    stroke: var(--Maize);
+    fill: var(--Maize);
+}
+
+[class*="achievementsheader_BigStat"] svg circle{
+    stroke: var(--MaizeBG);
+    fill: var(--MaizeBG);
+}
+[class*="gamepadtabbedpage_TabHeaderRowWrapper"][class*="gamepadtabbedpage_Scrolled"]::before{
+    box-shadow: none;
+    backdrop-filter: blur(0px);
+    background: transparent;
+}
+
+[class*="gamepadtabbedpage_Tab_"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+    text-transform: none;
+    font-weight: 500;
+    transform: none;
+}
+
+[class*="gamepadtabbedpage_Tab_"]:hover{
+    background: var(--GreenBG);
+    color: var(--Maize);
+    text-transform: none;
+}
+
+[class*="gamepadtabbedpage_Tab_"][class*="Selected"], [class*="gamepadtabbedpage_Tab"][class*="Selected"]:hover{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="achievementsheader_SearchField"] .DialogInput_Wrapper input, [class*="achievementslist_GlobalAchievementListItem"]{
+    border: var(--Inset);
+    background: var(--DarkGreenBG) !important;
+}
+
+[class*="achievementslist_GlobalAchievementListItem"] [class*="achievementslist_Content"] [class*="achievementslist_ProgressFill"]{
+    background: var(--MaizeBG)
+}
+
+[class*="achievementslist_GlobalAchievementListItem"] [class*="achievementslist_UnlockContainer"]{
+    color: var(--Maize);
+}
+
+[class*="achievementslist_AchievementTitle"], [class*="achievementslist_AchievementDescription"], [class*="achievementslist_HeaderText"], [class*="achievementslist_GlobalAchievementListItem"] [class*="achievementslist_Content"] [class*="achievementslist_Info"] [class*="achievementslist_Title"], [class*="achievementslist_GlobalAchievementListItem"] [class*="achievementslist_Content"] [class*="achievementslist_Info"] [class*="achievementslist_Description"]{
+    color: var(--OffWhite);
+    text-transform: none;
+}
+
+[class*="achievementslist_AchievementGlobalPercentage"], [class*="achievementslist_UnlockDate"], [class*="achievementslist_GlobalAchievementListItem"] [class*="achievementslist_Content"] [class*="achievementslist_Percent"]{
+    color: var(--Label);
+    text-transform: none;
+}
 
 [class*="library_AchievementsOverlayContainer"] [class*="library_AchievementsPageContainer"] [class*="library_CloseButton"]{
     background: var(--LightGreenBG);
@@ -662,6 +864,11 @@
 [class*="library_AchievementsPageContainer"] .SVGIcon_Button line{
     fill: currentColor !important;
     stroke: currentColor !important;
+}
+
+[class*="achievementspage_AchievementTabs"] ._TabContentsScroll::-webkit-scrollbar{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
 }
 
 /* Share popup ===================================================================== */

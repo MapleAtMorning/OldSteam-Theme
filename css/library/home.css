@@ -291,6 +291,10 @@
     color: var(--OffWhite);
 }
 
+[class*="libraryhomeshowcases_CollectionDropDown"] ._DialogInputContainer{
+    border: none;
+}
+
 [class*="appgrid_SortingDropDown_"] .DialogDropDown{
     border: var(--Outset);
     border-radius: 0;

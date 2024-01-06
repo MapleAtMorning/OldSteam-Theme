@@ -19,11 +19,11 @@
     stroke: var(--LightGreenBG);
 }
 
-[class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_Disk"] {
+[class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_Disk"]{
     background: var(--Maize)
 }
 
-[class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_LegendText"] {
+[class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_LegendText"]{
     color: var(--OffWhite);
     text-transform: none;
 }

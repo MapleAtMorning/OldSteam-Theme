@@ -30,6 +30,7 @@
 - Awards on your review
 - Eula on install (how do i even test this)
 - Creating categories of friends
+- Notifications
 
 ## Possible Todo:
 - Store page

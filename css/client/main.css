@@ -65,7 +65,7 @@ input[type="radio"]:focus{
     transition: none !important;
 }
 
-.DialogFooter .DialogButton::before{
+.DialogButton::before{
     box-shadow: none;
     display: none !important;
 }
@@ -84,7 +84,7 @@ input[type="radio"]:focus{
     background-color: var(--DarkGreenBG) !important;
 }
 
-.DialogInput{
+.DialogInput, .DialogTextInputBase{
     background-color: transparent !important;
     box-shadow: none !important;
     border-radius: 0% !important;
@@ -94,6 +94,27 @@ input[type="radio"]:focus{
 
 .DialogInput:hover, .DialogInput:focus{
     background-color: transparent !important;
+}
+
+._DialogInputContainer{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+    color: var(--OffWhite);
+    box-shadow: none !important;
+}
+
+.DialogDropDown_Arrow .SVGIcon_DownArrowContextMenu{
+    fill: var(--OffWhite);
+}
+
+[class*="dropdown_DialogDropDownMenu"]._DialogInputContainer{
+    background: var(--GreenBG);
+}
+
+[class*="dropdown_DialogDropDownMenu"]._DialogInputContainer [class*="dropdown_DialogDropDownMenu_Item"]:hover{
+    background: transparent;
+    color: var(--Maize);
 }
 
 .DialogLabel{
@@ -149,15 +170,12 @@ input[type="radio"]:focus{
     stroke: var(--Maize) !important;
 }
 
-[class*="contextmenu_contextMenu_"] [class*="contextmenu_contextMenuContents_"]{ 
-    border: var(--Outset);
-    border-radius: 0%;
-    box-sizing: border-box;
-}
-
 [class*="contextmenu_contextMenu_"]{
+    border: var(--Outset);
+    min-width: fit-content !important;
     background: var(--GreenBG) !important;
     box-shadow: none !important;
+    box-sizing: border-box;
 }
 
 [class*="contextmenu_contextMenu_"] .DialogCheckbox{
