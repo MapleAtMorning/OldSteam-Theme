@@ -24,7 +24,6 @@
 - Chats & Group chats
 - Game overlay
 - Settings page
-- Post-game summary
 - Screenshot manager
 - Achievements overview
 - Awards on your review
