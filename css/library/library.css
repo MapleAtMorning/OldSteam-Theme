@@ -206,6 +206,41 @@
     fill: var(--Maize);
 }
 
+/* Post Game Summary ===================================================================== */
+
+
+[class*="pageablecontainer_PageableContainer"] [class*="pageablecontainer_HeaderPageControls"] > div[class*="spotlightgameplaysummary_GamePlaySummaryHeader"]{
+    border: none;
+    background: transparent;
+    text-transform: none;
+    color: var(--OffWhite);
+}
+
+[class*="pageablecontainer_PageableCloseButton"]{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+}
+
+[class*="spotlightgameplaysummary_SummaryCarouselContainer"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0%;
+}
+
+[class*="spotlightgameplaysummary_SummaryContainer_"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    padding: 0 5px;
+}
+
+[class*="spotlightgameplaysummary_SummaryCarouselContainer"]::after{
+    display: none;
+}
+
+[class*="spotlightgameplaysummary_SummaryScreenshot"]{
+    box-shadow: none;
+}
+
 /* Activity =====================================================================*/
 
 [class*="appdetailssectionheader_LabelText"]{
@@ -910,4 +945,13 @@
     background: var(--DarkGreenBG);
     border: var(--Inset); 
     color: var(--Maize);
+}
+
+/* Screenshot hover =====================================================================*/
+[class*="appdetailshover_AppDetailsHover"]{
+    box-shadow: none;
+}
+[class*="appdetailshover_AppDetailsHover"] [class*="appdetailshover_Background"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
 }
