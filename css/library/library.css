@@ -48,6 +48,10 @@
     color: var(--DimListText) !important;
 }
 
+[class*="friendsnooze_SnoozeContainer"].online [class*="friendsnooze_SnoozeZ"]{
+    color: var(--OffWhite);
+}
+
 [class*="appdetailsfriendssection_AvatarAndLabel"]:hover{
     background-color: transparent;
 }

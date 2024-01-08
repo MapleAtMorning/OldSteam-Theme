@@ -1,0 +1,14 @@
+[class*="gamenotes_EditorInput"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    box-shadow: none;
+}
+
+[class*="gamenotes_NoteEditorArea"] [class*="gamenotes_NoteActions"] .DialogButton{
+    opacity: 1;
+}
+
+[class*="prosemirror_ToolbarRow"] [class*="prosemirror_CommandButton"][class*="Toggled"]{
+    background: var(--DarkGreenBG) !important;
+    border: var(--Inset) !important;
+}
