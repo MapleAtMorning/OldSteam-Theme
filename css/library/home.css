@@ -298,11 +298,12 @@
 [class*="appgrid_SortingDropDown_"] .DialogDropDown{
     border: var(--Outset);
     border-radius: 0;
+    background: var(--GreenBG);
 }
 
 [class*="appgrid_SortingDropDown_"] .DialogDropDown > div{
     border-radius: none;
-    background-color: var(--GreenBG);
+    background: var(--GreenBG) !important;
 }
 
 .DesktopUI [class*="appgrid_SortingDropDownContainer"]>div, .DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer"].DialogMenuPosition [class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer{

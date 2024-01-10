@@ -32,3 +32,18 @@
 [class^="bottombar_Status_"]{
     color: var(--Maize) !important;
 }
+
+[class*="updatealert_Alert_"]{
+    background: var(--MaizeBG);
+    border: none;
+}
+
+[class*="updatealert_Alert"] [class*="updatealert_AlertButton"], [class*="updatealert_Alert"] [class*="updatealert_AlertButton"]:hover{
+    background: var(--Maize);
+    border: var(--Outset);
+}
+
+[class*="updatealert_Alert"] [class*="updatealert_AlertButton"]:active{
+    background: var(--MaizeBG);
+    border: var(--Inset);
+}

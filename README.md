@@ -22,9 +22,12 @@
 ## Todo:
 - Finish Downloads section
 - Chats & Group chats
+- News popup on steam opening
 - Game overlay
 - Settings page
-- Screenshot manager
+- Screenshot manager (1/2)
+- Fix game validation circle
+- Game Servers (lol)
 - Achievements overview
 - Awards on your review
 - Eula on install (how do i even test this)

@@ -55,6 +55,7 @@
 [class*="menu_MenuItem"]{
     background-color: var(--GreenBG);
 }
+
 [class*="menu_MenuItem"]:hover{
     background-color: var(--GreenBG) !important;
 }
@@ -66,12 +67,12 @@
     align-items: start;
 }
 
-[class*="titlebarcontrols_GamepadUIToggle"], [class*="titlebarcontrols_VRToggle"], [class*="titlebarcontrols_AnnouncementsButton"], [class*="titlebarcontrols_NotificationsButton"]{
+[class*="titlebarcontrols_GamepadUIToggle"], [class*="titlebarcontrols_VRToggle"], [class*="titlebarcontrols_AnnouncementsButton"], [class*="titlebarcontrols_NotificationsButton"], [class*="titlebarcontrols_SoundtrackControls"], [class*="titlebarcontrols_SoundtrackControls"][class*="Playing"]{
     background-color: var(--GreenBG) !important;
     border: var(--Outset);
     border-radius: 0%;
     padding: 5px;
-    margin: 0 5px 3px;
+    margin: 0 5px 3px !important;
     position: relative;
     width: 17px !important;
     min-width: 17px !important;
@@ -88,6 +89,19 @@
     background-color: var(--GreenBG) !important;
     border: var(--Outset);
     color: #fff !important;
+}
+
+[class*="titlebarcontrols_SoundtrackControls"][class*="Playing"] svg[class*="Icon"]{
+    color: var(--Maize);
+}
+
+[class*="titlebarcontrols_SoundtrackControls"]:active{
+    background: var(--DarkGreenBG) !important;
+    border: var(--Inset);
+}
+
+[class*="titlebarcontrols_SoundtrackControls"]:hover{
+    background: transparent;
 }
 
 [class*="titlebarcontrols_GamepadUIToggle"] svg{
@@ -114,6 +128,10 @@
 [class*="titlebarcontrols_AccountMenu_"].ingame div{
     color: var(--Maize);
     font-weight: 100;
+}
+
+[class*="titlebarcontrols_AccountMenuPopup"] [class*="titlebarcontrols_AccountName"], [class*="titlebarcontrols_AccountMenuPopup"] [class*="titlebarcontrols_WalletBalance"]{
+    color: var(--Maize);
 }
 
 [class*="steamavatar_avatar"]{

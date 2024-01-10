@@ -1,0 +1,52 @@
+[class*="mediamanagerutils_ExplainerBox"]{
+    border-radius: 0%;
+    border: var(--Inset);
+    background: var(--DarkGreenBG)
+}
+
+[class*="mediamanagerutils_ExplainerBox"] [class*="mediamanagerutils_Explainer"]{
+    color: var(--OffWhite);
+}
+
+[class*="mediamanagerutils_ButtonBox"][class*="Secondary"], [class*="mediamanagerutils_ButtonBox"][class*="Secondary"][class*="Disabled"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+    color: var(--OffWhite);
+    transition: none;
+}
+
+[class*="mediamanagerutils_ButtonBox"][class*="Secondary"]:hover{
+    background: var(--GreenBG);
+    color: var(--Maize);
+}
+
+[class*="mediamanagerutils_ButtonBox"][class*="Secondary"]:active{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="mediamanagerutils_Skeleton"]{
+    animation: none;
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="mediamanagerutils_ComboboxSelectorContextMenu"]{
+    border: var(--Outset);
+    background-color: var(--GreenBG);
+    box-shadow: none;
+}
+
+[class*="mediamanagerutils_ComboboxSelector"] [class*="Option"]:hover{
+    color: var(--Maize);
+    background-color: transparent;
+}
+
+[class*="mediamanagerutils_Text"]{
+    color: inherit;
+}
+
+[class*="mediamanagerutils_IconButton"] [class*="mediamanagerutils_IconButtonIcon"][class*="Active"]{
+    color: var(--Maize);
+}

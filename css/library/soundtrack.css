@@ -1,0 +1,82 @@
+[class*="appdetailssoundtrack_SoundtrackPanel"]{
+    background: var(--DarkGreenBG);
+}
+
+[class*="appdetailssoundtrack_BackgroundContainer"] [class*="appdetailssoundtrack_BackgroundBlurArt"]{
+    display: none;
+}
+
+[class*="appdetailssoundtrack_AlbumArt_"]{
+    border: var(--Outset);
+    filter: drop-shadow(0 0 0 black) !important;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+[class*="appdetailssoundtrack_AlbumArtAndTitle"]{
+    box-sizing: border-box;
+    background: var(--GreenBG);
+    border: var(--Outset);
+    width: 100%;
+    padding: 4px 4px 0;
+}
+
+[class*="appdetailssoundtrack_ParentGameLink"], [class*="appdetailssoundtrack_AlbumStatsContainer"], [class*="appdetailssoundtrack_AlbumStats"], [class*="appdetailssoundtrack_ParentAppName"]{
+    text-transform: none;
+    color: var(--Label) !important;
+}
+
+[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="appdetailssoundtrack_Header"] [class*="appdetailssoundtrack_ArtistName"], [class*="appdetailssoundtrack_SoundtrackContainer"] [class*="appdetailssoundtrack_Header"] [class*="appdetailssoundtrack_AlbumName"]{
+    color: var(--OffWhite);
+}
+
+[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="LeftColumn"][class*="WithControls"]{
+    overflow-x: hidden;
+}
+
+[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="LeftColumn"] [class*="Play"]{
+    box-sizing: border-box;
+}
+
+[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"]{
+    border: var(--Inset);
+    box-shadow: none;
+}
+
+[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"]{
+    border-radius: 0%;
+    background-color: var(--DarkGreenBG);
+}
+
+[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="Disc"], [class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="TrackListing"][class*="Playing"], [class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="TrackListing"]:hover{
+    border: var(--Outset);
+    background: var(--GreenBG);
+}
+
+[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="TrackListing"] [class*="TrackLength"], [class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="TrackListing"] [class*="TrackNumber"]{
+    color: var(--Label);
+}
+
+/* Play section */
+[class*="appdetailssoundtrack_DesktopControls"]{
+    background: transparent;
+    border: none;
+    border-radius: 0%;
+}
+
+button[class*="soundtrackcontrols_IconButton"].gpfocus, button[class*="soundtrackcontrols_IconButton"]:active{
+    background: var(--DarkGreenBG) !important;
+    border: var(--Inset);
+}
+
+[class*="gamepadslider_SliderTrack"], [class*="gamepadslider_SliderControl"]:hover [class*="gamepadslider_SliderTrack"]{
+    border-radius: 0;
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    --left-track-color: var(--Maize);
+}
+
+[class*="gamepadslider_SliderTrack"]::before{
+    border-radius: 0;
+}
+

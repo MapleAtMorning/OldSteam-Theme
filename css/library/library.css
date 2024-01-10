@@ -209,6 +209,45 @@
 [class^="appdetailsspotlight_ReviewContainer"] svg{
     fill: var(--Maize);
 }
+/* Available Content Ad ===================================================================== */
+[class*="appactivitydlc_Rollup"] [class*="appactivitydlc_Contents"] {
+    background: var(--GreenBG);
+    border: var(--Outset);
+    box-shadow: none;
+}
+
+[class*="appactivitydlc_Rollup"] [class*="appactivitydlc_Contents"] [class*="pageablecontainer_HeaderPageControls"] > div{
+    border: none;
+    background: transparent;
+    text-transform: none;
+    color: var(--OffWhite);
+}
+
+[class*="appdetailsdlcsection_DLCArt"] [class*="appdetailsdlcsection_Art"], [class*="appactivitydlc_CarouselItem"] > [class*="appactivitydlc_Carousel"]{
+    box-shadow: none;
+}
+
+[class*="appdetailsdlcsection_DLCArt"] [class*="appdetailsdlcsection_Gloss"]{
+    display: none;
+}
+
+[class*="appactivitydlc_ViewAllRow"] [class*="appactivitydlc_ViewAll"]{
+    background-color: var(--GreenBG);
+    color: var(--OffWhite);
+    border: var(--Outset);
+    transition: none;
+}
+
+[class*="appactivitydlc_ViewAllRow"] [class*="appactivitydlc_ViewAll"]:hover{
+    color: var(--Maize);
+    background-color: var(--GreenBG);
+}
+
+[class*="appactivitydlc_ViewAllRow"] [class*="appactivitydlc_ViewAll"]:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
 
 /* Post Game Summary ===================================================================== */
 
@@ -244,6 +283,21 @@
 [class*="spotlightgameplaysummary_SummaryScreenshot"]{
     box-shadow: none;
 }
+
+[class*="appdetailsachievementssection_Featured"] [class*="TextSection"] [class*="Name"], [class*="appdetailsachievementssection_Featured"] [class*="TextSection"] [class*="Desc"]{
+    color: var(--OffWhite);
+}
+
+[class*="appdetailsachievementssection_Featured"] [class*="TextSection"] [class*="Stats"]{
+    color: var(--Label);
+}
+
+[class*="spotlightgameplaysummary_EventDaySeparator"]{
+    background-color: var(--Label);
+}
+
+
+
 
 /* Activity =====================================================================*/
 
@@ -534,6 +588,12 @@
     background-color: var(--GreenBG);
     color: var(--OffWhite);
     border-radius: 0%;
+    transition: none;
+}
+
+[class*="appdetailscommunityfeed_LoadContentButton"]:hover{
+    background-color: var(--GreenBG);
+    color: var(--Maize);
 }
 
 [class*="appdetailscommunityfeed_TopSection_"]{
@@ -958,4 +1018,14 @@
 [class*="appdetailshover_AppDetailsHover"] [class*="appdetailshover_Background"]{
     background: var(--GreenBG);
     border: var(--Outset);
+}
+
+[class*="appdetailshover_AppDetailsHover"] [class*="appdetailshover_Background"] [class*="Blur"]{
+    display: none;
+}
+
+[class*="appdetailsachievementssection_Hover"] [class*="Unlocked"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    color: var(--Label);
 }
