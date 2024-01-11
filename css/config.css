@@ -1,9 +1,12 @@
-/* Disable rare achievements effect */
+/** Disable rare achievements effect */
     /* [class*="achievementiconbase_RareAchievementIconGlowContainerRoot"], [class*="achievementiconbase_RareAchievementIconGlowContainer"]{display: none;} */
     /* [class*="achievementiconbase_Icon"][class*="achievementiconbase_IconGlow"]{box-shadow: none;} */
 
-/* Disable avatar borders/frames */
+/** Disable avatar borders/frames */
     /* .avatarFrame{display: none !important;} */
 
-/* Disable lines on PFPs in Friends */
+/** Disable lines on PFPs in Friends */
     .avatarStatus{background: transparent !important; width: 0 !important;}
+
+/** Disable Logo on download page */
+    /* [class*="downloadgraph_HeroAndLogo"] [class*="downloadgraph_Logo_"] img{background: var(--GreenBG);border: var(--Outset);padding: 0 16px;} */

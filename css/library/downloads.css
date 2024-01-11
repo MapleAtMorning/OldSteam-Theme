@@ -1,8 +1,8 @@
 [class*="downloads_DownloadsPage"]{
-    background: var(--GreenBG)
+    background: var(--DarkGreenBG)
 }
 
-/* Graph & Stats */
+/* Graph & Stats =====================================================================*/
 [class*="downloadgraph_GraphAndStats"]{
     background: var(--DarkGreenBG)
 }
@@ -11,16 +11,54 @@
     background: var(--Maize)
 }
 
+[class*="downloadgraph_HeroAndLogo"]{
+    z-index: 5;
+}
+
 [class*="downloadgraph_HeroAndLogo"][class*="downloadgraph_Empty"]{
     background: transparent;
 }
 
+[class*="downloadgraph_HeroAndLogo"] [class*="downloadgraph_HeroContainer"] [class*="downloadgraph_HeroGradient"]{
+    background: transparent;
+}
+
+[class*="downloadgraph_HeroAndLogo"] [class*="downloadgraph_HeroContainer"] [class*="downloadgraph_HeaderImage"] img{
+    opacity: 0;
+}
+
+[class*="downloadgraph_HeroAndLogo"] [class*="downloadgraph_LogoShadow"]{
+    display: none;
+}
+
+[class*="downloadgraph_HeroAndLogo"] [class*="downloadgraph_Logo_"] img{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    padding: 0 16px;
+}
+
+
+[class*="downloadgraph_DownloadGraph"]{
+    -webkit-mask: none;
+    mask: none;
+    mix-blend-mode: normal;
+    margin: 0;
+}
+
 [class*="downloadgraph_DownloadGraph"] [class*="downloadgraph_GraphLine"]{
-    stroke: var(--LightGreenBG);
+    stroke: var(--DimListText);
+}
+
+[class*="downloadgraph_DownloadGraph"] [class*="downloadgraph_GraphBarDownload"]{
+    color: var(--Maize);
 }
 
 [class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_Disk"]{
     background: var(--Maize)
+}
+
+[class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_Network"] svg{
+    color: var(--Maize);
 }
 
 [class*="downloadgraph_DownloadGraphLegend"] [class*="downloadgraph_LegendText"]{
@@ -32,16 +70,111 @@
     text-transform: none;
 }
 
-/* Up Next */
+[class*="downloads_SectionItemStatus"]{
+    text-transform: none;
+    color: var(--Label);
+}
+
+/* Currently Downloading =====================================================================*/
+/* TODO: make the silly pop out */
+[class*="downloads_Active"] [class*="downloads_SectionList"], [class*="downloads_Active"] [class*="downloads_SectionList"]:hover{
+    border: 2px solid transparent;
+    background-color: transparent;
+}
+
+[class*="downloads_SectionItem"][class*="downloads_Active"]{
+    background-color: var(--GreenBG);
+}
+
+/* Up Next & Scheduled =====================================================================*/
 
 [class*="downloads_SectionTitle"] [class*="TitleAndCount"] [class*="Title"], [class*="downloads_SectionJumpBar"] [class*="TitleAndCount"] [Class*="Title"]{
     color: var(--OffWhite);
 }
 
-[class*="downloads_SectionTitle"] [class*="downloads_Count"], [class*="downloads_AutoUpdateHours"], [class*="downloads_Text_"]{
+[class*="downloads_SectionTitle"] [class*="downloads_Count"], [class*="downloads_AutoUpdateHours"], [class*="downloads_Text_"], [class*="downloads_ProgressDetails"] [class*="downloads_Value"]{
     color: var(--Label);
+}
+
+[class*="downloads_AutoUpdateHours"]:hover{
+    color: var(--Maize);
 }
 
 [class*="downloads_SectionTitle"] [class*="downloads_Rule"]{
     background: var(--Label)
 }
+
+[class*="downloads_SectionItem_"]:hover{
+    background-color: transparent;
+}
+
+[class*="downloads_SectionItem"][class*="downloads_Dragging"]{
+    background-color: var(--GreenBG);
+    border-radius: 0%;
+}
+
+[class*="downloads_SectionItem"][class*="downloads_Dragging"] [class*="downloads_DragHandle"]{
+    color: var(--Maize);
+}
+
+[class*="downloads_SectionItemWrapper_"]{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+    margin: 3px 0;
+    transition: none;
+}
+
+[class*="downloads_SectionItemWrapper_"]:first-of-type{
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+[class*="downloads_SectionItemWrapper_"]:last-of-type{
+    margin: 0;
+    margin-top: 3px;
+}
+
+[class*="downloads_SectionItem"] [class*="downloads_RemoveFromQueue"]{
+    opacity: 1;
+}
+
+[class*="downloads_SectionItem"] [class*="downloads_DragHandle"]{
+    color: var(--OffWhite);
+    transition: none;
+}
+
+[class*="downloads_SectionItemStatus"] [class*="downloads_ProgressBar"]{
+    background: var(--DarkGreenBG) !important;
+}
+
+[class*="libraryassetimage_LandscapeImage"] [class*="libraryassetimage_Image"]{
+    height: 90%;
+    margin: 2.5% 0;
+    border: var(--Outset);
+}
+/* TODO: Please fix. */
+/* Fucking. Scuffed. */
+
+[class*="downloads_SectionItem"] [class*="downloads_Name"]{
+    color: var(--OffWhite);
+}
+
+[class*="downloads_ContentTypes"] svg{
+    color: var(--OffWhite);
+}
+
+[class*="downloads_SectionList"][class*="downloads_DropOption"]{
+    outline: 3px solid var(--Maize);
+    outline-offset: -5px;
+    border: 2px solid transparent;
+    border-radius: 0%;
+}
+
+[class*="downloads_SectionList"][class*="downloads_DropOption"][class*="downloads_DragOver"]{
+    background: none;
+    outline: 5px solid var(--Maize);
+    outline-offset: -7px;
+    border: 2px solid transparent;
+}
+

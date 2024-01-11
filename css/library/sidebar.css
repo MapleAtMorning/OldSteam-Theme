@@ -205,9 +205,11 @@
     color: var(--Maize) !important;
 }
 
-[class*="gamelistentry_Updating_"] circle, [class*="gamelistentry_CloudOutOfDate"] circle{
+[class*="gamelistentry_Updating_"] circle, [class*="gamelistentry_CloudOutOfDate"] circle, [class*="gamelistentry_AppIconDownloading"] svg[class*="gamelistentry_DownloadProgressSVG"] circle{
     stroke: var(--Maize) !important;
 }
+
+
 
 [class*="gamelistentry_HoverOverlay_"]{
     background-color: var(--GreenBG) !important;

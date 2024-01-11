@@ -20,9 +20,9 @@
 - Jank
 
 ## Todo:
-- Finish Downloads section
 - Chats & Group chats
 - News popup on steam opening
+- Right click properties
 - Game overlay
 - Settings page
 - Screenshot manager (1/2)

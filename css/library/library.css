@@ -52,6 +52,10 @@
     color: var(--OffWhite);
 }
 
+[class*="personastatusicons_PersonaStatusIcon"].online .SVGIcon_MobilePhone path{
+    fill: var(--OffWhite);
+}
+
 [class*="appdetailsfriendssection_AvatarAndLabel"]:hover{
     background-color: transparent;
 }
@@ -295,9 +299,6 @@
 [class*="spotlightgameplaysummary_EventDaySeparator"]{
     background-color: var(--Label);
 }
-
-
-
 
 /* Activity =====================================================================*/
 
