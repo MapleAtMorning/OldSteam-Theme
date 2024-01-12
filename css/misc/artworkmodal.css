@@ -24,6 +24,10 @@
     position: relative;
 }
 
+[class*="comment_thread_ActivityCommentThread"]{
+    background: transparent;
+}
+
 [class*="comment_thread_ActivityCommentThread"] [class*="comment_thread_RatingContainer"][class*="HasComments"]{
     width: fit-content;
     position: absolute;
