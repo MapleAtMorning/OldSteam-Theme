@@ -191,6 +191,7 @@
 
 [class*="gamelistentry_Selected"][class*="gamelistentry_Container"] [class*="CloudError"]{
     background: transparent;
+    color: var(--Maize);
 }
 
 [class*="gamelistentry_GameListEntryLabels"], [class*="gamelistentry_GameListEntryLabels"] *{
