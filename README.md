@@ -4,7 +4,7 @@
   <sub>we aren't fancy enough for a logo</sub>
 </div>
 
-## Requires [SFP](https://github.com/PhantomGamers/SFP) or [Millennium](https://github.com/ShadowMonster99/millennium-steam-patcher) with Javascript Injection
+## Requires [SFP](https://github.com/PhantomGamers/SFP) or [Millennium](https://millennium.web.app/) with Javascript Injection
 
 <h3>Many things are unfinished or overall buggy. </h3>
 <h4>If you find something broken that isn't listed here, please create an <a href="https://github.com/MapleAtMorning/Green-Steam-Theme/issues/new">issue</a> for it.</h4>

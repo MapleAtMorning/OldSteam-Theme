@@ -47,6 +47,39 @@
 
 /* Header / Favorites / You */
 
+[class*="friendslist_RemotePlayInviteLinkSection"]{
+    position: absolute;
+    right: 8px;
+    top: 36px;
+    z-index: 5;
+}
+
+[class*="friendslist_RemotePlayInviteLinkSection"] [class*="friendslist_LinkRow_"]{
+    background-color: var(--GreenBG);
+    color: var(--OffWhite);
+    border: var(--Outset);
+    margin: 0px;
+    width: min-content;
+    height: min-content;
+    padding: 0;
+}
+
+[class*="friendslist_RemotePlayInviteLinkSection"] [class*="friendslist_LinkRow"] [class*="friendslist_LinkRowText"]{
+    display: none;
+}
+
+[class*="friendslist_RemotePlayInviteLinkSection"] [class*="friendslist_LinkRow"] [class*="friendslist_LinkRowIconContainer"]{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+
+[class*="friendslist_RemotePlayInviteLinkSection"] [class*="friendslist_LinkRow"] [class*="friendslist_LinkRowIcon_"]{
+    padding: 1px;
+    width: 18px;
+    height: 18px;
+}
+
 .friendListHeaderContainer {
     box-shadow: none;
     background: var(--GreenBG);

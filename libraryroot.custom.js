@@ -51,7 +51,7 @@ export function waitForElement(querySelector, timeout) {
 // TY Shadow from Millennium
 
 async function runStyling(){
-    const { querySelector, matchedElements } = await waitForElement('[class*="steamdesktop_OuterFrame_"] [class*="steamdesktop_TopBar_"]', 3000)
+    const { querySelector, matchedElements } = await waitForElement('[class*="steamdesktop_OuterFrame_"] [class*="LocalContentContainer"]', 3000)
     console.log('awaited code', querySelector, matchedElements)
     
     const rootMenuNav = document.getElementsByClassName("steamdesktop_TitleBar_39oUC")[0]

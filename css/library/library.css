@@ -48,8 +48,14 @@
     color: var(--DimListText) !important;
 }
 
-[class*="friendsnooze_SnoozeContainer"].online [class*="friendsnooze_SnoozeZ"]{
+[class*="friendsnooze_SnoozeContainer"][class*="Dim"].online [class*="friendsnooze_SnoozeZ"], [class*="friendsnooze_SnoozeContainer"].online [class*="friendsnooze_SnoozeZ"]{
     color: var(--OffWhite);
+    text-shadow: none;
+}
+
+[class*="friendsnooze_SnoozeContainer"][class*="Dim"].in-game [class*="friendsnooze_SnoozeZ"], [class*="friendsnooze_SnoozeContainer"].in-game [class*="friendsnooze_SnoozeZ"]{
+    color: var(--Maize);
+    text-shadow: none;
 }
 
 [class*="personastatusicons_PersonaStatusIcon"].online .SVGIcon_MobilePhone path{
@@ -58,6 +64,14 @@
 
 [class*="appdetailsfriendssection_AvatarAndLabel"]:hover{
     background-color: transparent;
+}
+
+[class*="appdetailsfriendssection_AvatarAndLabel"] [class*="appdetailsfriendssection_PlaytimeStatus"]{
+    color: var(--Label) !important;
+}
+
+.offline [class*="personanameandstatus_playerName"], [class*="appdetailsfriendssection_AvatarAndLabel"] .offline [class*="appdetailsfriendssection_PlaytimeStatus"]{
+    color: var(--DisabledText1) !important;
 }
 
 [class*="appdetailscontrollersupport_PurchaseNoticeContainer"]{
@@ -146,19 +160,74 @@
     box-shadow: none !important;
 }
 
-[class*="appdetailsplaysection_MenuButton"], [class*="appdetailsgameinfopanel_Container_"]{
+[class*="appdetailsgameinfopanel_DeckVerifiedInfo"]{
+    background-color: transparent;
+    color: var(--OffWhite);
+}
+
+[class*="appdetailsgameinfopanel_Container"] [class*="appdetailsgameinfopanel_SectionContainer"] [class*="appdetailsgameinfopanel_GameDescription"], [class*="appdetailsgameinfopanel_AssociationList"] [class*="appdetailsgameinfopanel_Label"]{
+    color: var(--OffWhite);
+}
+
+[class*="appdetailsgameinfopanel_DeckVerifiedInfo"] [class*="appdetailsgameinfopanel_Details"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+    color: var(--OffWhite);
+}
+
+[class*="appdetailsgameinfopanel_DeckVerifiedInfo"] [class*="appdetailsgameinfopanel_Details"]:hover{
+    color: var(--Maize);
+}
+
+[class*="appdetailsgameinfopanel_DeckVerifiedInfo"] [class*="appdetailsgameinfopanel_Details"]:active{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+.DeckVerifiedModalDialogClient .DialogContent{
+    background: var(--GreenBG) !important;
+    border: var(--Outset);
+}
+
+[class*="deckverified_CompatibilityDetailsSeparator"]{
+    background: var(--OffWhite);
+}
+
+[class*="appdetailsplaysection_MenuButton_"], [class*="appdetailsgameinfopanel_Container_"]{
     background-color: var(--GreenBG);
     border: var(--Outset);
     border-radius: 0%;
     color: var(--OffWhite);
 }
 
+[class*="appdetailsplaysection_MenuButton_"]:hover{
+    background-color: var(--GreenBG);
+    color: var(--Maize);
+    transition: none;
+}
+
+[class*="appdetailsplaysection_MenuButton_"] svg, [class*="appdetailsplaysection_MenuButton_"] .SVGIcon_Button path, [class*="appdetailsplaysection_MenuButton_"] [class*="appdetailsplaysection_DotDotDot"]{
+    fill: currentColor !important;
+    color: inherit !important;
+    transition: none;
+}
+
+[class*="appdetailsplaysection_MenuButton_"] svg polyline, [class*="appdetailsplaysection_MenuButton_"] svg circle{
+    stroke: currentColor !important;
+}
+
+[class*="appdetailsplaysection_MenuButton_"]:hover .I{
+    fill: currentColor !important;
+}
+
 [class*="appdetailsplaysection_MenuActive"]{
     background-color: var(--DarkGreenBG) !important;
     border: var(--Inset);
+    color: var(--Maize);
 }
 
-[class*="appdetailsplaysection_MenuButton"][class*="Favorited"] path{
+[class*="appdetailsplaysection_MenuButton_"][class*="Favorited"] path{
     stroke: var(--Maize) !important;
     fill: var(--Maize) !important;
 }
@@ -1029,4 +1098,9 @@
     background: var(--DarkGreenBG);
     border: var(--Inset);
     color: var(--Label);
+}
+
+[class*="appdetailsachievementssection_Hover"] [class*="Unlocked"] [class*="appdetailsachievementssection_YouUnlocked"]{
+    color: var(--Maize);
+    border: none;
 }

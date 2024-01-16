@@ -86,13 +86,17 @@
     background-color: var(--GreenBG);
 }
 
+[class*="downloads_Label"]{
+    color: var(--OffWhite);
+}
+
 /* Up Next & Scheduled =====================================================================*/
 
 [class*="downloads_SectionTitle"] [class*="TitleAndCount"] [class*="Title"], [class*="downloads_SectionJumpBar"] [class*="TitleAndCount"] [Class*="Title"]{
     color: var(--OffWhite);
 }
 
-[class*="downloads_SectionTitle"] [class*="downloads_Count"], [class*="downloads_AutoUpdateHours"], [class*="downloads_Text_"], [class*="downloads_ProgressDetails"] [class*="downloads_Value"]{
+[class*="downloads_SectionTitle"] [class*="downloads_Count"], [class*="downloads_AutoUpdateHours"], [class*="downloads_Text_"], [class*="downloads_ProgressDetails"] [class*="downloads_Value"], [class*="downloads_SectionItemStatus"] [class*="downloads_Downloading"] [class*="downloads_State"], [class*="downloads_SectionItemStatus"] [class*="downloads_State"] [class*="downloads_InProgress"]{
     color: var(--Label);
 }
 
@@ -148,13 +152,14 @@
     background: var(--DarkGreenBG) !important;
 }
 
-[class*="libraryassetimage_LandscapeImage"] [class*="libraryassetimage_Image"]{
+[class*="downloads"] [class*="libraryassetimage_LandscapeImage"] [class*="libraryassetimage_Image"]{
     height: 90%;
     margin: 2.5% 0;
     border: var(--Outset);
 }
 /* TODO: Please fix. */
 /* Fucking. Scuffed. */
+/* I've changed my mind. if it works it works. Should probably still fix it eventually if I find that it breaks. */
 
 [class*="downloads_SectionItem"] [class*="downloads_Name"]{
     color: var(--OffWhite);

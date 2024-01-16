@@ -12,7 +12,43 @@
         "repo_name": "OldSteam-Theme"
     },
 
-    
+    "discord_support": {
+        "inviteCodeExcludingLink": "3GkMYRvW7M"
+    },
+
+    "Configuration": [
+        {
+            "Name": "THIS CONFIG MENU ISN'T FUNCTIONAL YET",
+            "ToolTip": "SORRY! LOL!",
+            "Type": "CheckBox",
+            "Value": true
+        },
+        {
+            "Name": "Disable Avatar Status Lines",
+            "ToolTip": "Disable the avatar status lines on friends",
+            "Type": "CheckBox",
+            "Value": true
+        },
+        {
+            "Name": "Disable Download Logo",
+            "ToolTip": "Disable the logo that shows up on the downloads page for the currently downloading game",
+            "Type": "CheckBox",
+            "Value": false
+        },
+        {
+            "Name": "Disable Avatar Frames",
+            "ToolTip": "Disable the avatar frames around profile pictures",
+            "Type": "CheckBox",
+            "Value": false
+        },
+        {
+            "Name": "Disable Rare Achievements Effect",
+            "ToolTip": "Disable the animated yellow glow around rare achievements",
+            "Type": "CheckBox",
+            "Value": false
+        }
+    ],
+
     "UseDefaultPatches": true,
     "Patches": [
         {
