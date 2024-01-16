@@ -91,6 +91,10 @@
     transition: none;
 }
 
+[class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"] [class*="libraryhomenewupdates_PartnerEventRowCapsule_MainImageContainer"]{
+    border-radius: 0%;
+}
+
 [class*="libraryhomenewupdates_PartnerEventRowCapsule_Container_"][class*="libraryhomenewupdates_HoversEnabled"]:hover [class*="libraryhomenewupdates_EventSummaryContainer"]{
     background-color: rgba(145, 134, 60, .45)
 }

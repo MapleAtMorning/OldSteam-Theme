@@ -1,0 +1,24 @@
+{
+    "name": "OldSteam",
+    "author": "MapleAtMorning",
+    "description": "The weirdest amalgamation of modern and old steam",
+    "source": "https://github.com/MapleAtMorning/OldSteam-Theme", 
+    "version": "v0",
+    "header_image": "https://raw.githubusercontent.com/MapleAtMorning/MapleAtMorning/main/steamui.png",
+    "splash_image": "https://raw.githubusercontent.com/MapleAtMorning/MapleAtMorning/main/steamui.png",
+
+    "github": {
+        "owner": "MapleAtMorning",
+        "repo_name": "OldSteam-Theme"
+    },
+
+    
+    "UseDefaultPatches": true,
+    "Patches": [
+        {
+            "MatchRegexString": "^Steam$",
+            "TargetJs": "libraryroot.custom.js",
+            "TargetCss": "libraryroot.custom.css"
+        }
+    ]
+}
