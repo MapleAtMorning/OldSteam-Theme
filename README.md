@@ -28,11 +28,8 @@
 - Game overlay
 - Settings page
 - Screenshot manager (1/2)
-- Fix game validation circle
 - Game Servers (lol)
-- Achievements overview
 - Awards on your review
-- Eula on install (how do i even test this)
 - Creating categories of friends
 - Notifications
 

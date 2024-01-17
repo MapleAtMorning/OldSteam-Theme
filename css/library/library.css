@@ -1075,6 +1075,12 @@
     border: var(--Outset);
 }
 
+.DesktopUI [class*="installrequest_FolderOption"]:hover{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    color: var(--Maize);
+}
+
 .DesktopUI [class*="installrequest_FolderOption"][class*="Active"]{
     background: var(--DarkGreenBG);
     border: var(--Inset); 
@@ -1103,4 +1109,20 @@
 [class*="appdetailsachievementssection_Hover"] [class*="Unlocked"] [class*="appdetailsachievementssection_YouUnlocked"]{
     color: var(--Maize);
     border: none;
+}
+
+/* Eula =====================================================================*/
+[class*="euladialog_EULAContent"]{
+    background: var(--DarkGreenBG);
+    transition-property: transform;
+}
+
+.DesktopUI [class*="euladialog_EulaDialogContent"] [class*="euladialog_EULAScrolling"]{
+    box-shadow: none;
+    border: var(--Inset);
+    background: var(--DarkGreenBG)
+}
+
+.DesktopUI [class*="euladialog_EulaModalDialog"] .DialogDropDown:hover{
+    background: var(--GreenBG);
 }
