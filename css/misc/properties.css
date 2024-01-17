@@ -1,0 +1,36 @@
+.PopupFullWindow > [class*="pagedsettings_PagedSettingsDialog"]{
+    flex-direction: column;
+}
+
+[class*="pagedsettings_PagedSettingsDialog_PageList_"]{
+    height: min-content;
+    flex-direction: row;
+    padding: 0;
+}
+
+[class*="pagedsettings_PagedSettingsDialog_PageListItem"]{
+    z-index: 50;
+    padding: 5px 8px;
+    font-size: 12px;
+    border: var(--Outset);
+    border-radius: 0%;
+    background-color: var(--GreenBG);
+    margin: 0 2px;
+}
+
+[class*="pagedsettings_PagedSettingsDialog_Title"]{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    color: transparent;
+    height: min-content;
+}
+
+[class*="pagedsettings_PagedSettingsDialog_PageListColumn"].DesktopUI, .DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageListColumn"]{
+    background: var(--GreenBG);
+    padding: 8px;
+    min-width: 100vw;
+    min-height: 30px;
+    max-height: 30px;
+    flex-direction: row;
+}
