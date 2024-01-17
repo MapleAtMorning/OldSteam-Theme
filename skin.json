@@ -18,12 +18,6 @@
 
     "Configuration": [
         {
-            "Name": "THIS CONFIG MENU ISN'T FUNCTIONAL YET",
-            "ToolTip": "SORRY! LOL!",
-            "Type": "CheckBox",
-            "Value": true
-        },
-        {
             "Name": "Disable Avatar Status Lines",
             "ToolTip": "Disable the avatar status lines on friends",
             "Type": "CheckBox",
@@ -54,7 +48,43 @@
         {
             "MatchRegexString": "^Steam$",
             "TargetJs": "libraryroot.custom.js",
-            "TargetCss": "libraryroot.custom.css"
+            "TargetCss": "libraryroot.custom.css",
+            "Statement": [
+                {
+                    "If": "Disable Download Logo",
+                    "Equals": true,
+                    "True": {
+                        "TargetCss": "css/config/downloadlogo.css"
+                    }
+                },
+                {
+                    "If": "Disable Rare Achievements Effect",
+                    "Equals": true,
+                    "True": {
+                        "TargetCss": "css/config/rareachievements.css"
+                    }
+                }
+            ]
+        },
+        {
+            "MatchRegexString": "Friends List",
+            "TargetCss": "friends.custom.css",
+            "Statement": [
+                {
+                    "If": "Disable Avatar Status Lines",
+                    "Equals": true,
+                    "True": {
+                        "TargetCss": "css/config/statuslines.css"
+                    }
+                },
+                {
+                    "If": "Disable Avatar Frames",
+                    "Equals": true,
+                    "True": {
+                        "TargetCss": "css/config/avatarframes.css"
+                    }
+                }
+            ]
         }
     ]
 }
