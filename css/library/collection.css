@@ -23,3 +23,13 @@
 [class*="appgrid_LibraryImageBackgroundGlow"]{
     display: none;
 }
+
+[class*="appgrid_AppGridSectionHeader"]{
+    box-shadow: none;
+}
+
+[class*="appgrid_AppGridSectionHeader"]::after{
+    background: var(--GreenBG);
+    border-bottom: var(--Outset);
+    box-shadow: none;
+}

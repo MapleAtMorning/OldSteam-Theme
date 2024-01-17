@@ -171,6 +171,11 @@
     stroke: var(--Maize);
 }
 
+[class^="gamelistsectionheader_Container"][class*="gamelistsectionheader_HasContextMenuOpen"]{
+    border: var(--Outset);
+    background: var(--GreenBG);
+}
+
 [class^="gamelistsectionheader_Section"], [class^="gamelistsectionheader_Section"]:hover{
     color: var(--Maize) !important;
     text-transform: none !important;
@@ -202,7 +207,7 @@
     background-color: var(--GreenBG);
 }
 
-[class*="gamelistentry_Updating_"], [class*="gamelistentry_DownloadProgress_"], [class*="gamelistentry_Container"][class*="gamelistentry_CloudOutOfDate"] span, [class*="gamelistentry_Running"] span{
+[class*="gamelistentry_Updating_"], [class*="gamelistentry_DownloadProgress_"], [class*="gamelistentry_Container"][class*="gamelistentry_CloudOutOfDate"] span, [class*="gamelistentry_Running"] span, [class*="gamelistentry_Container"][class*="gamelistentry_Synchronizing"]{
     color: var(--Maize) !important;
 }
 
