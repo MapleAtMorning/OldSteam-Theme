@@ -49,6 +49,10 @@ input[type="radio"]:focus{
     outline: transparent;
 }
 
+.DialogBodyText{
+    color: var(--OffWhite);
+}
+
 .DialogCheckbox{
     box-shadow: none;
     border-radius: 0%;
@@ -85,7 +89,7 @@ input[type="radio"]:focus{
 }
 
 .DialogInput, .DialogTextInputBase{
-    background-color: transparent !important;
+    background-color: var(--DarkGreenBG) !important;
     box-shadow: none !important;
     border-radius: 0% !important;
     text-transform: none !important;
@@ -93,12 +97,12 @@ input[type="radio"]:focus{
 }
 
 .DialogInput:hover, .DialogInput:focus{
-    background-color: transparent !important;
+    background-color: var(--DarkGreenBG) !important;
 }
 
 ._DialogInputContainer{
-    background: var(--GreenBG);
-    border: var(--Outset);
+    background: var(--DarkGreenBG) !important;
+    border: var(--Inset) !important;
     border-radius: 0%;
     color: var(--OffWhite);
     box-shadow: none !important;
@@ -109,12 +113,17 @@ input[type="radio"]:focus{
 }
 
 [class*="dropdown_DialogDropDownMenu"]._DialogInputContainer{
-    background: var(--GreenBG);
+    background: var(--GreenBG) !important;
+    border: var(--Outset) !important;
 }
 
 [class*="dropdown_DialogDropDownMenu"]._DialogInputContainer [class*="dropdown_DialogDropDownMenu_Item"]:hover{
     background: transparent;
     color: var(--Maize);
+}
+
+[class*="dropdownlabel_DropDownLabelDescription"]{
+    color: var(--Label);
 }
 
 .DialogLabel{
@@ -134,7 +143,7 @@ input[type="radio"]:focus{
     display: none;
 }
 
-.DesktopUI .DialogHeader{
+.DesktopUI .DialogHeader, .DesktopUI .DialogBody{
     color: var(--OffWhite);
 }
 

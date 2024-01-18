@@ -989,7 +989,7 @@
     border: var(--Inset);
 }
 
-[class*="achievementsheader_SearchField"] .DialogInput_Wrapper input, [class*="achievementslist_GlobalAchievementListItem"]{
+[class*="achievementslist_GlobalAchievementListItem"]{
     border: var(--Inset);
     background: var(--DarkGreenBG) !important;
 }
@@ -1121,8 +1121,4 @@
     box-shadow: none;
     border: var(--Inset);
     background: var(--DarkGreenBG)
-}
-
-.DesktopUI [class*="euladialog_EulaModalDialog"] .DialogDropDown:hover{
-    background: var(--GreenBG);
 }

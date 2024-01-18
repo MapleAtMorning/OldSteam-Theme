@@ -173,8 +173,6 @@
 }
 
 ._DialogInputContainer[class*="libraryhomenewupdates_WhatsNewPriorityContainer"]{
-    background: var(--DarkGreenBG);
-    border: var(--Inset);
     border-radius: 0%;
 }
 
@@ -211,8 +209,6 @@
 }
 
 [class*="libraryhomenewupdates_WhatsNewSettings_"] ._DialogInputContainer{
-    background: var(--DarkGreenBG);
-    border: var(--Inset);
     border-top: none;
     border-radius: 0%;
 }
@@ -238,6 +234,7 @@
     border: var(--Inset);
     background: var(--DarkGreenBG)
 }
+
 [class*="toggle_Toggle_"] [class*="toggle_ToggleRail_"][class*="On"]{
     background: var(--MaizeBG)
 }
@@ -248,6 +245,7 @@
     border: var(--Outset);
     background: var(--GreenBG);
 }
+
 [class*="toggle_Toggle_"] [class*="toggle_ToggleSwitch_"][class*="On"]{
     border-radius: 0%;
     transition: none;
@@ -296,13 +294,13 @@
 }
 
 [class*="libraryhomeshowcases_CollectionDropDown"] ._DialogInputContainer{
-    border: none;
+    border: none !important;
 }
 
 [class*="appgrid_SortingDropDown_"] .DialogDropDown{
-    border: var(--Outset);
+    border: var(--Outset) !important;
     border-radius: 0;
-    background: var(--GreenBG);
+    background: var(--GreenBG) !important;
 }
 
 [class*="appgrid_SortingDropDown_"] .DialogDropDown > div{
@@ -312,7 +310,7 @@
 
 .DesktopUI [class*="appgrid_SortingDropDownContainer"]>div, .DesktopUI [class*="libraryhomeshowcases_CollectionDropDownContainer"].DialogMenuPosition [class*="dropdown_DialogDropDownMenu_"]._DialogInputContainer{
     background: var(--GreenBG) !important;
-    border: var(--Outset);
+    border: var(--Outset) !important;
     box-shadow: none !important;
 }
 
@@ -332,7 +330,7 @@
 
 [class*="libraryhomeshowcases_Reordering"] [class*="appgrid_SortingDropDown"] ._DialogInputContainer [class*="DialogDropDown_CurrentDisplay"]{
     border-radius: 0;
-    background: var(--GreenBG);
+    background: var(--GreenBG) !important;
     color: var(--OffWhite);
 }
 
