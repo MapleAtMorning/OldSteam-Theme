@@ -1,36 +1,274 @@
-.PopupFullWindow > [class*="pagedsettings_PagedSettingsDialog"]{
+/* General window & Navbar */
+
+[class*="pagedsettings_PagedSettingsDialog_3"]{
     flex-direction: column;
+    padding: 30px 4px 20px;
+    border: var(--Outset);
+    background-color: var(--GreenBG);
+    box-sizing: border-box;
+}
+
+.client_chat_frame.fullheight .title-area{
+    height: 30px !important;
+    min-height: 30px !important;
+}
+
+.client_chat_frame.fullheight .title-area .window-controls{
+    position: absolute;
+    top: 4px;
+}
+
+[class*="settings_DesktopPopup"] [class*="pagedsettings_PagedSettingsDialog_PageList_"]{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+[class*="settings_DesktopPopup"] [class*="pagedsettings_PagedSettingsDialog_PageList_"]::-webkit-scrollbar{
+    background-color: var(--DarkGreenBG);
+    position: absolute;
+    border: var(--Inset);
+    transform: translateY(-10px);
+}
+
+.DesktopUI [class*="settings_DesktopPopup"] [class*="pagedsettings_PagedSettingsDialog_PageListColumn"]{
+    min-height: 39px;
+    max-height: 39px;
+}
+
+
+[class*="settings_DesktopPopup"] .DialogContentTransition{
+    border-top: none;   
+}
+
+.DesktopUI [class*="pagedsettings_PageListSeparator"]{
+    display: none;
 }
 
 [class*="pagedsettings_PagedSettingsDialog_PageList_"]{
-    height: min-content;
+    height: 100%;
+    width: 100%;
     flex-direction: row;
     padding: 0;
+    overflow: visible   ;
 }
 
 [class*="pagedsettings_PagedSettingsDialog_PageListItem"]{
-    z-index: 50;
     padding: 5px 8px;
     font-size: 12px;
     border: var(--Outset);
     border-radius: 0%;
+    transform: translateY(1px);
+    background-color: var(--GreenBG) !important;
+    color: var(--OffWhite) !important;
+    max-width: none;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+[class*="pagedsettings_PagedSettingsDialog_PageListItem"][class*="Active"]{
     background-color: var(--GreenBG);
-    margin: 0 2px;
+    z-index: 10;
+    border-bottom: none;
+    color: var(--Maize) !important;
+    padding: 0px 8px;
+    margin-top: 0;
+}
+
+[class*="pagedsettings_PagedSettingsDialog_PageListItem"] [class*="pagedsettings_PagedSettingsDialog_PageListItem_Title"]{
+    text-overflow: unset;
+}
+
+[class*="pagedsettings_PagedSettingsDialog_PageListItem"] [class*="pagedsettings_PageListItem_Icon"]{
+    color: inherit !important;
 }
 
 [class*="pagedsettings_PagedSettingsDialog_Title"]{
     padding: 0;
     margin: 0;
     position: absolute;
-    color: transparent;
+    top: 4px;
+    left: 8px;
+    color: var(--OffWhite);
     height: min-content;
+    text-transform: none;
+    font-weight: normal;
 }
 
-[class*="pagedsettings_PagedSettingsDialog_PageListColumn"].DesktopUI, .DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageListColumn"]{
+.DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageListColumn"]{
     background: var(--GreenBG);
-    padding: 8px;
-    min-width: 100vw;
-    min-height: 30px;
-    max-height: 30px;
+    padding: 0;
+    min-width: 100%;
+    box-sizing: border-box;
+    min-height: 27px;
+    max-height: 27px;
     flex-direction: row;
+    position: static;
+}
+
+.DialogContentTransition{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border: var(--Outset);
+    box-sizing: border-box;
+}
+
+.DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageContent"]{
+    padding: 8px !important;
+    background: var(--GreenBG);
+    border: none;
+}
+
+/* Toggles */
+
+[class*="gamepaddialog_Toggle"]{
+    box-shadow: none !important;
+}
+
+[class*="gamepaddialog_ToggleRail"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0%;
+    transition: none;
+}
+
+[class*="gamepaddialog_On"] [class*="gamepaddialog_ToggleRail"]::before{
+    background: var(--MaizeBG);
+    transition: none;
+}
+
+[class*="gamepaddialog_ToggleSwitch"]{
+    border-radius: 0%;
+    transition: none;
+    box-shadow: none;
+    border: var(--Outset);
+    width: 20px;
+    background: var(--GreenBG);
+
+}
+
+[class*="gamepaddialog_On"] [class*="gamepaddialog_ToggleSwitch"]{
+    background: var(--Maize);
+}
+
+/* Content */
+
+.DesktopUI [class*="gamepaddialog_FieldDescription"], [class*="appproperties_AppProperties"] [class*="appproperties_LocalFilesLink"] a{
+    color: var(--Label);
+}
+
+[class*="appproperties_AppProperties"] [class*="appproperties_LocalFilesLink"] a:hover{
+    color: var(--Maize);
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_Title"]{
+    color: var(--OffWhite);
+    text-transform: none;
+    font-size: 20px;
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_BlueHighlight"]{
+    color: var(--Maize);
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_SteamInputStatusGrid"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0%;
+}
+
+/* Settings specific content */
+
+[class*="accountsettings_EntryValue"], .DesktopUI [class*="notificationssettings_FriendsDescription"][class*="notificationssettings_FriendsDescription"] {
+    color: var(--Label);
+}
+
+.DesktopUI [class*="settings_SettingsDialogSubHeader"], [class*="familysettings_UserListHeader"], .DesktopUI [class*="remoteplaysettings_TableHeader"]{
+    color: var(--OffWhite);
+    text-transform: none;
+}
+
+[class*="desktopsecuritysettings_EntryValue"]{
+    color: var(--Maize);
+}
+
+[class*="notificationssettings_NotificationSection"] button.DialogButton{
+    background: transparent;
+    color: var(--OffWhite);
+}
+
+.DesktopUI [class*="settings_SettingsDialogBodyFade"]{
+    mask-image: none;
+    -webkit-mask-image: none;
+}
+
+.DialogBody a{
+    text-decoration: underline;
+    color: var(--Label);
+}
+
+.DialogBody a:hover{
+    color: var(--Maize);
+}
+
+[class*="contentmanagement_AppsGrid"] [class*="contentmanagement_AppBody"]:hover{
+    background-color: transparent;
+}
+
+[class*="contentmanagement_LibraryContent"] [class*="contentmanagement_DriveUsage"] [class*="contentmanagement_DriveName"]{
+    text-transform: none;
+    color: var(--Maize);
+}
+
+[class*="contentmanagement_AppInfo"]{
+    color: var(--Label) !important;
+}
+
+.DesktopUI [class*="contentmanagement_AppInfo"] svg, [class*="contentmanagement_AppInfo"] [class*="contentmanagement_AppUsageValue"], [class*="contentmanagement_AppInfo"] [class*="contentmanagement_AppUsageText"]{
+    color: inherit !important;
+    text-transform: none !important;
+}
+
+[class*="settings_DesktopPopup"] [class*="gamepaddialog_Field"][class*="gamepaddialog_Clickable"]:not([class*="Disabled"]):hover{
+    background: none;
+    cursor: default;
+}
+
+[class*="gamepaddialog_Field"][class*="gamepaddialog_Disabled"] [class*="gamepaddialog_FieldLabel"]{
+    color: var(--Maize);
+}
+
+[class*="gamepadslider_SliderHandle"]{
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+[class*="radio_Group"]{
+    border-radius: 0;
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+    color: var(--OffWhite);
+}
+
+[class*="radio_Group"] [class*="radio_Button"]{
+    background-color: var(--GreenBG);
+    border-radius: 0%;
+    border: var(--Outset);
+    transition: none;
+}
+
+[class*="radio_Group"] [class*="radio_Button"]:hover{
+    color: var(--Maize);
+}
+
+[class*="radio_Group"] [class*="radio_Active"]{
+    background-color: var(--DarkGreenBG);
+    border-radius: 0%;
+    border: var(--Inset);
+    color: var(--OffWhite);
+}
+
+[class*="radio_Group"] [class*="radio_Active"]:hover{
+    background: var(--DarkGreenBG);
 }
