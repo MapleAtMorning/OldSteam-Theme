@@ -40,10 +40,10 @@
 ## Won't do:
 - Profile pages
 
-<div style="display: none;">
+<div hidden>
   <style>
-  .addon-details-segment {
-    background: #4c5844 !important; 
+  .addon-details-segment{
+    background: #5a6a50 !important; 
     border-radius: 0% !important; 
     box-shadow: none !important;
     border: 1px outset #808080 !important;
@@ -52,13 +52,16 @@
     color: #c4b550 !important;
   }
   .btn.btn-primary, .btn.btn-primary:hover, .btn.btn-secondary, .btn.btn-secondary:hover{
-    background: #4c5844 !important;
+    background: #5a6a50 !important;
     border-radius: 0% !important; 
     border: 1px outset #808080 !important;
   }
   .btn.btn-primary:active, .btn.btn-secondary:active{
-    background: #5a6a50 !important;
+    background: #3e4637 !important;
     border: 1px inset #808080 !important;
+  }
+  .btn:focus{
+    box-shadow: 0 0 0 4px #c4b550;
   }
   
   </style>
