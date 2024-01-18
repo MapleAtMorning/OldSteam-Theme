@@ -7,7 +7,7 @@
 ## Requires [SFP](https://github.com/PhantomGamers/SFP) or [Millennium](https://millennium.web.app/) with Javascript Injection
 
 <h3>Many things are unfinished or overall buggy. </h3>
-<h4>If you find something broken that isn't listed here, please create an <a href="https://github.com/MapleAtMorning/Green-Steam-Theme/issues/new">issue</a> for it.</h4>
+<h4>If you find something broken that isn't listed here, please create an <a href="https://github.com/MapleAtMorning/Green-Steam-Theme/issues/new">issue</a> or a post on the <a href="https://discord.gg/3GkMYRvW7M">Discord</a> for it.</h4>
 <details align="center">
   <summary><h3>Preview Screenshots</h3></summary>
   <img src="https://github.com/MapleAtMorning/Green-Steam-Theme/assets/79129529/5f6bb637-6a4f-4030-8e26-c297d6460d16" width="54%">
@@ -39,3 +39,27 @@
 
 ## Won't do:
 - Profile pages
+
+<div style="display: none;">
+  <style>
+  .addon-details-segment {
+    background: #4c5844 !important; 
+    border-radius: 0% !important; 
+    box-shadow: none !important;
+    border: 1px outset #808080 !important;
+  }
+  .markdown-body a, #addon-details-column-actions .anchor{
+    color: #c4b550 !important;
+  }
+  .btn.btn-primary, .btn.btn-primary:hover, .btn.btn-secondary, .btn.btn-secondary:hover{
+    background: #4c5844 !important;
+    border-radius: 0% !important; 
+    border: 1px outset #808080 !important;
+  }
+  .btn.btn-primary:active, .btn.btn-secondary:active{
+    background: #5a6a50 !important;
+    border: 1px inset #808080 !important;
+  }
+  
+  </style>
+</div>
