@@ -8,8 +8,8 @@
 
 <h3>Many things are unfinished or overall buggy. </h3>
 <h4>If you find something broken that isn't listed here, please create an <a href="https://github.com/MapleAtMorning/Green-Steam-Theme/issues/new">issue</a> or a post on the <a href="https://discord.gg/3GkMYRvW7M">Discord</a> for it.</h4>
-<details align="center">
-  <summary><h3>Preview Screenshots</h3></summary>
+<details align="center" open>
+  <summary style="font-size: 24px">Preview Screenshots</summary>
   <img src="https://github.com/MapleAtMorning/Green-Steam-Theme/assets/79129529/5f6bb637-6a4f-4030-8e26-c297d6460d16" width="54%">
   <img src="https://github.com/MapleAtMorning/Green-Steam-Theme/assets/79129529/16906049-d70a-4345-9cb2-5d45c775736b" width="45%"><br>
   <img src="https://github.com/MapleAtMorning/OldSteam-Theme/assets/79129529/d50be6b2-0a63-4b13-bea1-ddd03a9452c9" width="100%">
@@ -40,10 +40,12 @@
 ## Won't do:
 - Profile pages
 
-<div hidden>
+<br><br>
+<details>
+  <summary style="font-size: 1px;">Super secret hidden styling for the Millennium page</summary>
   <style>
   .addon-details-segment{
-    background: #5a6a50 !important; 
+    background: #4c5844 !important; 
     border-radius: 0% !important; 
     box-shadow: none !important;
     border: 1px outset #808080 !important;
@@ -65,4 +67,4 @@
   }
   
   </style>
-</div>
+</details>
