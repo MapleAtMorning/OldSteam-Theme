@@ -9,6 +9,11 @@
     border: var(--Outset);
     padding: 3px;
     gap: 0;
+}
+
+[class^="bottombar_FriendsButton"]:active, [class^="bottombar_AddGameButton"]:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
 } 
 
 [class^="bottombar_FriendsButton"] [class*="Text"], [class^="bottombar_AddGameButton"] [class*="Text"]{

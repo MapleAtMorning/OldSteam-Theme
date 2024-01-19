@@ -16,6 +16,11 @@
         "inviteCodeExcludingLink": "3GkMYRvW7M"
     },
 
+    "tags": [
+        "Green",
+        "Classic"
+    ],
+
     "Configuration": [
         {
             "Name": "Disable Avatar Status Lines",
