@@ -43,4 +43,5 @@
 
 .markdown-body details[open] {
     padding-bottom: 12px;
+    background-color: #3e4637;
 }
