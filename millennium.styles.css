@@ -3,7 +3,7 @@
     border-radius: 0% !important;
     box-shadow: none !important;
     border: 1px outset #808080 !important;
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 .markdown-body a,
