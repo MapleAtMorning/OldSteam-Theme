@@ -81,14 +81,18 @@
     color: var(--OffWhite) !important;
 }
 
-.SVGIcon_Notification{
-    color: var(--OffWhite) !important;
+.SVGIcon_Notification, [class*="titlebarcontrols_NotificationsButton"] [class*="Icon"]{
+    color: inherit !important;
 }
 
 [class*="titlebarcontrols_GamepadUIToggle"]:hover, [class*="titlebarcontrols_VRToggle"]:hover, [class*="titlebarcontrols_AnnouncementsButton"]:hover, [class*="titlebarcontrols_NotificationsButton"]:hover{
     background-color: var(--GreenBG) !important;
     border: var(--Outset);
     color: #fff !important;
+}
+
+[class*="titlebarcontrols_NotificationsButton"][class*="HasNew"], [class*="titlebarcontrols_NotificationsButton"][class*="HasNew"]:hover{
+    color: var(--Maize) !important;
 }
 
 [class*="titlebarcontrols_SoundtrackControls"][class*="Playing"] svg[class*="Icon"]{
@@ -137,4 +141,62 @@
 [class*="steamavatar_avatar"]{
     box-shadow: none;
     border: none;
+}
+
+/* Notifications Box */
+
+[class*="titlebarcontrols_NotificationsMenu_"]{
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    color: var(--OffWhite);
+    padding: 2px 2px 4px !important;
+}
+
+[class*="titlebarcontrols_NotificationHeader"] [class*="titlebarcontrols_AllNotificationsButton"]{
+    transition: none;
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0;
+}
+
+[class*="titlebarcontrols_NotificationHeader"] [class*="titlebarcontrols_AllNotificationsButton"]:hover{
+    transition: none;
+    background-color: var(--GreenBG);
+    color: var(--Maize);
+}
+
+[class*="titlebarcontrols_NotificationHeader"] [class*="titlebarcontrols_AllNotificationsTitle"]{
+    font-weight: normal;
+}
+
+[class*="titlebarcontrols_EmptyNotificationsCtn"] [class*="titlebarcontrols_EmptyNotificationsBody"]{
+    color: var(--Label);
+}
+
+[class*="titlebarcontrols_NotificationsMenu"] [class*="standardtemplates_StandardTemplateDesktop"]{
+    background: var(--GreenBG) !important;
+    border: var(--Outset);
+}
+
+[class*="titlebarcontrols_NotificationsMenu"] [class*="standardtemplates_StandardTemplateDesktop"]:active, [class*="titlebarcontrols_NotificationHeader"] [class*="titlebarcontrols_AllNotificationsButton"]:active{
+    background: var(--DarkGreenBG) !important;
+    border: var(--Inset);
+}
+
+[class*="steamtemplates_WishlistBlurImage"]{
+    filter: brightness(100%) blur(0px);
+    border: var(--Outset);
+}
+
+[class*="steamtemplates_WishlistBlurImage"] + img{
+    display: none;
+}
+
+[class*="titlebarcontrols_NotificationsMenu"] [class*="standardtemplates_StandardTemplateDesktop"] [class*="standardtemplates_Header"], [class*="titlebarcontrols_NotificationsMenu"] [class*="standardtemplates_StandardTemplateDesktop"] [class*="standardtemplates_StandardNotificationSubText"]{
+    color: var(--Label);
+}
+
+[class*="titlebarcontrols_NotificationsMenu"] [class*="standardtemplates_StandardTemplateDesktop"] [class*="standardtemplates_Header"] > div{
+    color: inherit !important;
 }

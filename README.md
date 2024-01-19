@@ -26,12 +26,10 @@
 - News popup on steam opening
 - Right click properties
 - Game overlay
-- Settings page
 - Screenshot manager (1/2)
 - Game Servers (lol)
 - Awards on your review
 - Creating categories of friends
-- Notifications
 
 ## Possible Todo:
 - Store page
