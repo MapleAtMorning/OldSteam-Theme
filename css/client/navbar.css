@@ -184,6 +184,12 @@
     border: var(--Inset);
 }
 
+[class*="titlebarcontrols_NotificationsMenu"] [class*="standardtemplates_PinnedTemplateDesktop"]{
+    background: var(--GreenBG);
+    border-radius: 0%;
+    border: var(--Outset);
+}
+
 [class*="steamtemplates_WishlistBlurImage"]{
     filter: brightness(100%) blur(0px);
     border: var(--Outset);
