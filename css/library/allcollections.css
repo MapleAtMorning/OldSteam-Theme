@@ -17,10 +17,10 @@
 }
 
 [class*="allcollections_Collection_"][class*="allcollections_NewCollection_"], [class*="allcollections_Collection_"]{
-    border-radius: 0;
-    border: var(--Outset);
-    background: var(--GreenBG);
-    box-shadow: none;
+    border-radius: 0 !important;
+    border: var(--Outset) !important;
+    background: var(--GreenBG) !important;
+    box-shadow: none !important;
     transition: none;
 }
 
@@ -83,4 +83,23 @@
     background: var(--DarkGreenBG) !important;
     filter: saturate(1);
     color: var(--DisabledText1);
+}
+
+/* Drag Drop */
+[class*="allcollections_Collection"][class*="allcollections_DropOption"]:not([class*="library_NewCollectionTarget"]){
+    outline: 3px solid var(--Maize);
+    outline-offset: -5px;
+    border: 2px solid transparent;
+    border-radius: 0%;
+}
+
+[class*="allcollections_Collection"][class*="allcollections_DropTarget"]:not([class*="library_NewCollectionTarget"]){
+    background: none;
+    outline: 5px solid var(--Maize);
+    outline-offset: -7px;
+    border: 2px solid transparent;
+}
+
+[class*="allcollections_Collection"] [class*="allcollections_NavTimer"] svg circle{
+    stroke: var(--Maize);
 }

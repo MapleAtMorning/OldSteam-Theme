@@ -1123,7 +1123,7 @@
     background: var(--DarkGreenBG)
 }
 
-/* Controller popup */
+/* Controller popup =====================================================================*/*/
 .DesktopUI [class*="controllerconfigurator_interstitial_ConfiguratorInterstitialContainer"]{
     background: var(--GreenBG);
     color: var(--OffWhite);

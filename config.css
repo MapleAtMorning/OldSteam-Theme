@@ -1,14 +1,13 @@
 /* SFP users, you're in the right place! Millennium users, use the inbuilt config editor. */
 
 /** Disable rare achievements effect */
-    /* [class*="achievementiconbase_RareAchievementIconGlowContainerRoot"], [class*="achievementiconbase_RareAchievementIconGlowContainer"]{display: none;} */
-    /* [class*="achievementiconbase_Icon"][class*="achievementiconbase_IconGlow"]{box-shadow: none;} */
+/* @import url(css/config/rareachievements.css); */
 
 /** Disable avatar borders/frames */
-    /* .avatarFrame{display: none !important;} */
+/* @import url(css/config/avatarframes.css); */
 
 /** Disable status lines on PFPs in Friends */
-    .avatarStatus{background: transparent !important; width: 0 !important;}
+/* @import url(css/config/statuslines.css); */
 
 /** Disable Logo on download page */
-    /* [class*="downloadgraph_HeroAndLogo"] [class*="downloadgraph_Logo_"] img{display: none;} */
+/* @import url(css/config/downloadlogo.css); */

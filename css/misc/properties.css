@@ -132,6 +132,11 @@
     transition: none;
 }
 
+[class*="gamepaddialog_Toggle"][class*="Disabled"] [class*="gamepaddialog_ToggleRail"], [class*="gamepaddialog_Toggle"][class*="Disabled"] [class*="gamepaddialog_ToggleSwitch"]{
+    background: var(--DisabledText1);
+}
+
+
 [class*="gamepaddialog_On"] [class*="gamepaddialog_ToggleRail"]::before{
     background: var(--MaizeBG);
     transition: none;
@@ -175,6 +180,45 @@
     background: var(--DarkGreenBG);
     border: var(--Inset);
     border-radius: 0%;
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"]{
+    border: 1px transparent;
+    box-shadow: none;
+    background: var(--DarkGreenBG);
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_DlcHeader"], [class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_DlcHeader"]:hover{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    text-transform: none;
+    border-left: none;
+    border-right: none;
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_DlcHeader"]:first-of-type{
+    border-left: var(--Outset);
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_DlcHeader"]:nth-of-type(4){
+    border-right: var(--Outset);
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_Install_"]{
+    border-left: var(--Inset);
+    border-bottom: var(--Inset);
+    margin: 0;
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_SizeDisk"]{
+    border-right: var(--Inset);
+    border-bottom: var(--Inset);
+    margin: 0;
+}
+
+[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] a, [class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_Added"]{
+    border-bottom: var(--Inset);
+    margin: 0;
 }
 
 /* Settings specific content */
@@ -269,6 +313,6 @@
     color: var(--OffWhite);
 }
 
-[class*="radio_Group"] [class*="radio_Active"]:hover{
+[class*="radio_Group"] [class*="radio_Active"]:hover, [class*="voicesettings_MicrophoneTest"] [class*="voicesettings_VolumeBar"]{
     background: var(--DarkGreenBG);
 }

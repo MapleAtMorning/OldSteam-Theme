@@ -14,14 +14,15 @@
 .btn.btn-primary,
 .btn.btn-primary:hover,
 .btn.btn-secondary,
-.btn.btn-secondary:hover {
+.btn.btn-secondary:hover{
     background: #5a6a50 !important;
     border-radius: 0% !important;
     border: 1px outset #808080 !important;
 }
 
 .btn.btn-primary:active,
-.btn.btn-secondary:active {
+.btn.btn-secondary:active,
+.addon-tags .addon-tag {
     background: #3e4637 !important;
     border: 1px inset #808080 !important;
 }

@@ -215,8 +215,6 @@
     stroke: var(--Maize) !important;
 }
 
-
-
 [class*="gamelistentry_HoverOverlay_"]{
     background-color: var(--GreenBG) !important;
     box-shadow: none !important;

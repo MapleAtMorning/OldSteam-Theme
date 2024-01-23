@@ -24,7 +24,6 @@
 ## Todo:
 - Chats & Group chats
 - News popup on steam opening
-- Right click properties
 - Game overlay
 - Screenshot manager (1/2)
 - Game Servers (lol)

@@ -343,6 +343,10 @@ button.DialogButton[class*="libraryhomeshowcases_DoneReordering"]::before{
 }
 
 /* Game Cards =====================================================================*/
+[class*="appportrait_LibraryItemBox"]{
+    box-shadow: none;
+}
+
 [class*="appportrait_HoversEnabled"] [class*="appportrait_LibraryItemBox_"][class*="Portrait"]{
     border: var(--Inset);
     box-shadow: none;
@@ -469,4 +473,23 @@ button.DialogButton[class*="libraryhomeshowcases_DoneReordering"]::before{
 
 [class*="appportraithover_FriendsContainer"] [class*="appportraithover_FriendsHeader"] [class*="appportraithover_FriendsLabel"]{
     color: var(--Maize);
+}
+
+/* Game Dragging */
+[class*="libraryhomeshowcases_DropOption"] [class*="libraryhomeshowcases_Showcase_"]{
+    outline: 3px solid var(--Maize);
+    outline-offset: -5px;
+    border: 2px solid transparent;
+    border-radius: 0%;
+}
+
+[class*="libraryhomeshowcases_DropTarget"] [class*="libraryhomeshowcases_Showcase_"]{
+    background: none;
+    outline: 5px solid var(--Maize);
+    outline-offset: -7px;
+    border: 2px solid transparent;
+}
+
+[class*="draganddrop_GhostContainer"] [class*="draganddrop_Ghost"] [class*="draganddrop_Image"]{
+    box-shadow: none;
 }
