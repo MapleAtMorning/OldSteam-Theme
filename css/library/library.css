@@ -1122,3 +1122,10 @@
     border: var(--Inset);
     background: var(--DarkGreenBG)
 }
+
+/* Controller popup */
+.DesktopUI [class*="controllerconfigurator_interstitial_ConfiguratorInterstitialContainer"]{
+    background: var(--GreenBG);
+    color: var(--OffWhite);
+    border: var(--Outset);
+}
