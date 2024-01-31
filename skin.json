@@ -38,11 +38,23 @@
             "Name": "Disable Avatar Frames",
             "ToolTip": "Disable the avatar frames around profile pictures",
             "Type": "CheckBox",
-            "Value": false
+            "Value": true
         },
         {
             "Name": "Disable Rare Achievements Effect",
             "ToolTip": "Disable the animated yellow glow around rare achievements",
+            "Type": "CheckBox",
+            "Value": false
+        },
+        {
+            "Name": "Disable New Message Line",
+            "ToolTip": "Disable the yellow line and \"New Message\" text in chats",
+            "Type": "CheckBox",
+            "Value": true
+        },
+        {
+            "Name": "Disable Chat Tab PFPs",
+            "ToolTip": "Disable the profile pictures in tabs for chat",
             "Type": "CheckBox",
             "Value": false
         }
@@ -50,6 +62,39 @@
 
     "UseDefaultPatches": true,
     "Patches": [
+        {
+            "MatchRegexString": ".*",
+            "Statement": [
+                {
+                    "If": "Disable Avatar Status Lines",
+                    "Equals": true,
+                    "True": {
+                        "TargetCss": "css/config/statuslines.css"
+                    }
+                },
+                {
+                    "If": "Disable Avatar Frames",
+                    "Equals": true,
+                    "True": {
+                        "TargetCss": "css/config/avatarframes.css"
+                    }
+                },
+                {
+                    "If": "Disable New Message Line",
+                    "Equals": true,
+                    "True": {
+                        "TargetCss": "css/config/newmsgline.css"
+                    }
+                },
+                {
+                    "If": "Disable Chat Tab PFPs",
+                    "Equals": true,
+                    "True": {
+                        "TargetCss": "css/config/chattabpfps.css"
+                    }
+                }
+            ]
+        },
         {
             "MatchRegexString": "^Steam$",
             "TargetJs": "libraryroot.custom.js",
@@ -67,26 +112,6 @@
                     "Equals": true,
                     "True": {
                         "TargetCss": "css/config/rareachievements.css"
-                    }
-                }
-            ]
-        },
-        {
-            "MatchRegexString": "Friends List",
-            "TargetCss": "friends.custom.css",
-            "Statement": [
-                {
-                    "If": "Disable Avatar Status Lines",
-                    "Equals": true,
-                    "True": {
-                        "TargetCss": "css/config/statuslines.css"
-                    }
-                },
-                {
-                    "If": "Disable Avatar Frames",
-                    "Equals": true,
-                    "True": {
-                        "TargetCss": "css/config/avatarframes.css"
                     }
                 }
             ]

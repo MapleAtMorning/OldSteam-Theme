@@ -1,0 +1,326 @@
+/* General Frame */
+
+.client_chat_frame.ChatPopup body > .popup_chat_frame{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    padding: 0 5px;
+    z-index: 1000;
+
+}
+
+.titleBarContainer.ChatTabs{
+    background-color: var(--GreenBG);
+    border: none;
+    box-shadow: none;
+}
+
+[class*="chattabs_ChatTab"]:before, [class*="chattabs_ChatTab"]:last-of-type:after{
+    display: none;
+}
+
+.chatTabList>div, .HorizontalMiniSlider, .HorizontalMiniSliderScroll{
+    overflow: visible;
+}
+
+.client_chat_frame.ChatPopup .chatTitleBar{
+    border-bottom: var(--Outset);
+}
+
+[class*="chattabs_ChatTab_"]{
+    padding: 5px 8px;
+    border: var(--Outset);
+    border-radius: 0%;
+    transition: none;
+    background-color: var(--GreenBG) !important;
+    min-width: 0;
+    white-space: nowrap;
+    margin-top: 2px;
+    border-bottom: none;
+}
+
+[class*="chattabs_ChatTab_"][class*="chattabs_Active"]{
+    background-color: var(--DarkGreenBG) !important;
+    border: var(--Inset);
+    border-bottom: none;
+    /* transform: translateY(-1px); */
+    min-height: 36px;
+    height: 100%;
+    margin-top: 0;
+    position: relative;
+}
+
+.chatWindow{
+    background: var(--DarkGreenBG);
+}
+
+.chatWindow .chatHeader{
+    min-height: 1px;
+    transition: none;
+    background: transparent;
+}
+
+.inviteAnotherFriendButton{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+    transition: none;
+}
+
+
+.inviteAnotherFriendButton:hover .invitePlus{
+    transition: none;
+    transform: scale(1);
+}
+
+.inviteAnotherFriendButton .SVGIcon_Button{
+    fill: var(--OffWhite);
+    transition: none;
+}
+
+.inviteAnotherFriendButton:hover .SVGIcon_Button{
+    fill: var(--Maize);
+}
+
+.inviteAnotherFriendButton .SVGIcon_Button line{
+    transition: none;
+    stroke: var(--OffWhite);
+}
+
+.inviteAnotherFriendButton:hover .SVGIcon_Button line{
+    stroke: var(--Maize);
+}
+
+/* Bottom Bar */
+
+.chatWindow .chatEntry{
+    background: var(--GreenBG);
+    box-shadow: none;
+    padding-left: 0;
+}
+
+[class*="chatentry_chatEntryActionsGroup"]{
+    background: var(--GreenBG);
+    box-shadow: none;
+    margin: 0;
+    padding: 2px 0;
+}
+
+[class*="chatentry_chatEntryControls"]{
+    background: var(--GreenBG);
+    box-shadow: none;
+    justify-content: center;
+}
+
+[class*="chatentry_chatTextarea_"]{
+    box-shadow: none;
+    color: var(--OffWhite);
+    border: var(--Inset);
+    background-color: var(--DarkGreenBG);
+    margin: 2px 4px 2px 0;
+    padding: 1px 4px;
+}
+
+[class*="chatentry_chatEntryControls"] [class*="chatentry_chatSubmitButton"]:not([class*="disabled"]), .VoiceToggle:not([class*="Disabled"]), .VoiceToggle:not([class*="Disabled"]):hover{
+    background: var(--GreenBG);
+    color: var(--OffWhite);
+    opacity: 1;
+}
+
+[class*="chatentry_chatEntryControls"] [class*="chatentry_chatSubmitButton"], .VoiceToggle, .VoiceToggle.Disabled:hover{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    color: var(--DisabledText1);
+    opacity: 0.5;
+    transition: none;
+}
+
+.ChatMessageEntryVoice, .ChatMessageEntryVoice.Disabled{
+    border: none;
+    opacity: 1;
+    outline: none;
+    background: transparent;
+    box-shadow: none;
+    transition: none;
+    margin: 0;
+} 
+
+[class*="chatentry_chatSubmitButton"][class*="chatentry_EmbedButton"], [class*="chatentry_chatSubmitButton"][class*="chatentry_EmoticonPickerButton"]{
+    background: var(--GreenBG) !important;
+    border: var(--Outset);
+    margin: 0 2px;
+    color: var(--OffWhite);
+}
+
+[class*="chatentry_chatSubmitButton"] .SVGIcon_Submit, [class*="chatentry_chatSubmitButton"] .SVGIcon_Submit path, .friendsui-container .SVGIcon_Button.SVGIcon_VoiceRoom, .VoiceToggleIconCtn{
+    fill: currentColor !important;
+    color: inherit;
+}
+
+[class*="chatentry_chatSubmitButton"][class*="chatentry_EmbedButton"] svg, [class*="chatentry_chatSubmitButton"][class*="chatentry_EmoticonPickerButton"] svg{
+    color: var(--OffWhite);
+}
+
+[class*="chatentry_chatSubmitButton"][class*="chatentry_EmbedButton"]:hover svg, [class*="chatentry_chatSubmitButton"][class*="chatentry_EmoticonPickerButton"]:hover svg, [class*="chatentry_chatEntryControls"] [class*="chatentry_chatSubmitButton"]:not([class*="disabled"]):hover svg, .VoiceToggle:not(.Disabled):hover svg{
+    color: var(--Maize) !important;
+}
+
+/* Chat Content */
+
+.chatHistoryScroll{
+    border: var(--Inset);
+    border-top: none;
+} 
+
+.speakerTimeStamp, .msg.timeDivision{
+    color: var(--DimListText);
+}
+
+.timeDivision .preHorizDivider, .timeDivision .horizDivider{
+    background-color: var(--DimListText);
+}
+
+.timeDivision.time_passes{
+    padding-top: 12px;
+}
+.timeDivision.time_passes .preHorizDivider, .timeDivision.time_passes .horizDivider{
+    border: 1px var(--Maize) solid;
+    margin: 0;
+}
+.timeDivision.time_passes::before{
+    content: "New Messages";
+    margin: auto;
+    color: var(--Maize);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+[class*="messages_MsgWithAddons"]:hover {
+    background: transparent
+}
+
+.chatWindow .speaker .speakerName{
+    padding-left: 2px;
+}
+
+[class*="messages_SpeakerName_Online"], .isCurrentUser [class*="messages_SpeakerName_Online"]{
+    color: var(--OffWhite);
+}
+
+[class*="messages_SpeakerName_InGame"], .isCurrentUser [class*="messages_SpeakerName_InGame"]{
+    color: var(--Maize);
+}
+
+.MultiUserChat .isCurrentUser .msgText{
+    color: var(--OffWhite);
+}
+
+[class*="messages_MsgWithAddons"] [class*="messages_Addons"]{
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+[class*="messages_MsgWithAddons"] [class*="messages_Addons"] > [class*="messages_Emoticon"]{
+    border: var(--Outset);
+    background: var(--GreenBG);
+    stroke: var(--OffWhite);
+    color: var(--OffWhite);
+
+}
+
+[class*="messages_MsgWithAddons"] [class*="messages_Addons"] > [class*="messages_Emoticon"]:hover{
+    stroke: var(--Maize);
+    color: var(--Maize);
+}
+
+/* Emoji Selector */
+[class*="addonpicker_SectionTitle"]{
+    text-transform: none;
+    color: var(--OffWhite);  
+} 
+
+[class*="addonpicker_Content"]{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="addonpicker_FilterInputContainer"] [class*="addonpicker_FilterInput"], [class*="addonpicker_FilterInputContainer"] [class*="addonpicker_FilterInput"]:hover, [class*="addonpicker_FilterInputContainer"] [class*="addonpicker_FilterInput"]:focus{
+    background: var(--DarkGreenBG) !important;
+    border: var(--Inset);
+    color: var(--OffWhite);
+    box-shadow: none;
+    border-radius: 0%;
+}
+
+[class*="addonpicker_Tabs_"]{
+    border: none;
+}
+
+[class*="addonpicker_Tab_"][class*="addonpicker_Active"], [class*="addonpicker_Tab_"]:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+    color: var(--Maize);
+    margin-bottom: 4px;
+}
+
+[class*="addonpicker_Tab_"]:not([class*="addonpicker_Active"]){
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    color: var(--OffWhite);
+    margin-bottom: 4px;
+}
+
+[class*="addonpicker_Tab_"]:not([class*="addonpicker_Active"]):hover{
+    color: var(--Maize);
+}
+
+[class*="addonpicker_Tab_"] [class*="addonpicker_TabContent"]{
+    color: inherit !important;
+    background-color: transparent !important;
+    opacity: 1;
+    width: 28px;
+    height: 28px;
+    padding: 2px;
+}
+
+[class*="addonpicker_Tab_"] [class*="addonpicker_TabContent"] svg{
+    fill: currentColor;
+}
+
+[class*="addonpicker_ItemList"] [class*="addonpicker_Item"]:hover, [class*="addonpicker_ItemList"] [class*="addonpicker_Item"][class*="addonpicker_Focus"]{
+    background-color: transparent;
+}
+
+[class*="addonpicker_ItemList"] [class*="addonpicker_Item"]:hover img, [class*="addonpicker_ItemList"] [class*="addonpicker_Item"][class*="addonpicker_Focus"] img{
+    filter: 
+    drop-shadow(1px 1px 0px var(--Maize)) 
+    drop-shadow(-1px 1px 0px var(--Maize)) 
+    drop-shadow(1px -1px 0px var(--Maize)) 
+    drop-shadow(-1px -1px 0px var(--Maize));
+}
+
+[class*="emoticon_EmoticonHover"]{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+    box-shadow: none;
+}
+
+/* Chatroom */
+/* I hate group chats they do not get special treatment they will look like suck!!! */
+.chatRoomGroupHeader{
+    border: none;
+    background-color: var(--GreenBG);
+}
+
+.chatRoomGroupNavColumn, .MemberListColumn, .chatRoomMembers{
+    box-shadow: none;
+    background: var(--GreenBG);
+    border: none;
+}
+
+/* TODO: Find a way to differenciate groups and individual chats */
+/* .chatHistoryAndMembers .chatHistoryScroll{
+    border-left: var(--Outset);
+} */

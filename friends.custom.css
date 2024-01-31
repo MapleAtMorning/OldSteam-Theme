@@ -1,5 +1,6 @@
 @import url(css/universal.css);
 
 @import url(css/friends/friends.css);
+@import url(css/friends/chat.css);
 
-@import url(css/config.css);
+@import url(config.css);

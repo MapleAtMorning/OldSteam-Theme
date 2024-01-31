@@ -1,0 +1,56 @@
+[class*="messagelist_MarketingMessagePage"] [class*="messagelist_MessageListPage"]{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="image_GameImage"][class*="image_IsBlur"]{
+    display: none;
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="image_GameImage"]{
+    box-shadow: none;
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="image_Btn"]{
+    text-transform: none;
+    border: var(--Outset);
+    border-radius: 0%;
+    background: var(--GreenBG);
+    color: var(--OffWhite);
+    transition: none;
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="image_Btn"]:hover{
+    box-shadow: none;
+    background: var(--GreenBG);
+    color: var(--Maize);
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="image_Btn"]:active{
+    border: var(--Inset);
+    background: var(--DarkGreenBG);
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="image_MessagePriceCtn"] [class*="StoreSalePriceWidgetCon"]{
+    border: var(--Outset);
+    background: var(--GreenBG) !important;
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="salepreviewwidgets_StoreSaleDiscountBox"]{
+    background: var(--MaizeBG) !important;
+    color: var(--OffWhite) !important;
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="salepreviewwidgets_StoreSaleDiscountedPriceCtn"] [class*="salepreviewwidgets_StoreSalePriceBox"]{
+    color: var(--Maize) !important;
+    text-shadow: none !important;
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="salepreviewwidgets_StoreOriginalPrice"]{
+    color: var(--DisabledText1) !important;
+}
+
+[class*="messagelist_MarketingMessagePage"] [class*="salepreviewwidgets_StoreOriginalPrice"]::before{
+    border-bottom: 1px solid currentColor !important;
+    box-shadow: none !important;
+}

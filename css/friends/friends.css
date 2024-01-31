@@ -122,6 +122,15 @@
     fill: var(--Maize);
 }
 
+.friendsui-container .friendsContextMenu .contextMenuSectionContent .menuChecked{
+    color: var(--Maize);
+}
+
+.friendsui-container .friendsContextMenu [class*="persona_menu"]{
+    color: var(--DimListText);
+}
+
+
 /* Friends navbar */
 
 .activeTab{
@@ -149,6 +158,7 @@
 
 .friendsTabButtonsContainer svg[class*="SVGIcon"] > path, .friendsTabButtonsContainer svg[class*="SVGIcon"] > g{
     fill: var(--OffWhite) !important;
+    color: var(--OffWhite) !important;
 }
 
 .TabSearchButton .ColorSelector {
@@ -199,6 +209,7 @@
     width: 100%;
     height: 100%;
     border: none;
+    transition: none;
 }
 
 .ingame .avatarStatus{
@@ -229,6 +240,31 @@
 }
 
 .friendStatusHover.ingame:hover, .friendStatusHover.ingame.Friend_ContextMenuActive, .friendStatusHover.online:hover, .friendStatusHover.online.Friend_ContextMenuActive, .friendStatusHover.offline:hover, .friendStatusHover.offline.Friend_ContextMenuActive{
+    background: transparent;
+}
+
+/* Friends Categories Creation */
+
+.FriendPicker_ChosenFriend{
+    border: var(--Outset);
+    background: var(--GreenBG);
+    border-radius: 0;
+    color: var(--OffWhite);
+}
+
+.FriendPicker_ChosenFriend:hover{
+    color: var(--Maize)
+}
+
+.FriendPicker_ChosenFriend span{
+    color: inherit !important;
+}
+
+.FriendPicker_ChosenFriend .SVGIcon_X_Line line{
+    stroke: currentColor !important;
+}
+
+.FriendPicker_Focus .FriendPicker_SuggestedFriend.Focus{
     background: transparent;
 }
 
@@ -271,7 +307,17 @@
     background: var(--GreenBG) !important;
     border: var(--Outset) !important;
     border-radius: 0%;
+    box-shadow: none;
 }
+
+[class*="contextmenu_contextMenuItem"]{
+    color: var(--OffWhite);
+}
+
+.contextMenuUnselectable, .contextMenuUnselectable.disabled, .contextMenuGameTitle, .contextMenuBroadcast, .contextMenuGameOptions{
+    background: transparent;
+}
+
 .contextMenuItem:hover, .contextMenuItem[class*="active"]{
     background: var(--GreenBG) !important;
     color: var(--Maize);

@@ -1,0 +1,3 @@
+[class*="chattabs_ChatTabContent_Friend"] .friend.Panel > div:not(.labelHolder){
+    display: none;
+}

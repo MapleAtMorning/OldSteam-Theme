@@ -22,13 +22,11 @@
 - Jank
 
 ## Todo:
-- Chats & Group chats
-- News popup on steam opening
+- Group Chats
 - Game overlay
 - Screenshot manager (1/2)
 - Game Servers (lol)
 - Awards on your review
-- Creating categories of friends
 
 ## Possible Todo:
 - Store page

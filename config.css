@@ -11,3 +11,9 @@
 
 /** Disable Logo on download page */
 /* @import url(css/config/downloadlogo.css); */
+
+/** Disable "New Message" line and text in Chat  */
+/* @import url(css/config/newmsgline.css); */
+
+/** Disable PFPs in chat tabs */
+/* @import url(css/config/chattabpfps.css); */
