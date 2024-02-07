@@ -1,4 +1,4 @@
-/* General Frame */
+/* General Frame =================================================================*/
 
 .client_chat_frame.ChatPopup body > .popup_chat_frame{
     background-color: var(--GreenBG);
@@ -90,7 +90,7 @@
     stroke: var(--Maize);
 }
 
-/* Bottom Bar */
+/* Bottom Bar =================================================================*/
 
 .chatWindow .chatEntry{
     background: var(--GreenBG);
@@ -164,7 +164,7 @@
     color: var(--Maize) !important;
 }
 
-/* Chat Content */
+/* Chat Content =================================================================*/
 
 .chatHistoryScroll{
     border: var(--Inset);
@@ -234,7 +234,7 @@
     color: var(--Maize);
 }
 
-/* Emoji Selector */
+/* Emoji Selector ================================================================= */
 [class*="addonpicker_SectionTitle"]{
     text-transform: none;
     color: var(--OffWhite);  
@@ -307,7 +307,7 @@
     box-shadow: none;
 }
 
-/* Chatroom */
+/* Chatroom =================================================================*/
 /* I hate group chats they do not get special treatment they will look like suck!!! */
 .chatRoomGroupHeader{
     border: none;

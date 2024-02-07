@@ -147,7 +147,7 @@ input[type="radio"]:focus{
     color: var(--OffWhite);
 }
 
-/* Windows buttons */
+/* Windows buttons =================================================================*/
 .DesktopUI .window-controls > div, .ModalPosition_Dismiss .closeButton{
     background: var(--GreenBG);
     border: var(--Outset);
@@ -198,6 +198,7 @@ input[type="radio"]:focus{
 [class*="emoticon_NewEmoticonIndicator"]{
 background: transparent;
 }
+
 [class*="emoticon_NewEmoticonIndicator"] [class*="emoticon_NewEmoticonCircle"]{
     background-color: var(--Maize);
 }

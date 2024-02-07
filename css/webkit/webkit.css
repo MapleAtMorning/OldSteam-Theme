@@ -1,0 +1,9 @@
+/* Page Background */
+body.v6, body .responsive_page_content, body.v6 .game_page_background, html{
+    background: var(--DarkGreenBG) !important;
+}
+
+/* "Fix" odd scrolling on store page */
+.home_page_body_ctn{
+    min-width: 100%;
+}
