@@ -101,3 +101,11 @@ body.v6 .store_nav .popup_block_new .popup_body{
     border-bottom: 2px solid transparent;
     background: transparent;
 }
+
+body.v6 .store_nav .popup_menu_subheader, body.v6 .store_nav .popup_menu_subheader a{
+    text-transform: none !important;
+    color: var(--Maize);
+    text-shadow: none;
+    font-weight: bold !important;
+    font-variant: normal !important;
+}

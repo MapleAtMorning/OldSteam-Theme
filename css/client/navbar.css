@@ -151,7 +151,7 @@
 }
 
 [class*="steamdesktop_BrowserWrapper"] [class*="steamdesktop_URLBar"] [class*="steamdesktop_StatusIcon"], [class*="steamdesktop_BrowserWrapper"] [class*="steamdesktop_URLBar"] [class*="steamdesktop_URLBarText"] [class*="steamdesktop_URL"]{
-    color: inherit;
+    color: inherit !important;
     transition: none;
 }
 

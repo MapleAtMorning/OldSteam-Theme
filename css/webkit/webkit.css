@@ -1,5 +1,5 @@
 /* Page Background */
-body.v6, body .responsive_page_content, body.v6 .game_page_background, html{
+body.v6, body .responsive_page_content, body.responsive_page, body.v6 .game_page_background, html{
     background: var(--DarkGreenBG) !important;
 }
 
