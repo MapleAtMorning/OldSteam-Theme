@@ -135,7 +135,7 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
 .popup_body.search_v2 .match.match_v2 .match_background_image {
     border: var(--Inset);
     border-radius: 0 !important;
-    background-color: transparent;
+    background: transparent;
 }
 
 .match_background_image img {
@@ -145,14 +145,13 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
     mask-image: none;
 }
 
-.popup_body.search_v2 .match.match_v2 .match_img {
-    border: 1px transparent;
+.popup_body.search_v2 .match.match_creator.match_v2 .match_img {
+    margin: 1px;
     border-radius: 0;
 }
-.popup_body.search_v2 .match.match_v2 .match_img img{
+.popup_body.search_v2 .match.match_creator.match_v2 .match_img img{
     border-radius: 0;
 }
-
 
 .popup_body.search_v2 .match.match_v2 .match_name{
     text-shadow: none;
@@ -162,5 +161,83 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
     /* color: var(--Label) !important; */
     background: transparent;
     border-radius: 0 !important;
+}
 
+/* Main store content*/
+
+.carousel_container.maincap .carousel_items{
+    box-shadow: none;
+}
+
+.carousel_container .arrow{
+    background: var(--GreenBG) !important;
+    border: var(--Outset);
+    transition: none !important;
+    width: 36px;
+    padding: 5px;
+    top: 144px !important;
+}
+
+.carousel_container .arrow:active{
+    background: var(--DarkGreenBG) !important;
+}
+
+.carousel_container .arrow.right{
+    right: -55px;
+}
+
+.carousel_container .arrow.left{
+    left: -55px;
+}
+
+.carousel_container .arrow > div{
+    margin: auto;
+}
+
+.carousel_container .arrow:hover > div{
+    filter: brightness(0) saturate(100%) invert(69%) sepia(59%) saturate(368%) hue-rotate(15deg) brightness(91%) contrast(92%);
+}
+
+.store_main_capsule, .store_main_capsule:hover {
+    background: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.store_main_capsule .capsule{
+    box-shadow: none;
+    height: 100%;
+    margin: 0;
+}
+
+.store_main_capsule .info{
+    width: 310px;
+    padding-left: 10px;
+}
+
+.store_main_capsule .screenshots {
+    margin: 0;
+    width: 100%;
+    height: 170px;
+    max-height: none;
+    position: static;
+    display: flex;
+    gap: 6px;
+    flex-flow: row wrap;
+}
+
+.store_main_capsule .screenshots > div{
+    width: 150px;
+    height: 50%;
+    padding: 0;
+}
+
+.store_main_capsule .screenshots > div > div{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
