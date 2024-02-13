@@ -154,7 +154,7 @@ input[type="radio"]:focus{
     border-radius: 0%;
     height: 20px;
     width: 20px;
-    transition: none; 
+    transition: none !important; 
     margin: 0 3px;
 }
 
@@ -164,6 +164,7 @@ input[type="radio"]:focus{
 
 .DesktopUI .window-controls > div:hover, .ModalPosition_Dismiss .closeButton:hover{
     background: var(--GreenBG) !important;
+    transition: none !important;
 }
 
 .DesktopUI .window-controls > div:active, .ModalPosition_Dismiss .closeButton:active{
