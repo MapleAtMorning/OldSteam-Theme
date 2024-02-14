@@ -219,6 +219,10 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
     padding-left: 10px;
 }
 
+.store_main_capsule .app_name > div {
+    max-height: max-content;
+}
+
 .store_main_capsule .screenshots {
     margin: 0;
     width: 100%;
@@ -251,6 +255,10 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
     color: var(--OffWhite);
 }
 
+.store_main_capsule .reason .main strong{
+    color: var(--Maize);
+}
+
 /* Content */
 
 .home_page_content.takeunder a{
@@ -271,10 +279,12 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
 
 .store_capsule, .store_capsule:hover,
 .carousel_container.spotlight .carousel_items > * .store_capsule, 
-.carousel_container.spotlight .carousel_items > * .store_capsule.daily_deal{
+.carousel_container.spotlight .carousel_items > * .store_capsule.daily_deal,
+.recently_updated .store_capsule{
     box-shadow: none;
     background: var(--GreenBG);
     border: var(--Outset);
+    box-sizing: border-box;
 }
 
 .spotlight_content{
@@ -286,20 +296,31 @@ body.v6 h2, .dailydeal_desc, .content_hub_carousel_ctn .title{
     text-transform: none;
 }
 
-.spotlight_body{
+.spotlight_body, .recently_updated .store_capsule .recently_updated_announcement_link{
     color: var(--Label);
 }
 
-body.v6 .deep_dive_key_tags{
-    border-top: 1px solid var(--GreenBG);
+.recently_updated .store_capsule .recently_updated_announcement_link:hover{
+    color: var(--Maize);
+}
+
+.store_capsule .discount_block.empty::before{
+    content: "Free to Play";
+    /* position: absolute; */
+}
+
+body.v6 .deep_dive_key_tags, .recently_updated .store_capsule .recently_updated_desc{
+    border-top: transparent;
     color: var(--OffWhite);
     display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 body.v6 .deep_dive_tag{
     height: min-content;
     color: inherit;
+    margin: 3px;
     border-radius: 0;
     background: var(--GreenBG);
     border: var(--Outset);
@@ -310,7 +331,7 @@ body.v6 .deep_dive_tag{
     overflow: hidden;
     transition: none;
     border: var(--Outset);
-    color: var(--OffWhite);
+    color: white;
 }
 
 .content_hub_capsule_ctn:hover{
@@ -413,13 +434,26 @@ body.v6 .discover_queue_empty>h3, .discover_queue_empty>p{
 }
 
 /* Misc Buttons */
-.btnv6_white_transparent > span,
-.btnv6_lightblue_blue, .btnv6_lightblue_blue:hover{
-    border: var(--Outset);
-    background: var(--GreenBG);
-    columns: var(--OffWhite);
+.btnv6_white_transparent > span, .btnv6_lightblue_blue, .big_button{
+    border: var(--Outset) !important;
+    background: var(--GreenBG) !important;
     text-transform: none;
+    box-shadow: none;
+    border-radius: 0 !important;
     color: var(--OffWhite) !important;
+}
+
+.btnv6_white_transparent > span:hover, .btnv6_lightblue_blue:hover, .big_button:hover{
+    background: var(--GreenBG) !important;
+    border: var(--Outset) !important;
+    box-shadow: none;
+    border-radius: 0 !important;
+    color: var(--Maize) !important;
+}
+
+.btnv6_white_transparent > span:active, .btnv6_lightblue_blue:active, .big_button:active{
+    border: var(--Inset) !important;
+    background: var(--DarkGreenBG) !important;
 }
 
 .btnv6_lightblue_blue > span{
