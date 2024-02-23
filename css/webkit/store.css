@@ -280,14 +280,16 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
 .store_capsule, .store_capsule:hover,
 .carousel_container.spotlight .carousel_items > * .store_capsule, 
 .carousel_container.spotlight .carousel_items > * .store_capsule.daily_deal,
-.recently_updated .store_capsule{
+.recently_updated .store_capsule,
+.recommended_creators_ctn .store_capsule{
     box-shadow: none;
     background: var(--GreenBG);
     border: var(--Outset);
     box-sizing: border-box;
 }
 
-.spotlight_content{
+.spotlight_content, .recommended_creators_ctn .recommended_creators_container{
+    border: none;
     background: var(--GreenBG);
 }
 
@@ -306,7 +308,8 @@ body.v6 h2, .dailydeal_desc, .content_hub_carousel_ctn .title{
 
 .store_capsule .discount_block.empty::before{
     content: "Free to Play";
-    /* position: absolute; */
+    font-size: 11px;
+    line-height: 12px;
 }
 
 body.v6 .deep_dive_key_tags, .recently_updated .store_capsule .recently_updated_desc{
@@ -324,6 +327,189 @@ body.v6 .deep_dive_tag{
     border-radius: 0;
     background: var(--GreenBG);
     border: var(--Outset);
+}
+
+body.v6 .broadcast_live_stream_icon, .ds_flag.ds_owned_flag, .ds_flag.ds_wishlist_flag{
+    color: var(--Maize);
+    background: var(--GreenBG);
+    box-shadow: none;
+    border: var(--Outset);
+    border-left: 0;
+}
+
+body.v6 .broadcast_live_stream_icon::before{
+    content: "";
+    position: absolute;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAFMN540AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MkQ4QTE5MTc3M0M4MTFFODkzODlBNzdDNUZEOUI2RUMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MkQ4QTE5MTg3M0M4MTFFODkzODlBNzdDNUZEOUI2RUMiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoyRDhBMTkxNTczQzgxMUU4OTM4OUE3N0M1RkQ5QjZFQyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyRDhBMTkxNjczQzgxMUU4OTM4OUE3N0M1RkQ5QjZFQyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqixHngAAAK7SURBVHjaYvz//z8DMmABEZuio2CiX8ACf378gCngAQv8/fHjM5DiDd26jREggBjRzWDcGBUpB6Qfgjh+S5cxsgD1P0RWwRS0dh0j0AyQOWABgACCm7ElLhauFQiW+yxaHAVXsDE8DNUmKPBfuYoR7Kzf37+vAFIR2BRhOBMdAAQQXgUsMAbQgX+AFDOIDXQcI1wnUqDBAdjzIMb/P38wjAT6ZgckMLFIAoEOWPLf798YMiGbNsswQRmM///+ZUDC0QS9AhBABAMCH2BB5myOjckHUhPwqP/vu3gJE4bNm6Ii/4KSAZGWKvgtW/4QbjMwRJhIcPEtIGaHa8YR1rhAHUaArfH1+QcSI6AxMmTzlhU4Q3uVlycolc8GYkcgfgXEU8K2be9AVwcQQBRFFRMDBYAFXQCY7peB/IUmDAoLRWA+eITT2cBEQiiui4CJpB8zkURHgcoYHiJcKw/MaI8QxVdUpDyRGkHgPiw7Q3Lq378zyQlkiOZ//xzIDu1///69AVLSZMUz0ObJQMxALEbRHLx+QydaMYIPr8BMYf//RzKAog0//g8sryKxJpLV3l5+oCIRhxe/AOsZXoIZA5irKoBUDhCLAfF+IM4E5qp7VM1VAAFGkWaq5khcYEt8HKhwiYIWLlpALAqqG4H4CbRqPQDEK30WLrpPsY83x8WCIm4JqDFAooe+AHGa76LFy0myeHNMdDioYUBEGUwIgAyP9F2ydCVBi4FF0VJokFITrAAWW5E4Ld4YEV4OpDpolJ4q/Fes7MRaVwDLh1xSyhIScS7OVA2UFKFhDhLFZ/FBIOVGI4v347M4HUjdpbS6xgJAZXwG3lQNbMqACoqrJNSVxORpbWDT5xFRBchqH29Q+7GPAt+DDC4N3bK1l6yyejWkHQbKBmFEOAIUpKuAuDx02/ZHg7KSYGIYIAAAG8jIJ8edBjIAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 16px;
+    width: 16px;
+    left: 0;
+    top: 0;
+    margin: 2px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(36%) saturate(629%) hue-rotate(15deg) brightness(101%) contrast(80%);
+}
+
+.ds_flag.ds_owned_flag::before{
+    content: "";
+    position: absolute;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUNDNzBFNTUyMUM0MTFFNDk1REVFODRBNUU5RjA2MUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUNDNzBFNTYyMUM0MTFFNDk1REVFODRBNUU5RjA2MUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5Q0M3MEU1MzIxQzQxMUU0OTVERUU4NEE1RTlGMDYxRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5Q0M3MEU1NDIxQzQxMUU0OTVERUU4NEE1RTlGMDYxRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv3vUKAAAAAlSURBVHjaYvz//z8DsYARpFhISAivjnfv3jGSp3jUGeQ4AyDAADZHNe2nyOBrAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10px;
+    width: 10px;
+    left: 0;
+    top: 0;
+    margin: 5px 4px 3px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(36%) saturate(629%) hue-rotate(15deg) brightness(101%) contrast(80%);
+}
+
+.ds_flag.ds_wishlist_flag::before{
+    content: "";
+    position: absolute;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QTM3OEVDNTUyMUM0MTFFNDgxN0ZEN0MzNjYzNzcxOTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QTM3OEVDNTYyMUM0MTFFNDgxN0ZEN0MzNjYzNzcxOTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBMzc4RUM1MzIxQzQxMUU0ODE3RkQ3QzM2NjM3NzE5NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBMzc4RUM1NDIxQzQxMUU0ODE3RkQ3QzM2NjM3NzE5NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Ps9jzFQAAACPSURBVHjaYvz//z+DkJDQdQYGhpsMCMAKxMZAHPXu3bt9cFGQYkFBwQ0gGoaBfAEgzgfibUDsBxNnYsAOfgKxJBBvAeIZMEEWZBVA52xA5gOdUAEUc8NQDBTkBEoGMOAByCYLAjUsRzM5AKtioMQzIEW0ydjcHIBTMSE3M0Ij5RKQfQ6HGiOgIXogBkCAAQDGVT+0v+n6EQAAAABJRU5ErkJggg==);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 10px;
+    width: 10px;
+    left: 0;
+    top: 0;
+    margin: 5px 4px 3px;
+    filter: brightness(0) saturate(100%) invert(68%) sepia(36%) saturate(629%) hue-rotate(15deg) brightness(101%) contrast(80%);
+}
+
+/* New & Trending */
+.home_ctn.tab_container {
+    background: transparent;
+}
+
+.home_tabs_row_ctn{
+    margin-bottom: -2px;
+    overflow: visible;
+}
+
+.home_tab .tab_content{
+    border-radius: 0;
+    line-height: 29px;
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-bottom: none;
+    color: var(--OffWhite);
+    /* transform: translateY(-1px); */
+}
+
+.home_tab:not(.active) .tab_content:hover{
+    color: var(--Maize);
+    background-color: var(--GreenBG);
+}
+
+.home_tab .tab_content:active, .home_tab .tab_content:active:hover{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+.home_tab.active .tab_content{
+    transform: translateY(0);
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    color: var(--Maize);
+    border-bottom: none;
+}
+
+.tab_item_details{
+    color: var(--DimListText);
+}
+
+.tab_controls, .tab_see_more{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    margin-bottom: 5px;
+    color: var(--OffWhite);
+}
+
+.tab_item_discount{
+    justify-content: right;
+    width: min-content;
+    right: 0;
+}
+
+.tab_item{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+    transition: none;
+}
+
+.tab_item.focus{
+    background: var(--LightGreenBG);
+    margin: unset;
+    margin-bottom: 5px;
+}
+
+.tab_item.focus .discount_block .discount_final_price, .tab_item.focus .tab_item_name{
+    color: var(--Maize);
+    transition: none;
+}
+
+.tab_item_name{
+    transition: none;
+}
+
+.tab_item_cap{
+    padding: 4px 8px;
+    height: calc(100% - 8px);
+}
+
+.tab_item_cap_img{
+    height: 100%;
+    border: var(--Outset);
+    box-sizing: border-box;
+}
+
+.home_tabs_content .discount_block:not(.no_discount) .discount_prices, .tab_content_ctn .discount_block:not(.no_discount) .discount_prices{
+    background: var(--GreenBG);
+}
+
+.tab_item.focus .tab_item_details span.platform_img.win{
+    background-image: url(https://store.cloudflare.steamstatic.com/public/images/v6/icon_platform_win.png?v=3);
+}
+
+.tab_item.focus .tab_item_details span.platform_img.mac{
+    background-image: url(https://store.cloudflare.steamstatic.com/public/images/v6/icon_platform_mac.png?v=3);
+}
+
+.tab_item.focus .tab_item_details span.platform_img.linux{
+    background-image: url(https://store.cloudflare.steamstatic.com/public/images/v6/icon_platform_linux.png?v=3);
+}
+
+#tab_preview_container{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+}
+
+.tab_preview{
+    transition: none;
+}
+
+body.v6 .home_rightcol .tab_preview h2{
+    color: var(--OffWhite);
+}
+
+.game_review_summary.no_reviews, .game_review_summary.not_enough_reviews {
+    color: var(--DisabledText1);
+}
+
+.game_review_summary.positive{
+    color: var(--DimListText);
+}
+
+
+.tab_review_summary{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0;
 }
 
 /* Browse by category */
@@ -366,6 +552,20 @@ body.v6 .deep_dive_tag{
     text-shadow: none;
     color: inherit;
     font-size: 22px;
+}
+
+/* Trending Among Friends */
+.friends_recently_purchased .store_capsule {
+    background: var(--GreenBG);
+}
+
+.friends_recently_purchased .friends_container{
+    background: var(--GreenBG);
+    border: none;
+}
+
+.friends_recently_purchased .store_capsule .discount_block{
+    color: var(--OffWhite) !important;
 }
 
 /* Discovery Queue Ad */
@@ -430,6 +630,10 @@ body.v6 .discover_queue_empty>h3, .discover_queue_empty>p{
 .store_main_capsule .reason .additional > div {
     background-color: var(--BorderBright);
     border-radius: 0;
+    color: var(--OffWhite);
+}
+
+.discount_block.no_discount .discount_final_price{
     color: var(--OffWhite);
 }
 

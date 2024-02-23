@@ -7,3 +7,8 @@ body.v6, body .responsive_page_content, body.responsive_page, body.v6 .game_page
 .home_page_body_ctn{
     min-width: 100%;
 }
+
+/* Misc */
+a:hover{
+    color: var(--Maize);
+}
