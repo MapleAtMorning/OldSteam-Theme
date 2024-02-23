@@ -54,17 +54,17 @@ async function runStyling(){
     const { querySelector, matchedElements } = await waitForElement('[class*="steamdesktop_OuterFrame_"] [class*="LocalContentContainer"]', 3000)
     console.log('awaited code', querySelector, matchedElements)
     
-    const rootMenuNav = document.getElementsByClassName("steamdesktop_TitleBar_39oUC")[0]
-    const accountNewsMore = document.getElementsByClassName("steamdesktop_TitleBarControls_1-9si")[0]
+    const rootMenuNav = document.querySelector("[class*='steamdesktop_TitleBar_']")
+    const accountNewsMore = document.querySelector("[class*='steamdesktop_TitleBarControls_']")
     
-    const topBar = document.getElementsByClassName("steamdesktop_TopBar_3Z7VQ")[0]
-    const bottomBar = document.getElementsByClassName("bottombar_BottomBarContainer_1_yS5")[0]
-    const outerFrame = document.getElementsByClassName("steamdesktop_OuterFrame_3mz8w")[0]
-    const contentFrame = document.getElementsByClassName("steamdesktop_ContentFrame_1rDh5")[0]
+    const topBar = document.querySelector("[class*='steamdesktop_TopBar_']")
+    const bottomBar = document.querySelector("[class*='bottombar_BottomBarContainer_']")
+    const outerFrame = document.querySelector("[class*='steamdesktop_OuterFrame_']")
+    const contentFrame = document.querySelector("[class*='steamdesktop_ContentFrame_']")
     
-    var vrMode = document.getElementsByClassName("titlebarcontrols_VRToggle_3lRfT")[0]
+    var vrMode = document.querySelector("[class*='titlebarcontrols_VRToggle_']")
     
-    const steamLogoContainer = document.getElementsByClassName("rootmenu_SteamButton_bSKGl")[0]
+    const steamLogoContainer = document.querySelector("[class*='rootmenu_SteamButton_']")
     const newLogo = document.createElement("img")
     newLogo.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpaIVBwsVcQhSnSyIijhKFYtgobQVWnUweemP0KQhSXFxFFwLDv4sVh1cnHV1cBUEwR8QJ0cnRRcp8b6k0CLGB5f3cd47h/vuA4R6malmxzigapaRisfEbG5FDLyiB2GqYYQlZuqJ9EIGnuvrHj6+30V5lve9P1evkjcZ4BOJZ5luWMTrxNObls55nzjESpJCfE48ZlCDxI9cl11+41x0WOCZISOTmiMOEYvFNpbbmJUMlXiKOKKoGuULWZcVzluc1XKVNfvkLwzmteU016mGEMciEkhChIwqNlCGhSjtGikmUnQe8/APOv4kuWRybYCRYx4VqJAcP/gf/J6tWZiccJOCMaDzxbY/RoDALtCo2fb3sW03TgD/M3CltfyVOjDzSXqtpUWOgL5t4OK6pcl7wOUOMPCkS4bkSH4qoVAA3s/om3JA/y3QverOrXmO0wcgQ7NaugEODoHRImWveby7q31u/95pzu8HiVBysCZNXyYAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfkCxcLIiaC9YE/AAABgElEQVQ4y41Tv0sCYRh+9NoMp2ioqSWxhpb+gYKCnEToCOGCtkNojUYnJRSHPOqWc+imCIIgFDzQORXUUgxFHKKhwR/gXWNvi9/hjzv1gY/v5f3xvN/7fN/HAUAw5Oc+ip8EGwgi79nb3107C55ebWytf72X6l0zGAz5OcxBJBG+aTTrNI5Gs04BwefGIggi72XFAcHnZouRLEXAirO5NBERZXNpYn4AcM4j8G7vnDP76ODE3A1D/zZ+dSiqrDmndRi3xYvL65Hp0PIZAICWz8DlWt0c+VdsxXx+ffphohXLbxMa3KduX9gIiCTCUbvZp6EbQ9KNIRERxZKRJACABRRV1hRV1qq1splkRcBENLtZJQoi76nWyhM+RZU1y3dDNhBE3tvrd6ndaZEg8h5WPEPA7teKwBRqDpzHhz5HXIpK/UEPcSkqlSoFlCoFAPjrD3oTN2T77IMhPxdLRu5YZ3Z8RZXzdvmWzofHVLHdaVG70yJFlfNM7UUfboZ56QIA//3tbq2ow2VbAAAAAElFTkSuQmCC"
     
@@ -80,7 +80,7 @@ async function runStyling(){
     steamLogoContainer.insertBefore(newLogo, steamLogoContainer.firstChild)
     
     // Move the VR & Bigpicture buttons from the right of the account button to the left
-    const bigPicture = document.getElementsByClassName("titlebarcontrols_GamepadUIToggle_3LKQ3")[0].parentNode
+    const bigPicture = document.querySelector("[class*='titlebarcontrols_GamepadUIToggle_']").parentNode
     accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
     if (vrMode != undefined){
         vrMode = vrMode.parentNode

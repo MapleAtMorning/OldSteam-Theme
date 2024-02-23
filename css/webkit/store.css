@@ -310,6 +310,7 @@ body.v6 h2, .dailydeal_desc, .content_hub_carousel_ctn .title{
     content: "Free to Play";
     font-size: 11px;
     line-height: 12px;
+    color: var(--OffWhite);
 }
 
 body.v6 .deep_dive_key_tags, .recently_updated .store_capsule .recently_updated_desc{

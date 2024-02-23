@@ -1,6 +1,6 @@
 [class^="bottombar_BottomBar"]{
     background: transparent;
-    box-shadow: none;
+    box-shadow: none !important;
     padding: 0;
 }
 
