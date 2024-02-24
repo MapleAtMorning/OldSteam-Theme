@@ -24,7 +24,6 @@
 ## Todo:
 - Group Chats
 - Game overlay
-- Store page
 
 ## Possible Todo:
 - Community pages / rest of webkit

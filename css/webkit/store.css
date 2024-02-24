@@ -295,7 +295,7 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
 
 body.v6 h2, .dailydeal_desc, .content_hub_carousel_ctn .title{
     color: var(--OffWhite);
-    text-transform: none;
+    text-transform: capitalize;
 }
 
 .spotlight_body, .recently_updated .store_capsule .recently_updated_announcement_link{
@@ -380,6 +380,112 @@ body.v6 .broadcast_live_stream_icon::before{
     filter: brightness(0) saturate(100%) invert(68%) sepia(36%) saturate(629%) hue-rotate(15deg) brightness(101%) contrast(80%);
 }
 
+#live_streams_carousel .carousel_items .store_capsule{
+    background: var(--GreenBG);
+}
+
+.home_marketing_message, .home_marketing_message:hover{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+}
+
+.home_page_content .more_content_title, .home_page_content .more_content_desc{
+    color: var(--OffWhite);
+}
+
+/* "Dark BG" / Due to your playtime... */
+
+body.v6 .page_content_ctn.dark{
+    background: var(--DarkGreenBG);
+}
+
+body.v6 h2 a, body.v6 h2 a:hover {
+    color: var(--Maize);
+    font-size: 20px;
+}
+
+.home_content.twowide a.home_content_item, .home_content.fourwide a.home_content_item{
+    padding: 4px;
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+}
+
+.home_content.twowide a.home_content_item{
+    padding: 6px;
+}
+
+.home_content.twowide a.home_content_item .broadcast_live_stream_icon{
+    margin: 4px 0 0 4px;
+}
+
+body.v6 h2 .header_inline{
+    color: var(--DisabledText1);
+}
+
+/* Hot Single Games In Your Area */
+.home_page_content.gp_contiguous_singles > div{
+    border: var(--Outset);
+    background: var(--GreenBG);
+    box-sizing: border-box;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.home_content.single{
+    background: transparent;
+    margin: 0;
+}
+
+.home_content.single .gamelink{
+    width: 100%;
+}
+
+.home_content.single a.screenshot {
+    width: 204px;
+    background: transparent;
+    margin-top: 10.5px;
+}
+
+.home_content.single .capsule{
+    box-shadow: none;
+}
+
+.home_content.single a.screenshot:hover img{
+    transform: scale(1);
+    box-shadow: none;
+    z-index: 9;
+}
+
+.home_content.single_buttonbar{
+    background: transparent;
+    margin: 0;
+    padding: 0 0 0 17px;
+    justify-content: left;
+}
+
+.btnv6_blue_hoverfade{
+    color: var(--OffWhite) !important;    
+    background: var(--GreenBG);
+    border-radius: 0;
+    outline: var(--Outset);
+}
+
+.btnv6_blue_hoverfade:hover{
+    background: var(--GreenBG) !important;
+    outline: var(--Outset);
+}
+
+.btnv6_blue_hoverfade:hover span{
+    color: var(--Maize) !important;
+}
+
+.btnv6_blue_hoverfade:active{
+    background: var(--DarkGreenBG) !important;
+    outline: var(--Inset);
+}
+
 /* New & Trending */
 .home_ctn.tab_container {
     background: transparent;
@@ -397,7 +503,6 @@ body.v6 .broadcast_live_stream_icon::before{
     border: var(--Outset);
     border-bottom: none;
     color: var(--OffWhite);
-    /* transform: translateY(-1px); */
 }
 
 .home_tab:not(.active) .tab_content:hover{
@@ -638,6 +743,14 @@ body.v6 .discover_queue_empty>h3, .discover_queue_empty>p{
     color: var(--OffWhite);
 }
 
+.home_marketing_message.small .discount_block_large .discount_prices{
+    height: 28px;
+}
+
+.discount_block_large .discount_prices{
+    height: 34px;
+}
+
 /* Misc Buttons */
 .btnv6_white_transparent > span, .btnv6_lightblue_blue, .big_button{
     border: var(--Outset) !important;
@@ -688,4 +801,21 @@ a.gutter_item:hover{
 
 #home_gutter_recentlyviewed{
     background: transparent;
+}
+
+/* Footer ============================================================================================================================================================ */
+body.v6 #footer{
+    background: var(--DarkGreenBG);
+}
+
+body.v6 #footer .rule{
+    display: none;    
+}
+
+body.v6 #footer #footer_text {
+    color: var(--OffWhite);
+}
+
+body.v6 #footer #footer_logo img, body.v6 #footer #footer_logo_steam img{
+    filter: brightness(0) saturate(100%) invert(93%) sepia(10%) saturate(157%) hue-rotate(50deg) brightness(95%) contrast(91%);
 }
