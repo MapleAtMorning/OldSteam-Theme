@@ -166,7 +166,7 @@
     stroke: var(--OffWhite) !important;
 }
 
-/* Friends */
+/* Friends =================================================================*/
 
 ::-webkit-scrollbar-thumb{
     background-color: var(--GreenBG) !important;
@@ -243,7 +243,7 @@
     background: transparent;
 }
 
-/* Friends Categories Creation */
+/* Friends Categories Creation =================================================================*/
 
 .FriendPicker_ChosenFriend{
     border: var(--Outset);
@@ -268,7 +268,7 @@
     background: transparent;
 }
 
-/* Group chats */
+/* Group chats =================================================================*/
 .friendsListSectionTitle, .friendsListSectionTitle.chatSectionTitle:hover, .friendListFooter {
     background: var(--GreenBG);
     box-shadow: none;
@@ -301,7 +301,7 @@
     color: var(--Maize);
 }
 
-/* Right click popup */
+/* Right click popup =================================================================*/
 [class*="contextmenu_contextMenu_"]{
     color: var(--OffWhite) !important;
     background: var(--GreenBG) !important;

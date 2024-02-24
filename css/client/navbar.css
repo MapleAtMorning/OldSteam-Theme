@@ -143,14 +143,15 @@
     border: none;
 }
 
-[class*="steamdesktop_BrowserWrapper"], [class*="steamdesktop_BrowserWrapper"] [class*="steamdesktop_URLBar"]{
+[class*="steamdesktop_BrowserWrapper"] [class*="steamdesktop_URLBar_"]{
     background: var(--GreenBG);
     box-shadow: none;
     color: var(--Label);
+    border-bottom: var(--Outset);
 }
 
 [class*="steamdesktop_BrowserWrapper"] [class*="steamdesktop_URLBar"] [class*="steamdesktop_StatusIcon"], [class*="steamdesktop_BrowserWrapper"] [class*="steamdesktop_URLBar"] [class*="steamdesktop_URLBarText"] [class*="steamdesktop_URL"]{
-    color: inherit;
+    color: inherit !important;
     transition: none;
 }
 
@@ -163,7 +164,7 @@
     color: var(--Maize) !important;
 }
 
-/* Notifications Box */
+/* Notifications Mailbox =================================================================*/
 
 [class*="titlebarcontrols_NotificationsMenu_"]{
     background: transparent;
@@ -225,4 +226,11 @@
 
 [class*="titlebarcontrols_NotificationsMenu"] [class*="standardtemplates_StandardTemplateDesktop"] [class*="standardtemplates_Header"] > div{
     color: inherit !important;
+}
+
+/* Browser container =================================================================*/
+
+[class*="steamdesktop_BrowserWrapper"] [class*="steamdesktop_Browser"]{
+    background: var(--DarkGreenBG);
+    outline: 1px inset var(--BorderBright);
 }

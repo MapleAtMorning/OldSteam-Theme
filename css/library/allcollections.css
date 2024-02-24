@@ -65,7 +65,7 @@
     display: none;
 }
 
-/* New Collection Popup */
+/* New Collection Popup =================================================================*/
 [class*="savecollectiondialog_TwoOptionsContainer"]{
     background: var(--DarkGreenBG);
     border: var(--Inset);
@@ -85,7 +85,7 @@
     color: var(--DisabledText1);
 }
 
-/* Drag Drop */
+/* Drag Drop =================================================================*/
 [class*="allcollections_Collection"][class*="allcollections_DropOption"]:not([class*="library_NewCollectionTarget"]){
     outline: 3px solid var(--Maize);
     outline-offset: -5px;

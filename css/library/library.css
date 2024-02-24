@@ -540,15 +540,6 @@
     radial-gradient(circle, transparent 20%, var(--Maize) 20%, transparent 30%);
 }
 
-[class*="appactivityday_ReviewIconThumbsUpColor"], [class*="appdetailsreviewsection_ReviewIconThumbsUpColor"], [class*="appactivityday_ReviewIconThumbsDownColor"], [class*="appdetailsreviewsection_ReviewIconThumbsDownColor"]{
-    fill: var(--Maize);
-}
-
-[class*="appactivityday_ReviewIconThumbsUp"], [class*="appdetailsreviewsection_ReviewIconThumbsUp"], [class*="appactivityday_ReviewIconThumbsDown"], [class*="appdetailsreviewsection_ReviewIconThumbsDown"]{
-    background: var(--LightGreenBG);
-    border: var(--Outset);
-    border-radius: 0%;
-}
 
 [class*="appdetailssection_Body_"] button[class*="appdetailsbutton_AppDetailsButton"]:active{
     background-color: var(--DarkGreenBG);
@@ -593,6 +584,32 @@
     transition: none;
 }
 
+/* Your Review =====================================================================*/
+
+[class*="appactivityday_ReviewIconThumbsUpColor"], [class*="appdetailsreviewsection_ReviewIconThumbsUpColor"], [class*="appactivityday_ReviewIconThumbsDownColor"], [class*="appdetailsreviewsection_ReviewIconThumbsDownColor"]{
+    fill: var(--Maize);
+}
+
+[class*="appactivityday_ReviewIconThumbsUp"], [class*="appdetailsreviewsection_ReviewIconThumbsUp"], [class*="appactivityday_ReviewIconThumbsDown"], [class*="appdetailsreviewsection_ReviewIconThumbsDown"]{
+    background: var(--LightGreenBG);
+    border: var(--Outset);
+    border-radius: 0%;
+}
+
+[class*="appdetailssection_AppDetailsSection_"] [class*="appdetailssection_AppDetailsSectionContainer_"] [class*="awardicon_IconList"]{
+    flex-wrap: wrap;
+}
+
+[class*="appdetailssection_AppDetailsSection_"] [class*="appdetailssection_AppDetailsSectionContainer_"] [class*="awardicon_IconContainer"], [class*="appdetailssection_AppDetailsSection_"] [class*="appdetailssection_AppDetailsSectionContainer_"] [class*="awardicon_IconContainer"]:hover{
+    border-radius: 0%;
+    border: var(--Outset);
+    background: var(--GreenBG);
+    margin: 0 2px 4px;
+}
+
+[class*="appdetailssection_AppDetailsSection_"] [class*="appdetailssection_AppDetailsSectionContainer_"] [class*="awardicon_ReactionCount"]{
+    color: var(--OffWhite);
+}
 
 /* Workshop =====================================================================*/
 [class*="appdetailsworkshopsection_WorkshopContainer"]{

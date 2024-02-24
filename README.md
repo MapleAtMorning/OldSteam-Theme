@@ -24,13 +24,9 @@
 ## Todo:
 - Group Chats
 - Game overlay
-- Screenshot manager (1/2)
-- Game Servers (lol)
-- Awards on your review
 
 ## Possible Todo:
-- Store page
-- Community pages
+- Community pages / rest of webkit
 
 ## Won't do:
 - Profile pages

@@ -158,9 +158,6 @@
     margin: 2.5% 0;
     border: var(--Outset);
 }
-/* TODO: Please fix. */
-/* Fucking. Scuffed. */
-/* I've changed my mind. if it works it works. Should probably still fix it eventually if I find that it breaks. */
 
 [class*="downloads_SectionItem"] [class*="downloads_Name"]{
     color: var(--OffWhite);

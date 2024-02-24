@@ -1,0 +1,145 @@
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"]{
+    border: var(--Outset);
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList_"]{
+    border: none;
+    background: var(--DarkGreenBG);
+    box-shadow: none;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_ServerListHeaderCtr"]{
+    background: transparent;
+    padding: 0;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_ServerListHeaderRow"]{
+    gap: 0;
+}
+
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_ServerListHeaderCtr"] > span > div{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    padding: 2px 4px;
+    min-width: fit-content !important;
+    min-height: 100% !important;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_ServerListHeaderCtr"] > span div{
+    text-transform: none !important;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_ServerListHeaderCtr"] > span div:hover{
+    color: var(--Maize) !important;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [role="rowgroup"]{
+    border: var(--Inset);
+    border-top: 0;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_ColumnResizer"] {
+    background: transparent;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_RadioButtonColumn"]{
+    display: none;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_ColumnResizer"] span{
+    border-left: none;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_SelectColumnsButton"]{
+    transition: none;
+    background: var(--GreenBG);
+    color: var(--OffWhite);
+    border: var(--Outset);
+    margin: 0;
+    height: 26px;
+}
+
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_SelectColumnsButton"]:hover{
+    background: var(--GreenBG);
+    color: var(--Maize);
+    border: var(--Outset);
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_SelectColumnsButton"]:active{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_ServerRow"]:hover, [class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_ServerList"] [class*="serverbrowserdialog_SelectedRow"]{
+    background: transparent;
+    color: var(--Maize);
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_BottomControlsRow"] [class*="serverbrowserdialog_ToggleShowFilterDetailsButton"][class*="serverbrowserdialog_Selected"]{
+    border: var(--Inset) !important;
+    background: var(--DarkGreenBG) !important;
+    color: var(--Maize);
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_FilterOptionsCtr"]{
+    transition: none;
+    padding: 0px 8px 16px;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_ServerTabPane"] [class*="serverbrowserdialog_BottomControlsRow"]{
+    padding: 0px 8px 4px;
+}
+
+/* Tabs */
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_DialogBody"] [class*="serverbrowserdialog_TopControlsCtr"]{
+    gap: 0;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] button.DialogButton svg{
+    color: inherit;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_TopControlsCtr"] button.DialogButton[class*="Search"]{
+    margin: 0;
+    width: 44px;
+    justify-content: center;
+    padding: 0;
+}
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_TopControlsCtr"] button.DialogButton{
+    margin: 10px 0 0 0;
+    border-bottom: none !important;
+}
+
+[class*="serverbrowserdialog_ServerBrowserDialog"] [class*="serverbrowserdialog_TopControlsCtr"] button.DialogButton[class*="Selected"]{
+    color: var(--Maize) !important;
+    margin-top: 5px;
+    position: relative;
+    transform: translateY(1px);
+}
+/* .DialogRoundCheckboxField{
+    border-radius: 0;
+}
+
+.DialogRoundCheckboxField_Control{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0;
+}
+
+.DialogRoundCheckboxField_OuterCircle, .DialogRoundCheckboxField_Container:hover .DialogRoundCheckboxField_OuterCircle{
+    background: transparent;
+    box-shadow: none;
+    transition: none;
+}
+
+.DialogRoundCheckboxField_Control.Active .DialogRoundCheckboxField_InnerCircle{
+    box-shadow: none;
+}
+
+.DialogRoundCheckboxField_Control .DialogRoundCheckboxField_InnerCircle{
+    transition: none;
+    background: var(--Maize);
+    border-radius: 0;
+} */

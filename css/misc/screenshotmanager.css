@@ -26,7 +26,7 @@
     border: var(--Inset);
 }
 
-[class*="mediamanagerutils_Skeleton"]{
+[class*="mediamanagerutils_Skeleton"], [class*="mediamanagerutils_CaptionField"] {
     animation: none;
     background-color: var(--DarkGreenBG);
     border: var(--Inset);
@@ -49,4 +49,27 @@
 
 [class*="mediamanagerutils_IconButton"] [class*="mediamanagerutils_IconButtonIcon"][class*="Active"]{
     color: var(--Maize);
+}
+
+[class*="mediamanagerutils_Metadata"], [class*="mediamanagerutils_CloudStorageImpact"]{
+    color: var(--Label);
+}
+
+[class*="mediamanagerutils_ButtonBox"][class*="mediamanagerutils_Primary"]{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0;
+    transition: none;
+    color: var(--OffWhite);
+}
+
+[class*="mediamanagerutils_ButtonBox"][class*="mediamanagerutils_Primary"]:hover{
+    background-color: var(--GreenBG);
+    color: var(--Maize);
+}
+
+[class*="mediamanagerutils_ButtonBox"][class*="mediamanagerutils_Primary"]:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+    transition: none;
 }

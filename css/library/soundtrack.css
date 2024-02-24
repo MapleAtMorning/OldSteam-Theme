@@ -57,7 +57,7 @@
     color: var(--Label);
 }
 
-/* Play section */
+/* Play section =================================================================*/
 [class*="appdetailssoundtrack_DesktopControls"]{
     background: transparent;
     border: none;

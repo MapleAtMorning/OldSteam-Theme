@@ -7,6 +7,7 @@
     background-color: var(--GreenBG) !important;
     border: var(--Outset);
     border-radius: 0%;
+    transition: none;
 }
 
 
@@ -49,7 +50,7 @@
     background-color: var(--DarkGreenBG);
     border: 1px solid var(--GreenBG);
     border-radius: 0%;
-    text-transform: none ;
+    text-transform: none;
 }
 
 [class^="gamelistdropdown_Bar_"] [class^="gamelistdropdown_Menu"]:hover{
@@ -224,6 +225,12 @@
 [class*="gamelistentry_FriendIsPlaying"] svg path, [class*="gamelistentry_FriendIsPlaying"] svg circle{
     fill: var(--Maize);
 }
+
+[class*="gamelistentry_Container_"][class*="gamelistentry_Uninstalled"]{
+    color: var(--DisabledText1);
+}
+
+
 /* Right Click Menu */
 .DesktopUI [class*="library_ContextMenuAction"]{
     background: var(--LightGreenBG) !important;
