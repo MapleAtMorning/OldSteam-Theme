@@ -536,7 +536,8 @@ body.v6 h2 .header_inline{
 
 .tab_item_discount{
     justify-content: right;
-    width: min-content;
+    position: absolute;
+    width: fit-content !important;
     right: 0;
 }
 
@@ -707,6 +708,7 @@ body.v6 .discover_queue_empty>h3, .discover_queue_empty>p{
     background-color: var(--GreenBG);
     border: var(--Outset);
     border-left: none;
+    padding-right: 4px;
 }
 
 .discount_block.no_discount .discount_prices{
