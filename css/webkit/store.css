@@ -609,7 +609,7 @@ body.v6 .home_rightcol .tab_preview h2{
 }
 
 .game_review_summary.positive{
-    color: var(--DimListText);
+    color: #66ab52;
 }
 
 
@@ -702,6 +702,41 @@ body.v6 .discover_queue_empty>h3, .discover_queue_empty>p{
     display: none;
 }
 
+/* Game Hover */
+[class*="hover_arrow_"]{
+    display: none !important;
+}
+
+.game_hover_box{
+    background: var(--GreenBG);
+    color: var(--OffWhite);
+    box-shadow: none;
+    border: var(--Outset);
+    box-sizing: border-box;
+}
+
+.hover_body .hover_review_summary{
+    border: var(--Inset);
+    box-shadow: none;
+    background: var(--DarkGreenBG);
+}
+
+.hover_title{
+    color: var(--OffWhite) !important;
+}
+
+.hover_tag_row{
+    height: 21px;
+}
+
+.hover_tag_row .app_tag{
+    color: var(--OffWhite);
+    background: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
 
 /* Discount Block */
 .discount_block .discount_prices, .store_capsule .discount_block.daily_deal_discount > .discount_prices, .store_capsule .discount_block > .discount_prices{
@@ -781,6 +816,10 @@ body.v6 .discover_queue_empty>h3, .discover_queue_empty>p{
     color: inherit;
 }
 
+/* Random Game */
+.home_page_content .more_content, .home_page_content .more_content a{
+    color: var(--Maize);
+}
 
 
 /* Side Gutter / Side Content =======================================================================================================================================*/

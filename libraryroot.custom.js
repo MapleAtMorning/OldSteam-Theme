@@ -48,7 +48,7 @@ export function waitForElement(querySelector, timeout) {
     })
 }
 
-// TY Shadow from Millennium
+// TY Shadow from Millennium & lazarFlashes for the code above 
 
 async function runStyling(){
     const { querySelector, matchedElements } = await waitForElement('[class*="steamdesktop_OuterFrame_"] [class*="LocalContentContainer"]', 3000)
