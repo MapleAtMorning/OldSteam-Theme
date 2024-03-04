@@ -30,3 +30,14 @@
 
 ## Won't do:
 - Profile pages
+
+<details align="center" open>
+  <summary style="font-size: 24px">Credits</summary>
+
+    MapleAtMorning - Main Development
+    OGSteam - Original Inspiration
+    Shadow - Millennium Integration Help
+    LazarFlashes - Await Element JS
+
+  <p>Please tell me if any credits are msising!</p>
+</details>

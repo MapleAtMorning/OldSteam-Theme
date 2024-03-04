@@ -41,9 +41,18 @@
 }
 
 /* Main Game Page ============================================================================================================ */
+.blockbg, .blockbg a{
+    color: var(--Label);
+}
+
+.blockbg a:hover{
+    color: var(--OffWhite);
+}
+
 #game_highlights{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
 }
 
 #game_highlights, .game_background_glow{
@@ -68,6 +77,10 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+}
+
+.glance_ctn > *:not(:first-child){
+    padding-left: 4px;
 }
 
 img.game_header_image_full{
@@ -168,6 +181,233 @@ img.game_header_image_full{
     border: var(--Outset);
     box-sizing: border-box;
     border-radius: 0;
-    height: 17px;
-    
+    height: 17px;   
+}
+
+/* Video Controls */
+
+.html5_video_overlay .play_button{
+    cursor: pointer;
+    border-width: 1px 1px 0 0;
+    box-sizing: border-box;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1px 0 0;
+    height: 21px;
+    width: 21px;
+}
+
+.html5_video_overlay .play_button.play{
+    background-color: var(--DarkGreenBG);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+PHBhdGggZD0iTTI0IDIyaC0yNGwxMi0yMHoiLz48L3N2Zz4=);
+    transform: rotate(90deg);
+    border: var(--Inset);
+}
+
+.html5_video_overlay .play_button.pause{
+    background-color: var(--GreenBG);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJ3aGl0ZSI+PHBhdGggZD0iTTExIDIyaC00di0yMGg0djIwem05LTIwaC00djIwaDR2LTIweiIvPjwvc3ZnPg==);
+    border: var(--Outset);
+}
+
+.html5_video_overlay .volume_icon{
+    cursor: pointer;
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGNsYXNzPSJzdDYiIGQ9Ik01NDUuOCAyOTQuN0wzNjMuNyA0MzEuNWMtMS4yLjktMiAyLjEtMi43IDMuM0gyNTZ2MTU0LjVoMTA1Yy43IDEuMiAxLjYgMi40IDIuNyAzLjNsMTgyLjEgMTM2LjdjNy4yIDUuNCAxNy41LjMgMTcuNS04LjdWMzAzLjVjMC05LTEwLjMtMTQuMi0xNy41LTguOHpNNjY4IDY5MS43Yy04LjggMC0xNy40LTQuNS0yMi4yLTEyLjctNy4xLTEyLjItMy0yNy45IDkuMi0zNSAyLjQtMS40IDYxLjctMzguNCA2MS43LTEzMiAwLTk1LTYxLjEtMTMxLjYtNjEuNy0xMzItMTIuMi03LjEtMTYuMy0yMi44LTkuMi0zNSA3LjEtMTIuMiAyMi44LTE2LjMgMzUtOS4yIDMuNyAyIDg3LjIgNTIuMiA4Ny4yIDE3Ni4ycy04My41IDE3NC4yLTg3LjEgMTc2LjJjLTQuMSAyLjQtOC41IDMuNS0xMi45IDMuNXoiLz4KPHBhdGggY2xhc3M9InN0NiIgZD0iTTYxMy4yIDYyMS4yYy04LjggMC0xNy40LTQuNS0yMi4xLTEyLjctNy4xLTEyLjItMy0yNy45IDkuMi0zNSAuNy0uNCAyNC42LTE2IDI0LjYtNTUuMXMtMjMuOS01NC43LTI1LTU1LjRjLTExLjgtNy40LTE1LjctMjMuMS04LjQtMzUgNy4yLTEyIDIyLjUtMTYgMzQuNi05IDIgMS4yIDUwIDI5LjkgNTAgOTkuNHMtNDggOTguMi01MCA5OS40Yy00LjEgMi4zLTguNSAzLjQtMTIuOSAzLjR6Ii8+Cjwvc3ZnPg==);
+}
+
+.html5_video_overlay .volume_icon.muted{
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjZmZmZmZmIiB3aWR0aD0iODAwcHgiIGhlaWdodD0iODAwcHgiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTU0Mi44NiAyOTQuNEwzNjIuMyA0MzBhMTAuNzIgMTAuNzIgMCAwIDAtMi43MSAzLjI1SDI1NS41M3YxNTMuMmgxMDQuMDZhMTAuNTggMTAuNTggMCAwIDAgMi43MSAzLjI1bDE4MC41NiAxMzUuNTJhMTAuODMgMTAuODMgMCAwIDAgMTcuMzQtOC42NnYtNDEzLjVhMTAuODMgMTAuODMgMCAwIDAtMTcuMzQtOC42NnpNNzQyLjYgNTk5LjQxTDc2NSA1NzdsLTY3LjItNjcuMiA2Ny4yLTY3LjItMjIuNC0yMi40LTY3LjIgNjcuMi02Ny4yLTY3LjItMjIuNCAyMi40IDY3LjIgNjcuMi02Ny4yIDY3LjIgMjIuNCAyMi40IDY3LjItNjcuMiA2Ny4yIDY3LjJ6Ii8+PC9zdmc+);
+}
+
+.html5_video_overlay .volume_slider{
+    background: transparent;
+    position: relative;
+}
+
+.html5_video_overlay .volume_slider::before{
+    content: "";
+    width: 80px;
+    height: 5px;
+    position: absolute;
+    border: var(--Inset);
+    background-color: var(--DarkGreenBG);
+    top: 50%;
+    transform: translateY(-40%);
+}
+
+.html5_video_overlay .volume_slider .volume_handle{
+    background: var(--OffWhite);
+    height: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.html5_video_overlay .autoplay_checkbox{
+    height: 19px;
+    width: 19px;
+    margin: 0 4px 0 15px;
+    background-color: var(--GreenBG);
+    background-size: contain;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV/TSkUqBe0g4pChOtlFRRxLFYtgobQVWnUwufQLmjQkKS6OgmvBwY/FqoOLs64OroIg+AHi7OCk6CIl/i8ptIjx4Lgf7+497t4BQqvGVDMQB1TNMjLJhJgvrIrBV/gRQBgihiRm6qnsYg6e4+sePr7exXiW97k/x6BSNBngE4njTDcs4g3i2U1L57xPHGEVSSE+J5406ILEj1yXXX7jXHZY4JkRI5eZJ44Qi+UelnuYVQyVeIY4qqga5Qt5lxXOW5zVWoN17slfGCpqK1mu0xxDEktIIU0dyWigihosxGjVSDGRof2Eh3/U8afJJZOrCkaOBdShQnL84H/wu1uzND3lJoUSQN+LbX+MA8FdoN207e9j226fAP5n4Err+ustYO6T9GZXix4B4W3g4rqryXvA5Q4w8qRLhuRIfppCqQS8n9E3FYDhW2Bgze2ts4/TByBHXS3fAAeHwESZstc93t3f29u/Zzr9/QBxkHKmIgHJ5AAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gDBA8nIBT2C1gAAABaSURBVDjLY2AY0YARmVOQEZ/JwMAwjQxzsibMWDgdxmFBk5yGroAQQHLIdFwK/pPjXXR9TLQI01FDRw0dNRQtLzOQmPdRAHqBksXAwDCtICOe1JIqi2EUwAAAwMkWMIiZzjgAAAAASUVORK5CYII=);
+}
+
+.html5_video_overlay .autoplay_checkbox:hover{
+    border: none;
+    cursor: pointer;
+    margin: 0 4px 0 15px;
+}
+
+.html5_video_overlay .autoplay_checkbox.checked{
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV/TSkUqBe0g4pChOtlFRRxLFYtgobQVWnUwufQLmjQkKS6OgmvBwY/FqoOLs64OroIg+AHi7OCk6CIl/i8ptIjx4Lgf7+497t4BQqvGVDMQB1TNMjLJhJgvrIrBV/gRQBgihiRm6qnsYg6e4+sePr7exXiW97k/x6BSNBngE4njTDcs4g3i2U1L57xPHGEVSSE+J5406ILEj1yXXX7jXHZY4JkRI5eZJ44Qi+UelnuYVQyVeIY4qqga5Qt5lxXOW5zVWoN17slfGCpqK1mu0xxDEktIIU0dyWigihosxGjVSDGRof2Eh3/U8afJJZOrCkaOBdShQnL84H/wu1uzND3lJoUSQN+LbX+MA8FdoN207e9j226fAP5n4Err+ustYO6T9GZXix4B4W3g4rqryXvA5Q4w8qRLhuRIfppCqQS8n9E3FYDhW2Bgze2ts4/TByBHXS3fAAeHwESZstc93t3f29u/Zzr9/QBxkHKmIgHJ5AAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gDBA8pLxrKO0cAAAEuSURBVDjL7ZSxdYMwEIaFpPdAomIFVsAjwApu3Tqu3GWGdKlw2rReAUYwK7ACFZJ4TyelQXmEZ2FMyuS6k07f3f2SDqE/bcHUOR8PLwihcgPn9P7xeXEOnW2W84BHNink4guwW9qdn8O/0W4Yhtd765ugxpik7/tKa52vhmqtc6115gNKKSsAyH1JvZVKKas5GABSIcQNALKlTrxQa22ilLoCQOqAUsrKGJO6mDAM357W1BiTKqWuWutcCHFzwCAIOs55QSmtV0MppTUhpBkrzIQQlbU2cUDGmBe4WCljrHDg72CMW875jlLabNIUY9xFUbTHGLcOOCZqHz25RU0JIW0URXtCSM05360B3oWOf3mqbxPHcYEx7hb+/s87mU8bhFB5Ph6enVQn9G/OvgCMcoYwTsJ1lAAAAABJRU5ErkJggg==);
+}
+
+.html5_video_overlay .fullscreen_button, .html5_video_overlay .fullscreen_button:hover{
+    cursor: pointer;
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    box-sizing: border-box;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 40% 50%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAABhGlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw0AcxV/TiqIVBTuIOGSoThZBRRxLFYtgobQVWnUwufQLmjQkKS6OgmvBwY/FqoOLs64OroIg+AHi7OCk6CIl/i8ptIjx4Lgf7+497t4BQqPCVDMQBVTNMlLxmJjNrYrdr/AjgEH0YVJipp5IL2bgOb7u4ePrXYRneZ/7c/QreZMBPpE4ynTDIt4gnt20dM77xCFWkhTic+IJgy5I/Mh12eU3zkWHBZ4ZMjKpeeIQsVjsYLmDWclQiWeIw4qqUb6QdVnhvMVZrdRY6578hcG8tpLmOs1RxLGEBJIQIaOGMiqwEKFVI8VEivZjHv4Rx58kl0yuMhg5FlCFCsnxg//B727NwvSUmxSMAV0vtv0xBnTvAs26bX8f23bzBPA/A1da219tAHOfpNfbWvgIGNgGLq7bmrwHXO4Aw0+6ZEiO5KcpFArA+xl9Uw4YugV619zeWvs4fQAy1NXyDXBwCIwXKXvd4909nb39e6bV3w+Hz3Kv0JOoQQAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gDBBAPBRXVlfgAAAAuSURBVCjPY2AYkoARxtiwbt1/YjQEBAXB9TBRxQnE2IyuhiKbR6JmFlJDfBgAAM1qDTNiD4xZAAAAAElFTkSuQmCC);
+}
+
+.html5_video_overlay .control_container{
+    margin: 1px 0 0 21px;
+    box-sizing: border-box;
+    background: var(--GreenBG);
+    border: var(--Outset);
+    height: 21px;
+}
+
+.html5_video_overlay .progress_bar_container{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.html5_video_overlay .progress_bar_background{
+    background-color: #91863c28;
+}
+
+.html5_video_overlay .progress_bar{
+    background-color: var(--Maize);
+}
+
+.html5_video_overlay .progress_bar_wrapper{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+    box-sizing: border-box;
+}
+
+/* Now Broadcasting */
+[data-featuretarget*="broadcast-embed"]{
+    position: absolute;
+    top: 560px;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.broadcast_embed_top_ctn_trgt, .broadcast_right_panel_simple{
+    transition: 1ms all linear !important; /* Transition None doesn't work for some reason, it breaks something with the steam JS that waits for the animation to finish*/
+}
+
+.game_background_glow:has([data-featuretarget*="broadcast-embed"]) ~ .queue_overflow_ctn{
+    margin-bottom: 80px;    
+}
+
+.game_background_glow:has([data-featuretarget*="broadcast-embed"] .broadcast_right_panel_simple) ~ .queue_overflow_ctn{
+    margin-bottom: 460px;
+}
+
+/* Wishlist Bar */
+#queueCtn{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    color: var(--OffWhite);
+    box-sizing: border-box;
+}
+
+.queue_ctn .queue_reason_description{
+    color: var(--DisabledText1);
+}
+
+.queue_ctn .queue_reason_description a{
+    color: var(--Label);
+}
+
+.queue_ctn .queue_reason_description a:hover{
+    color: var(--OffWhite);
+}
+
+.queue_ctn .ico16.arrow_next{
+    display: none;
+}
+
+.queue_ctn span:has(.ico16.arrow_next){
+    position: absolute;
+    color: transparent;
+}
+
+.queue_ctn .queue_actions_ctn .btn_medium:has(.ico16.arrow_next){
+    height: 34px;
+    width: 150px;
+}
+
+.queue_ctn span:has(.ico16.arrow_next)::before{
+    color: var(--OffWhite);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "View Your Queue";
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.queue_btn_menu > .queue_menu_arrow {
+    color: var(--OffWhite) !important;
+    background: var(--GreenBG) !important;
+    border: var(--Outset);
+    box-sizing: border-box;
+}
+
+.queue_btn_menu > .queue_menu_arrow img, .btnv6_blue_hoverfade.queue_btn_active img {
+    filter: grayscale(1) brightness(80)
+}
+
+.btnv6_blue_hoverfade.queue_btn_active{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+.queue_menu_flyout{
+    box-shadow: none;
+    color: var(--OffWhite);
+    z-index: 1000;
+}
+
+.queue_btn_menu:hover .queue_menu_flyout, .queue_menu_flyout:hover{
+    background: var(--GreenBG);
+    border: var(--Outset);
+}
+
+.queue_menu_option:hover{
+    background: transparent;
+}
+
+.queue_menu_option_label > .option_subtitle, .queue_menu_option:hover .queue_menu_option_label > .option_subtitle{
+    color: var(--Label);
 }

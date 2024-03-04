@@ -400,7 +400,7 @@ body.v6 .page_content_ctn.dark{
     background: var(--DarkGreenBG);
 }
 
-body.v6 h2 a, body.v6 h2 a:hover {
+body.v6 h2:not(.gradientbg) a, body.v6 h2:not(.gradientbg) a:hover {
     color: var(--Maize);
     font-size: 20px;
 }
@@ -469,12 +469,13 @@ body.v6 h2 .header_inline{
     color: var(--OffWhite) !important;    
     background: var(--GreenBG);
     border-radius: 0;
-    outline: var(--Outset);
+    border: var(--Outset);
+    box-sizing: border-box;
 }
 
 .btnv6_blue_hoverfade:hover{
     background: var(--GreenBG) !important;
-    outline: var(--Outset);
+    border: var(--Outset);
 }
 
 .btnv6_blue_hoverfade:hover span{
@@ -483,7 +484,7 @@ body.v6 h2 .header_inline{
 
 .btnv6_blue_hoverfade:active{
     background: var(--DarkGreenBG) !important;
-    outline: var(--Inset);
+    border: var(--Inset);
 }
 
 /* New & Trending */
