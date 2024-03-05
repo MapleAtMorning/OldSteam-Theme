@@ -1,6 +1,6 @@
 <div align="center">
   <h1>OldSteam</h1>
-  The weirdest amalgamation of modern and old steam<br>
+  The uncanny valley between modern steam and old vgui<br>
   <sub>we aren't fancy enough for a logo</sub>
 </div>
 
@@ -35,9 +35,9 @@
   <summary style="font-size: 24px">Credits</summary>
 
     MapleAtMorning - Main Development
-    OGSteam - Original Inspiration
-    Shadow - Millennium Integration Help
-    LazarFlashes - Await Element JS
+    Ungstein / OGSteam - Original Inspiration
+    ShadowMonster99 - Millennium Integration Help
+    LaserFlash - Await Element JS
 
   <p>Please tell me if any credits are msising!</p>
 </details>
