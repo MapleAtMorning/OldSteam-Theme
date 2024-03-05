@@ -1,0 +1,78 @@
+[class*="steamdesktopoverlay_OverlayPopup"]{
+    background: var(--GreenBG);
+    transition: none;
+}
+
+[class*="steamdesktopoverlay_OverlayPopup"] .title-area-children{
+    color: var(--OffWhite);
+}
+
+[class*="desktopbrowser_URLBar_"]{
+    background: var(--GreenBG);
+    border-top: var(--Outset);
+    border-bottom: var(--Outset);
+    position: static;
+}
+
+[class*="desktopbrowser_URLBar"] [class*="desktopbrowser_URLBarText"]:hover{
+    background: transparent;
+}
+
+[class*="desktopbrowser_URLBar"] [class*="desktopbrowser_StatusIcon"]{
+    color: var(--OffWhite);
+}
+[class*="desktopbrowser_URLBar"] [class*="desktopbrowser_StatusIcon"]:hover{
+    color: var(--Maize);
+    background: transparent;
+}
+
+/* Tabs */
+
+[class*="desktopbrowser_BrowserTabs"] > div:has([class*="desktopbrowser_BrowserTab_"]:not([class*="desktopbrowser_Active"])){
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+[class*="desktopbrowser_BrowserTabs"] [class*="desktopbrowser_BrowserTab_"]:not([class*="desktopbrowser_Active"]){
+    padding: 3px 8px;
+    height: 27px;
+}
+
+[class*="desktopbrowser_BrowserTabs"] > [class*="desktopbrowser_BrowserTab_"]{
+    max-height: 27px;
+    position: relative;
+    bottom: 0;
+}
+
+[class*="desktopbrowser_BrowserTabs"] [class*="desktopbrowser_BrowserTab_"], 
+[class*="desktopbrowser_BrowserTabs"] [class*="desktopbrowser_BrowserTab_"][class*="desktopbrowser_Active"],
+[class*="desktopbrowser_BrowserTabs"] [class*="desktopbrowser_BrowserTab_"]:hover{
+    border: none;
+    background: var(--GreenBG);
+    border: var(--Outset);
+    border-bottom: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+[class*="desktopbrowser_BrowserTabs"] [class*="desktopbrowser_BrowserTab_"][class*="desktopbrowser_Active"]::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: var(--GreenBG);
+    height: 1px;
+    left: 0;
+    bottom: -1px;
+    z-index: 100;
+}
+
+[class*="desktopbrowser_BrowserTabs"] [class*="desktopbrowser_BrowserTab_"]:hover{
+    color: var(--Maize);
+}
+
+[class*="desktopbrowser_BrowserTabs"]{
+    z-index: 100;
+    overflow: visible;
+    align-items: end;
+}

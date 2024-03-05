@@ -16,6 +16,7 @@
 @import url(css/misc/properties.css);
 @import url(css/misc/gameservers.css);
 
+@import url(css/client/browser.css);
 @import url(css/client/navbar.css);
 @import url(css/client/main.css);
 @import url(css/client/footer.css);
