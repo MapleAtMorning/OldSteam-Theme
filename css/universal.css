@@ -11,6 +11,7 @@
 	--DimListText: #758666 !important;
 	--DisabledText1: #75806f !important;
 	--DisabledText2: #282e22 !important; 
+	--FullGreen: #7ea64b !important;
     --Inset: 1px inset var(--BorderBright);
     --Outset: 1px outset var(--BorderBright);
 }

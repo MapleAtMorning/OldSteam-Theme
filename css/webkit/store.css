@@ -610,7 +610,7 @@ body.v6 .home_rightcol .tab_preview h2{
 }
 
 .game_review_summary.positive{
-    color: #66ab52;
+    color: var(--FullGreen);
 }
 
 
