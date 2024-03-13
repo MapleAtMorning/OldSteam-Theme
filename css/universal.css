@@ -14,4 +14,7 @@
 	--FullGreen: #7ea64b !important;
     --Inset: 1px inset var(--BorderBright);
     --Outset: 1px outset var(--BorderBright);
+	--MaizeFilter: brightness(0) saturate(100%) invert(75%) sepia(22%) saturate(895%) hue-rotate(15deg) brightness(90%) contrast(95%);
+	--OffWhiteFilter: brightness(0) saturate(100%) invert(93%) sepia(10%) saturate(157%) hue-rotate(50deg) brightness(95%) contrast(91%);
+	--DisabledText1Filter: brightness(0) saturate(100%) invert(52%) sepia(22%) saturate(374%) hue-rotate(49deg) brightness(93%) contrast(91%);
 }

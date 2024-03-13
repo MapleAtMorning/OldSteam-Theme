@@ -198,7 +198,7 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
 }
 
 .carousel_container .arrow:hover > div{
-    filter: brightness(0) saturate(100%) invert(69%) sepia(59%) saturate(368%) hue-rotate(15deg) brightness(91%) contrast(92%);
+    filter: var(--MaizeFilter);
 }
 
 .store_main_capsule, .store_main_capsule:hover {
@@ -349,7 +349,7 @@ body.v6 .broadcast_live_stream_icon::before{
     left: 0;
     top: 0;
     margin: 2px;
-    filter: brightness(0) saturate(100%) invert(68%) sepia(36%) saturate(629%) hue-rotate(15deg) brightness(101%) contrast(80%);
+    filter: var(--MaizeFilter);
 }
 
 .ds_flag.ds_owned_flag::before{
@@ -363,7 +363,7 @@ body.v6 .broadcast_live_stream_icon::before{
     left: 0;
     top: 0;
     margin: 5px 4px 3px;
-    filter: brightness(0) saturate(100%) invert(68%) sepia(36%) saturate(629%) hue-rotate(15deg) brightness(101%) contrast(80%);
+    filter: var(--MaizeFilter);
 }
 
 .ds_flag.ds_wishlist_flag::before{
@@ -377,7 +377,7 @@ body.v6 .broadcast_live_stream_icon::before{
     left: 0;
     top: 0;
     margin: 5px 4px 3px;
-    filter: brightness(0) saturate(100%) invert(68%) sepia(36%) saturate(629%) hue-rotate(15deg) brightness(101%) contrast(80%);
+    filter: var(--MaizeFilter);
 }
 
 #live_streams_carousel .carousel_items .store_capsule{
@@ -859,5 +859,5 @@ body.v6 #footer #footer_text {
 }
 
 body.v6 #footer #footer_logo img, body.v6 #footer #footer_logo_steam img{
-    filter: brightness(0) saturate(100%) invert(93%) sepia(10%) saturate(157%) hue-rotate(50deg) brightness(95%) contrast(91%);
+    filter: var(--OffWhiteFilter);
 }
