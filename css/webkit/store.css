@@ -178,7 +178,7 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
     width: 36px;
     padding: 5px;
     top: 50% !important;
-    transform: translateY(-75%);
+    transform: translateY(-75%) scale(1) !important;
 }
 
 .carousel_container .arrow:active{
