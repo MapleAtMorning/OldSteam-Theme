@@ -764,15 +764,15 @@
 }
 
 [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Icon"]{
-    filter: brightness(0) saturate(100%) invert(52%) sepia(22%) saturate(374%) hue-rotate(49deg) brightness(93%) contrast(91%);
+    filter: var(--DisabledText1Filter);
 }
 
 [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"]:hover [class*="appdetailscommunityfeed_Icon"]{
-    filter: brightness(0) saturate(100%) invert(98%) sepia(10%) saturate(208%) hue-rotate(33deg) brightness(91%) contrast(91%);
+    filter: var(--DisabledText1Filter);
 }
 
 [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"] [class*="appdetailscommunityfeed_Icon"][class*="Selected"], [class*="appdetailscommunityfeed_Controls"] [class*="appdetailscommunityfeed_Control"] [class*="appdetailscommunityfeed_Icon"]:active{
-    filter: brightness(0) saturate(100%) invert(75%) sepia(22%) saturate(895%) hue-rotate(15deg) brightness(90%) contrast(95%);
+    filter: var(--MaizeFilter);
 }
 
 /* Hopeful wishing that they eventually add :has support lol */

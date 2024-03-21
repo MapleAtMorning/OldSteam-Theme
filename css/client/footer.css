@@ -53,3 +53,12 @@
     background: var(--MaizeBG);
     border: var(--Inset);
 }
+
+/* TODO: Remove when steam family comes out */
+[class*="bottombar_SteamFamilyJoinClientBeta"]{
+    width: max-content;
+    background-color: var(--MaizeBG);
+    right: 23px;
+    bottom: 71px;
+    position: fixed;
+}

@@ -5,7 +5,7 @@
  * @param {Integer} timeout - Milliseconds to wait before timing out, or 0 for no timeout
  * @returns {Promise<{querySelector: string matchedElements: Element[] }>}  resolves with original selector & found elements
  */
-export function waitForElement(querySelector, timeout) {
+function waitForElement(querySelector, timeout) {
     return new Promise((resolve, reject) => {
         /* Do a quick check so see if the element is already in the dom */
         const matchedElements = document.querySelectorAll(querySelector)
@@ -51,6 +51,7 @@ export function waitForElement(querySelector, timeout) {
 // TY Shadow from Millennium & lazarFlashes for the code above 
 
 async function runStyling(){
+    if (document.title !== "Steam"){return;}
     const { querySelector, matchedElements } = await waitForElement('[class*="steamdesktop_OuterFrame_"] [class*="LocalContentContainer"]', 3000)
     console.log('awaited code', querySelector, matchedElements)
     
@@ -79,13 +80,27 @@ async function runStyling(){
     steamLogoContainer.firstChild.remove()
     steamLogoContainer.insertBefore(newLogo, steamLogoContainer.firstChild)
     
+    try{
+        const bigPicture = document.querySelector("[class*='titlebarcontrols_GamepadUIToggle_']").parentNode
+        accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
+        if (vrMode != undefined){
+            vrMode = vrMode.parentNode
+            accountNewsMore.insertBefore(vrMode, accountNewsMore.firstChild)
+        } 
+    }catch(e){
+        console.error(e);
+    }
     // Move the VR & Bigpicture buttons from the right of the account button to the left
-    const bigPicture = document.querySelector("[class*='titlebarcontrols_GamepadUIToggle_']").parentNode
-    accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
-    if (vrMode != undefined){
-        vrMode = vrMode.parentNode
-        accountNewsMore.insertBefore(vrMode, accountNewsMore.firstChild)
-    }    
+   
 }
 
-runStyling()
+document.onkeyup = function (e){
+    if (e.key.toLowerCase() === "f5"){
+        window.opener.eval("location.reload()");
+    }
+}
+
+
+if(document.title.toLowerCase() === "steam"){
+    runStyling()
+}
