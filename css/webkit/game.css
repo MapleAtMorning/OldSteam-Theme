@@ -412,6 +412,29 @@ img.game_header_image_full{
     color: var(--Label);
 }
 
+/* Game Already Owned ============================================================================================================ */
+body.v6 .game_area_already_owned.page_content{
+    background: var(--GreenBG);
+    border: var(--Outset);
+    color: var(--OffWhite);
+    margin-bottom: 0;
+}
+
+.game_area_already_owned .ds_flag{
+    border-left: var(--Outset);
+}
+
+.game_area_play_stats{
+    border: var(--Inset);
+    background: var(--DarkGreenBG);
+    border-top: none;
+}
+
+#review_create h1, .reviewDate{
+    color: var(--Maize);
+    border-color: var(--DisabledText1);
+}
+
 /* Metadata Col ============================================================================================================ */
 .rightcol.game_meta_data .block.heading{
     background: var(--GreenBG);
@@ -449,9 +472,10 @@ img.game_header_image_full{
     box-sizing: border-box;
 }
 
-.game_area_details_specs_ctn{
+.game_area_details_specs_ctn, .block a.linkbar, a.linkbar:hover{
     border: var(--Outset);
-    background: var(--GreenBG);
+    background: var(--GreenBG) !important;
+    color: var(--OffWhite);
 }
 
 .game_area_details_specs_ctn .label{
@@ -463,8 +487,13 @@ a.game_area_details_specs_ctn:hover img{
     filter: var(--MaizeFilter);
 }
 
-a.game_area_details_specs_ctn:hover .label{
+a.game_area_details_specs_ctn:hover .label, .block a.linkbar:hover{
     color: var(--Maize) !important;
+}
+
+a.game_area_details_specs_ctn:active, a.linkbar:active{
+    border: var(--Inset);
+    background: var(--DarkGreenBG) !important;
 }
 
 .game_language_options td.ellipsis, #LanguagesHeader{
@@ -503,6 +532,30 @@ a.game_area_details_specs_ctn:hover .label{
     border-top: none;
 }
 
+[data-featuretarget*="deck-verified"] ._1VhpnbFYLe10F8k2MVp3eU{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--OffWhite);
+    transition: none;
+}
+
+[data-featuretarget*="deck-verified"] ._1VhpnbFYLe10F8k2MVp3eU:hover{
+    background-color: var(--GreenBG);
+    border: var(--Outset);
+    border-radius: 0;
+    box-shadow: none;
+    color: var(--Maize);
+}
+
+[data-featuretarget*="deck-verified"] ._1VhpnbFYLe10F8k2MVp3eU:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
+    border-radius: 0;
+    box-shadow: none;
+}
+
 [data-featuretarget*="store-sidebar-controller-support-info"] > div > div{
     color: var(--Label);
 }
@@ -519,4 +572,43 @@ a.game_area_details_specs_ctn:hover .label{
 
 [data-featuretarget*="store-sidebar-controller-support-info"] > div > a:hover div{
     color: var(--Maize) !important;
+}
+
+
+.communitylink_achievement_images{
+    display: flex;
+}
+
+a.communitylink_achievement.communitylink_achivement_plusmore{
+    background: var(--GreenBG);
+    border-radius: 0;
+    border: var(--Outset);
+    box-sizing: border-box;
+    color: var(--OffWhite);
+}
+
+a.communitylink_achievement.communitylink_achivement_plusmore:hover{
+    background: var(--GreenBG);
+    color: var(--Maize);
+}
+
+a.communitylink_achievement.communitylink_achivement_plusmore:active{
+    background: var(--DarkGreenBG);
+    border: var(--Inset);
+}
+
+.block .block_title{
+    color: var(--Label);
+}
+
+.game_details b{
+    color: var(--DisabledText1);
+}
+
+.details_block, .details_block a{
+    color: var(--OffWhite);
+}
+
+.details_block a:hover{
+    color: var(--Maize);
 }
