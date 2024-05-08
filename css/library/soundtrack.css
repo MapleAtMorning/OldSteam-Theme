@@ -1,19 +1,19 @@
-[class*="appdetailssoundtrack_SoundtrackPanel"]{
+._23zCI_59RJTWRvY-_YCFb9{
     background: var(--DarkGreenBG);
 }
 
-[class*="appdetailssoundtrack_BackgroundContainer"] [class*="appdetailssoundtrack_BackgroundBlurArt"]{
+._26bNl_GrQVxUbLj1KjGJQN ._3JZ9bzoPhr9prUKdYatsP1{
     display: none;
 }
 
-[class*="appdetailssoundtrack_AlbumArt_"]{
+._1R0eEV6Mxu9G0FnF8g9vNI{
     border: var(--Outset);
     filter: drop-shadow(0 0 0 black) !important;
     max-width: 500px;
     box-sizing: border-box;
 }
 
-[class*="appdetailssoundtrack_AlbumArtAndTitle"]{
+._1NbxLEcEzNVpZ0TY7ONgs1{
     box-sizing: border-box;
     background: var(--GreenBG);
     border: var(--Outset);
@@ -21,62 +21,62 @@
     padding: 4px 4px 0;
 }
 
-[class*="appdetailssoundtrack_ParentGameLink"], [class*="appdetailssoundtrack_AlbumStatsContainer"], [class*="appdetailssoundtrack_AlbumStats"], [class*="appdetailssoundtrack_ParentAppName"]{
+._2pcGGedg89N3zrMcv-eZWQ, .J_w15AskfksVz-60nWbt1, .J_w15AskfksVz-60nWbt1, ._3C_pTK3Ed-6j5P02srRHtc{
     text-transform: none;
     color: var(--Label) !important;
 }
 
-[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="appdetailssoundtrack_Header"] [class*="appdetailssoundtrack_ArtistName"], [class*="appdetailssoundtrack_SoundtrackContainer"] [class*="appdetailssoundtrack_Header"] [class*="appdetailssoundtrack_AlbumName"]{
+._1c7FWVusLDkD_Lv6ZB0uTY ._4f23lVS-5qWUNLy1QTm12 ._2bTdSZveC7h_neiBX4DAsa, ._1c7FWVusLDkD_Lv6ZB0uTY ._4f23lVS-5qWUNLy1QTm12 .oW5xvEBArmBDwEZHO3Xip{
     color: var(--OffWhite);
 }
 
-[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="LeftColumn"][class*="WithControls"]{
+._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .LeftColumn.WithControls{
     overflow-x: hidden;
 }
 
-[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="LeftColumn"] [class*="Play"]{
+._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .LeftColumn .PlayMusic{
     box-sizing: border-box;
 }
 
-[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"]{
+._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .RightColumn{
     border: var(--Inset);
     box-shadow: none;
 }
 
-[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"]{
+._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .RightColumn .TrackListContainer{
     border-radius: 0%;
     background-color: var(--DarkGreenBG);
 }
 
-[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="Disc"], [class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="TrackListing"][class*="Playing"], [class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="TrackListing"]:hover{
+._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .RightColumn .TrackListContainer .Disc, ._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .RightColumn .TrackListContainer .TrackListing.Playing, ._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .RightColumn .TrackListContainer .TrackListing:hover{
     border: var(--Outset);
     background: var(--GreenBG);
 }
 
-[class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="TrackListing"] [class*="TrackLength"], [class*="appdetailssoundtrack_SoundtrackContainer"] [class*="Content"] [class*="RightColumn"] [class*="TrackListContainer"] [class*="TrackListing"] [class*="TrackNumber"]{
+._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .RightColumn .TrackListContainer .TrackListing .TrackLength, ._1c7FWVusLDkD_Lv6ZB0uTY .ContentHubMainCarouselCapsule .RightColumn .TrackListContainer .TrackListing .TrackNumber{
     color: var(--Label);
 }
 
 /* Play section =================================================================*/
-[class*="appdetailssoundtrack_DesktopControls"]{
+._5ZEYSTRBHDswDtriduXW0{
     background: transparent;
     border: none;
     border-radius: 0%;
 }
 
-button[class*="soundtrackcontrols_IconButton"].gpfocus, button[class*="soundtrackcontrols_IconButton"]:active{
+button._1iFnR7cGRa1kepep433pGx.gpfocus, button._1iFnR7cGRa1kepep433pGx:active{
     background: var(--DarkGreenBG) !important;
     border: var(--Inset);
 }
 
-[class*="gamepadslider_SliderTrack"], [class*="gamepadslider_SliderControl"]:hover [class*="gamepadslider_SliderTrack"]{
+._3UIUDh2q1nXDaHbWOLCILH, ._3o137DBNF03ytbLBl2jPri:hover ._3UIUDh2q1nXDaHbWOLCILH{
     border-radius: 0;
     background: var(--DarkGreenBG);
     border: var(--Inset);
     --left-track-color: var(--Maize);
 }
 
-[class*="gamepadslider_SliderTrack"]::before{
+._3UIUDh2q1nXDaHbWOLCILH::before{
     border-radius: 0;
 }
 

@@ -88,18 +88,11 @@ img.game_header_image_full{
     height: auto;
 }
 
-.game_description_snippet, 
-.glance_ctn .release_date .date,
-.glance_tags_label{
+.game_description_snippet, .glance_ctn .release_date .date, .glance_tags_label{
     color: var(--OffWhite);
 }
 
-.glance_ctn .user_reviews .subtitle, 
-.glance_ctn .subtitle, 
-.glance_ctn .user_reviews, 
-.glance_ctn .release_date .subtitle, 
-.glance_ctn .dev_row .subtitle, 
-.glance_ctn .dev_row .column{
+.glance_ctn .user_reviews .subtitle, .glance_ctn .subtitle, .glance_ctn .user_reviews, .glance_ctn .release_date .subtitle, .glance_ctn .dev_row .subtitle, .glance_ctn .dev_row .column{
     color: var(--DisabledText1);
     font-size: 12px;
     text-transform: none !important;

@@ -34,6 +34,7 @@
 
 .friendsui-container .title-area-icon:hover .title-area-icon-inner [class*="SVGIcon"] line, .friendsui-container .title-area-icon:hover .title-area-icon-inner [class*="SVGIcon"] rect, .friendsui-container .title-area-icon:hover .title-area-icon-inner [class*="SVGIcon"] polyline{
     stroke: var(--Maize) !important;
+    transition: none;
 }
 
 /* Disconnected message */
@@ -47,14 +48,14 @@
 
 /* Header / Favorites / You */
 
-[class*="friendslist_RemotePlayInviteLinkSection"]{
+.SRcc1TnUvlXq7c7R6TRb{
     position: absolute;
     right: 8px;
     top: 36px;
     z-index: 5;
 }
 
-[class*="friendslist_RemotePlayInviteLinkSection"] [class*="friendslist_LinkRow_"]{
+.SRcc1TnUvlXq7c7R6TRb ._2kAtv5HfuuXs5emJMlmah7{
     background-color: var(--GreenBG);
     color: var(--OffWhite);
     border: var(--Outset);
@@ -64,17 +65,17 @@
     padding: 0;
 }
 
-[class*="friendslist_RemotePlayInviteLinkSection"] [class*="friendslist_LinkRow"] [class*="friendslist_LinkRowText"]{
+.SRcc1TnUvlXq7c7R6TRb ._3oVx00gZQkqSHco5A_x0Yf .o_39qE2DKxFG3q0A-UZCM{
     display: none;
 }
 
-[class*="friendslist_RemotePlayInviteLinkSection"] [class*="friendslist_LinkRow"] [class*="friendslist_LinkRowIconContainer"]{
+.SRcc1TnUvlXq7c7R6TRb ._3oVx00gZQkqSHco5A_x0Yf ._3N7xtcNR2rrGhX3yLO9yDY{
     margin: 0;
     width: 20px;
     height: 20px;
 }
 
-[class*="friendslist_RemotePlayInviteLinkSection"] [class*="friendslist_LinkRow"] [class*="friendslist_LinkRowIcon_"]{
+.SRcc1TnUvlXq7c7R6TRb ._3oVx00gZQkqSHco5A_x0Yf ._3oVx00gZQkqSHco5A_x0Yf{
     padding: 1px;
     width: 18px;
     height: 18px;
@@ -126,7 +127,7 @@
     color: var(--Maize);
 }
 
-.friendsui-container .friendsContextMenu [class*="persona_menu"]{
+.friendsui-container .friendsContextMenu .persona_menu{
     color: var(--DimListText);
 }
 
@@ -146,7 +147,7 @@
     box-shadow: none;
 }
 
-.friendSearchInput[type=text], .friendSearchInput[type=text]:focus{
+.friendSearchInput[type="text"], .friendSearchInput[type="text"]:focus{
     background: transparent;
     box-shadow: none;
 }
@@ -156,7 +157,7 @@
     transition: none;
 }
 
-.friendsTabButtonsContainer svg[class*="SVGIcon"] > path, .friendsTabButtonsContainer svg[class*="SVGIcon"] > g{
+.friendsTabButtonsContainer svg.SVGIcon_Throbber > path, .friendsTabButtonsContainer svg.SVGIcon_Throbber > g{
     fill: var(--OffWhite) !important;
     color: var(--OffWhite) !important;
 }
@@ -183,7 +184,7 @@
     border: var(--Inset);
 }
 
-[class*="insetshadow_FriendListInsetShadow"]{
+._2hL6ssOeMwczcGsrkJWupl{
     display: none;
 }
 
@@ -191,20 +192,20 @@
     border-top: 1px solid var(--Maize);
 }
 
-.friend.ingame, .ingame [class*="personanameandstatus_playerName"]{
+.friend.ingame, .ingame .r62qzcdJQ0qezZglOtiUX{
     color: var(--Maize);
 }
 
-.friend.online, .online [class*="personanameandstatus_playerName"], .online [class*="personanameandstatus_gameName"][class*="personanameandstatus_richPresenceLabel"]{
+.friend.online, .online .r62qzcdJQ0qezZglOtiUX, .online ._2wpaptjZY-3Gn1HOPlL85O._1k82NiWym4STegDGxRBHz2{
     color: var(--OffWhite);
 }
 
-.ingame[class*="personanameandstatus_twoLine"] [class*="personanameandstatus_richPresenceLabel"], .ingame [class*="personanameandstatus_richPresenceContainer"] [class*="personanameandstatus_richPresenceLabel"]{
+.ingame._27M2GicEvwcoEI5R0FSKi9 ._1k82NiWym4STegDGxRBHz2, .ingame ._2nrSdZqzl3e01VZleoVaWp ._1k82NiWym4STegDGxRBHz2{
     color: var(--Maize);
     opacity: 0.65;
 }
 
-[class*="steamavatar_avatar"]{
+._338kJp62vHY5iDbsraaiKD{
     box-shadow: none;
     width: 100%;
     height: 100%;
@@ -216,26 +217,26 @@
     background: var(--Maize)
 }
 
-[class*="personastatusicons_PersonaStatusIcon"].online .SVGIcon_MobilePhone path{
+._1YsWjZbxFewllb2PX6ZhNm.online .SVGIcon_MobilePhone path{
     fill: currentColor;
 }
 
-[class*="friendsnooze_SnoozeContainer"][class*="Dim"].online [class*="friendsnooze_SnoozeZ"], [class*="friendsnooze_SnoozeContainer"].online [class*="friendsnooze_SnoozeZ"]{
+._3EzTyjJx_tZUEIHygPwAeC.Dim.online ._1DArl3Gs9lXPcZdmCIlDJa, ._3EzTyjJx_tZUEIHygPwAeC.online ._1DArl3Gs9lXPcZdmCIlDJa{
     color: var(--OffWhite);
     text-shadow: none;
 }
 
-[class*="friendsnooze_SnoozeContainer"][class*="Dim"].in-game [class*="friendsnooze_SnoozeZ"], [class*="friendsnooze_SnoozeContainer"].in-game [class*="friendsnooze_SnoozeZ"]{
+._3EzTyjJx_tZUEIHygPwAeC.Dim.in-game ._1DArl3Gs9lXPcZdmCIlDJa, ._3EzTyjJx_tZUEIHygPwAeC.in-game ._1DArl3Gs9lXPcZdmCIlDJa{
     color: var(--Maize);
     text-shadow: none;
 }
 
-.groupName .gameGroupContainer .groupIcon, [class*="GameIcon"] img{
+.groupName .gameGroupContainer .groupIcon, .GameIcon img{
     border-radius: 0;
     box-shadow: none;
 }
 
-[class*="personastatusicons_PersonaStatusIcon"].ingame .SVGIcon_MobilePhone path{
+._1YsWjZbxFewllb2PX6ZhNm.ingame .SVGIcon_MobilePhone path{
     fill: var(--Maize);
 }
 
@@ -302,7 +303,7 @@
 }
 
 /* Right click popup =================================================================*/
-[class*="contextmenu_contextMenu_"]{
+.LQkrbbayZPY11qHm01t7F{
     color: var(--OffWhite) !important;
     background: var(--GreenBG) !important;
     border: var(--Outset) !important;
@@ -310,7 +311,7 @@
     box-shadow: none;
 }
 
-[class*="contextmenu_contextMenuItem"]{
+.pFo3kQOzrl9qVLPXXGIMp{
     color: var(--OffWhite);
 }
 
@@ -318,7 +319,7 @@
     background: transparent;
 }
 
-.contextMenuItem:hover, .contextMenuItem[class*="active"]{
+.contextMenuItem:hover, .contextMenuItem._33FxRe6f78NvAxdIjNf7Sn{
     background: var(--GreenBG) !important;
     color: var(--Maize);
 }

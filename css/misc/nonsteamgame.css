@@ -1,21 +1,21 @@
-[class*="addnonsteamgamedialog_AddNonSteamGameDialogContent"] [class*="addnonsteamgamedialog_Header"]{
+.zhaKeChn9HPNSMtk0ami_ ._3m0MnUo45wjLOfNLpZ-3KH{
     background: var(--GreenBG);
     border: var(--Inset);
     border-bottom: none;
     color: var(--OffWhite);
 }
 
-[class*="addnonsteamgamedialog_AddNonSteamGameDialogContent"] [class*="addnonsteamgamedialog_GameList"]{
+.zhaKeChn9HPNSMtk0ami_ ._1e6tjguQEHdYIehM9aRmO5{
     border: var(--Inset);
     border-top: none;
     background-color: var(--DarkGreenBG);
     box-shadow: none;
 }
 
-[class*="addnonsteamgamedialog_AddNonSteamGameDialogContent"] [class*="addnonsteamgamedialog_GameRow"]:hover{
+.zhaKeChn9HPNSMtk0ami_ ._1cXzMrhKqoTeIK_bPpNLIC:hover{
     background: var(--LightGreenBG);
 }
 
-[class*="addnonsteamgamedialog_AddNonSteamGameDialogContent"] [class*="addnonsteamgamedialog_Footer"] button.DialogButton:hover::before {
+.zhaKeChn9HPNSMtk0ami_ .kOsdHFGVApmVzmcTgOixo button.DialogButton:hover::before {
     display: none;
 }

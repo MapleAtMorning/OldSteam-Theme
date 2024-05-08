@@ -1,17 +1,17 @@
-[class*="messagelist_MarketingMessagePage"] [class*="messagelist_MessageListPage"]{
+.messagelist_MarketingMessagePage .messagelist_MessageListPage{
     background: var(--DarkGreenBG);
     border: var(--Inset);
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="image_GameImage"][class*="image_IsBlur"]{
+.messagelist_MarketingMessagePage .image_GameImage.image_IsBlur{
     display: none;
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="image_GameImage"]{
+.messagelist_MarketingMessagePage .image_GameImage{
     box-shadow: none;
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="image_Btn"]{
+.messagelist_MarketingMessagePage .image_Btn{
     text-transform: none;
     border: var(--Outset);
     border-radius: 0%;
@@ -20,37 +20,37 @@
     transition: none;
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="image_Btn"]:hover{
+.messagelist_MarketingMessagePage .image_Btn:hover{
     box-shadow: none;
     background: var(--GreenBG);
     color: var(--Maize);
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="image_Btn"]:active{
+.messagelist_MarketingMessagePage .image_Btn:active{
     border: var(--Inset);
     background: var(--DarkGreenBG);
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="image_MessagePriceCtn"] [class*="StoreSalePriceWidgetCon"]{
+.messagelist_MarketingMessagePage .image_MessagePriceCtn .StoreSalePriceWidgetCon{
     border: var(--Outset);
     background: var(--GreenBG) !important;
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="salepreviewwidgets_StoreSaleDiscountBox"]{
+.messagelist_MarketingMessagePage ._2fpFvkG2gjtlAHB3ZxS-_7{
     background: var(--MaizeBG) !important;
     color: var(--OffWhite) !important;
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="salepreviewwidgets_StoreSaleDiscountedPriceCtn"] [class*="salepreviewwidgets_StoreSalePriceBox"]{
+.messagelist_MarketingMessagePage ._3GLeQSpjtTPdHW4J8KwCSa .Wh0L8EnwsPV_8VAu8TOYr{
     color: var(--Maize) !important;
     text-shadow: none !important;
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="salepreviewwidgets_StoreOriginalPrice"]{
+.messagelist_MarketingMessagePage ._1EKGZBnKFWOr3RqVdnLMRN{
     color: var(--DisabledText1) !important;
 }
 
-[class*="messagelist_MarketingMessagePage"] [class*="salepreviewwidgets_StoreOriginalPrice"]::before{
+.messagelist_MarketingMessagePage ._1EKGZBnKFWOr3RqVdnLMRN::before{
     border-bottom: 1px solid currentColor !important;
     box-shadow: none !important;
 }

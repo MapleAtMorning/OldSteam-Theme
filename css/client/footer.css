@@ -1,61 +1,46 @@
-[class^="bottombar_BottomBar"]{
+._3vCzSrrXZzZjVJFZNg9SGu{
     background: transparent;
     box-shadow: none !important;
     padding: 0;
 }
 
-[class^="bottombar_FriendsButton"], [class^="bottombar_AddGameButton"]{
+._1TdaAqMFadi0UTqilrkelR, ._2foCkpRXhqq0UGVE50BWqj, .ip-YZhijAMZcuRoXBGiye{
     background-color: var(--GreenBG);
     border: var(--Outset);
     padding: 3px;
     gap: 0;
 }
 
-[class^="bottombar_FriendsButton"]:active, [class^="bottombar_AddGameButton"]:active{
-    background-color: var(--DarkGreenBG);
-    border: var(--Inset);
-} 
-
-[class^="bottombar_FriendsButton"] [class*="Text"], [class^="bottombar_AddGameButton"] [class*="Text"]{
+._2foCkpRXhqq0UGVE50BWqj ._3OhUxFVlQYr9W5ThxstR8k, ._1TdaAqMFadi0UTqilrkelR ._3OhUxFVlQYr9W5ThxstR8k, .ip-YZhijAMZcuRoXBGiye ._3wJnTtcTLEp0R7eQj_mK8Y{
     color: var(--OffWhite) !important;
 }
 
-[class^="bottombar_DownloadStatusContent"] [class*="Icon"], [class^="bottombar_DownloadStatusContent"] [class*="Queue"]{
-    color: var(--OffWhite);
-    box-shadow: none;
+._2foCkpRXhqq0UGVE50BWqj ._3OhUxFVlQYr9W5ThxstR8k:hover, ._1TdaAqMFadi0UTqilrkelR ._3OhUxFVlQYr9W5ThxstR8k:hover, .ip-YZhijAMZcuRoXBGiye ._3wJnTtcTLEp0R7eQj_mK8Y:hover{
+    color: var(--Maize) !important;
 }
 
-[class^="bottombar_FriendsButton"] [class*="Icon"], [class^="bottombar_AddGameButton"] [class*="Icon"]{
-    display: none;
+._1TdaAqMFadi0UTqilrkelR:active, ._2foCkpRXhqq0UGVE50BWqj:active, .ip-YZhijAMZcuRoXBGiye:active{
+    background-color: var(--DarkGreenBG);
+    border: var(--Inset);
 }
 
-[class^="bottombar_DetailedDownloadProgress_"] [class^="bottombar_ProgressBarWrapper_"] [class^="progressbar_ProgressBar"]{
+._2foCkpRXhqq0UGVE50BWqj ._1KrJ3sFAqPBN9mfpaNTU5F, ._1TdaAqMFadi0UTqilrkelR ._1KrJ3sFAqPBN9mfpaNTU5F, .ip-YZhijAMZcuRoXBGiye ._1KrJ3sFAqPBN9mfpaNTU5F{
+    display: none !important;
+}
+
+._2VtAqT03BpBsVdmxwptn9D ._2_FomluqqgQ2Hx8ON3AVep .yZ55NhARZGx1Awk2qs8pS{
     --color-progress-bar-foreground: var(--Maize) !important;
     border: var(--Inset);
     background-color: var(--DarkGreenBG);
 }
 
-[class^="bottombar_Status_"]{
+._1sCy-pm412Smb0wJx0W-4{
     color: var(--Maize) !important;
 }
 
-[class*="updatealert_Alert_"]{
-    background: var(--MaizeBG);
-    border: none;
-}
-
-[class*="updatealert_Alert"] [class*="updatealert_AlertButton"], [class*="updatealert_Alert"] [class*="updatealert_AlertButton"]:hover{
-    background: var(--Maize);
-    border: var(--Outset);
-}
-
-[class*="updatealert_Alert"] [class*="updatealert_AlertButton"]:active{
-    background: var(--MaizeBG);
-    border: var(--Inset);
-}
 
 /* TODO: Remove when steam family comes out */
-[class*="bottombar_SteamFamilyJoinClientBeta"]{
+._3GaHEQJW9B1Rlt0Ddz3E8D{
     width: max-content;
     background-color: var(--MaizeBG);
     right: 23px;

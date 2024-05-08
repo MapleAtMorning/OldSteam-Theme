@@ -1,38 +1,38 @@
-[class*="launchoptionsdialog_LaunchOptionDialog"], .DialogContent{
+.LclHwcOfHFpwObYMD1HLa, .DialogContent{
     background: var(--GreenBG);
     border: var(--Outset);
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_OptionList"] [class*="launchoptionsdialog_ListContainer"]{
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx-{
     background-color: var(--DarkGreenBG);
     border: var(--Inset);
     border-radius: 0%;
     box-shadow: none;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_OptionList"] [class*="launchoptionsdialog_ListContainer"] [class*="launchoptionsdialog_ListItem"]{
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx- ._3DEhfTvEKwgLd4smd6QdaU{
     background-color: var(--GreenBG);
     border: var(--Outset);
     border-radius: 0%;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_OptionList"] [class*="launchoptionsdialog_ListContainer"] [class*="launchoptionsdialog_ListItem"]:hover {
+.LclHwcOfHFpwObYMD1HLa ._2aHnQT0gTQ5KIsi5omK93w ._134yW7SKfZYwmvwlUElGx- ._3DEhfTvEKwgLd4smd6QdaU:hover {
     background-color: var(--GreenBG);
     color: var(--Maize);
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_PlayButton"], [class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_CancelButton"]{
+.LclHwcOfHFpwObYMD1HLa ._3H2GezG50hog8gSDj-qbx1 ._3EWVuoln1WAvpEaPNfpift, .LclHwcOfHFpwObYMD1HLa ._3H2GezG50hog8gSDj-qbx1 ._1d8CbcBnA6t3lsxYdnMv1h{
     background-color: var(--GreenBG);
     border: var(--Outset);
     border-radius: 0%;
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_PlayButton"]:hover, [class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_CancelButton"]:hover{
+.LclHwcOfHFpwObYMD1HLa ._3H2GezG50hog8gSDj-qbx1 ._3EWVuoln1WAvpEaPNfpift:hover, .LclHwcOfHFpwObYMD1HLa ._3H2GezG50hog8gSDj-qbx1 ._1d8CbcBnA6t3lsxYdnMv1h:hover{
     background-color: var(--GreenBG);
     color: var(--Maize);
 }
 
-[class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_PlayButton"]:active, [class*="launchoptionsdialog_LaunchOptionDialog"] [class*="launchoptionsdialog_ButtonContainer"] [class*="launchoptionsdialog_CancelButton"]:active{
+.LclHwcOfHFpwObYMD1HLa ._3H2GezG50hog8gSDj-qbx1 ._3EWVuoln1WAvpEaPNfpift:active, .LclHwcOfHFpwObYMD1HLa ._3H2GezG50hog8gSDj-qbx1 ._1d8CbcBnA6t3lsxYdnMv1h:active{
     background-color: var(--DarkGreenBG);
     border: var(--Inset);
 }

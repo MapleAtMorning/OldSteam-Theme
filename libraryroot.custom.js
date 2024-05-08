@@ -52,20 +52,20 @@ function waitForElement(querySelector, timeout) {
 
 async function runStyling(){
     if (document.title !== "Steam"){return;}
-    const { querySelector, matchedElements } = await waitForElement('[class*="steamdesktop_OuterFrame_"] [class*="LocalContentContainer"]', 3000)
+    const { querySelector, matchedElements } = await waitForElement('[class*="_3mz8wQ6Q44B8P7pzPP4Iyw"] [class*="RGNMWtyj73_-WdhflrmuY"]', 3000)
     console.log('awaited code', querySelector, matchedElements)
     
-    const rootMenuNav = document.querySelector("[class*='steamdesktop_TitleBar_']")
-    const accountNewsMore = document.querySelector("[class*='steamdesktop_TitleBarControls_']")
+    const rootMenuNav = document.querySelector("[class*='_39oUCO1OuizVPwcnnv88no']")
+    const accountNewsMore = document.querySelector("[class*='_1-9sir4j_KQiMqdkZjQN0u']")
     
-    const topBar = document.querySelector("[class*='steamdesktop_TopBar_']")
-    const bottomBar = document.querySelector("[class*='bottombar_BottomBarContainer_']")
-    const outerFrame = document.querySelector("[class*='steamdesktop_OuterFrame_']")
-    const contentFrame = document.querySelector("[class*='steamdesktop_ContentFrame_']")
+    const topBar = document.querySelector("[class*='_3Z7VQ1IMk4E3HsHvrkLNgo']")
+    const bottomBar = document.querySelector("[class*='_1_yS5UP7el0aN4vntx3dx']")
+    const outerFrame = document.querySelector("[class*='_3mz8wQ6Q44B8P7pzPP4Iyw']")
+    const contentFrame = document.querySelector("[class*='_1rDh5rXSFZJOqCa4UpnI4z']")
     
-    var vrMode = document.querySelector("[class*='titlebarcontrols_VRToggle_']")
+    var vrMode = document.querySelector("[class*='_3lRfTo8Wo3phXfE1DvK6QW']")
     
-    const steamLogoContainer = document.querySelector("[class*='rootmenu_SteamButton_']")
+    const steamLogoContainer = document.querySelector("[class*='bSKGlAJG2UVWTsntEJY2v']")
     const newLogo = document.createElement("img")
     newLogo.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABhWlDQ1BJQ0MgcHJvZmlsZQAAKJF9kT1Iw1AUhU9TpaIVBwsVcQhSnSyIijhKFYtgobQVWnUweemP0KQhSXFxFFwLDv4sVh1cnHV1cBUEwR8QJ0cnRRcp8b6k0CLGB5f3cd47h/vuA4R6malmxzigapaRisfEbG5FDLyiB2GqYYQlZuqJ9EIGnuvrHj6+30V5lve9P1evkjcZ4BOJZ5luWMTrxNObls55nzjESpJCfE48ZlCDxI9cl11+41x0WOCZISOTmiMOEYvFNpbbmJUMlXiKOKKoGuULWZcVzluc1XKVNfvkLwzmteU016mGEMciEkhChIwqNlCGhSjtGikmUnQe8/APOv4kuWRybYCRYx4VqJAcP/gf/J6tWZiccJOCMaDzxbY/RoDALtCo2fb3sW03TgD/M3CltfyVOjDzSXqtpUWOgL5t4OK6pcl7wOUOMPCkS4bkSH4qoVAA3s/om3JA/y3QverOrXmO0wcgQ7NaugEODoHRImWveby7q31u/95pzu8HiVBysCZNXyYAAAAGYktHRAD/AP8A/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfkCxcLIiaC9YE/AAABgElEQVQ4y41Tv0sCYRh+9NoMp2ioqSWxhpb+gYKCnEToCOGCtkNojUYnJRSHPOqWc+imCIIgFDzQORXUUgxFHKKhwR/gXWNvi9/hjzv1gY/v5f3xvN/7fN/HAUAw5Oc+ip8EGwgi79nb3107C55ebWytf72X6l0zGAz5OcxBJBG+aTTrNI5Gs04BwefGIggi72XFAcHnZouRLEXAirO5NBERZXNpYn4AcM4j8G7vnDP76ODE3A1D/zZ+dSiqrDmndRi3xYvL65Hp0PIZAICWz8DlWt0c+VdsxXx+ffphohXLbxMa3KduX9gIiCTCUbvZp6EbQ9KNIRERxZKRJACABRRV1hRV1qq1splkRcBENLtZJQoi76nWyhM+RZU1y3dDNhBE3tvrd6ndaZEg8h5WPEPA7teKwBRqDpzHhz5HXIpK/UEPcSkqlSoFlCoFAPjrD3oTN2T77IMhPxdLRu5YZ3Z8RZXzdvmWzofHVLHdaVG70yJFlfNM7UUfboZ56QIA//3tbq2ow2VbAAAAAElFTkSuQmCC"
     
@@ -81,7 +81,7 @@ async function runStyling(){
     steamLogoContainer.insertBefore(newLogo, steamLogoContainer.firstChild)
     
     try{
-        const bigPicture = document.querySelector("[class*='titlebarcontrols_GamepadUIToggle_']").parentNode
+        const bigPicture = document.querySelector("[class*='_3LKQ3S_yqrebeNLF6aeiog']").parentNode
         accountNewsMore.insertBefore(bigPicture, accountNewsMore.firstChild)
         if (vrMode != undefined){
             vrMode = vrMode.parentNode

@@ -1,14 +1,14 @@
-[class*="gamenotes_EditorInput"]{
+._3zWunJFZU6u89fIABN9Gkf{
     background: var(--DarkGreenBG);
     border: var(--Inset);
     box-shadow: none;
 }
 
-[class*="gamenotes_NoteEditorArea"] [class*="gamenotes_NoteActions"] .DialogButton{
+._3WOF4kDR1RbjelZgS8Qd-H ._3uGOyXFBdLEV_F6dICiSwx .DialogButton{
     opacity: 1;
 }
 
-[class*="prosemirror_ToolbarRow"] [class*="prosemirror_CommandButton"][class*="Toggled"]{
+._2H40REphoCtny5VfHm5Ad9 ._1-R1Ud0bImFcswoqa8FbU.Toggled{
     background: var(--DarkGreenBG) !important;
     border: var(--Inset) !important;
 }

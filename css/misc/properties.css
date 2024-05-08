@@ -1,6 +1,6 @@
 /* General window & Navbar =================================================================*/
 
-[class*="pagedsettings_PagedSettingsDialog_3"]{
+._3I6h_oySuLmmLY9TjIKT9s{
     flex-direction: column;
     padding: 30px 4px 20px;
     border: var(--Outset);
@@ -18,7 +18,7 @@
     top: 4px;
 }
 
-[class*="settings_DesktopPopup"] [class*="pagedsettings_PagedSettingsDialog_PageList_"]{
+.MzjwfxXSiSauz8kyEuhYO ._36SrgqA3nPhqhDB9AkRbSc{
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -30,21 +30,21 @@
     transform: translateY(-10px);
 }
 
-.DesktopUI [class*="settings_DesktopPopup"] [class*="pagedsettings_PagedSettingsDialog_PageListColumn"]{
+.DesktopUI .MzjwfxXSiSauz8kyEuhYO .RTicBCbDcEGkjsbmWzA8C{
     min-height: 39px;
     max-height: 39px;
 }
 
 
-[class*="settings_DesktopPopup"] .DialogContentTransition{
+.MzjwfxXSiSauz8kyEuhYO .DialogContentTransition{
     border-top: none;   
 }
 
-.DesktopUI [class*="pagedsettings_PageListSeparator"]{
+.DesktopUI ._1UEEmNDZ7Ta3enwTf5T0O0{
     display: none;
 }
 
-[class*="pagedsettings_PagedSettingsDialog_PageList_"]{
+._36SrgqA3nPhqhDB9AkRbSc{
     height: 100%;
     width: 100%;
     flex-direction: row;
@@ -52,7 +52,7 @@
     overflow: visible   ;
 }
 
-[class*="pagedsettings_PagedSettingsDialog_PageListItem"]{
+.bkfjn0yka2uHNqEvWZaTJ{
     padding: 5px 8px;
     font-size: 12px;
     border: var(--Outset);
@@ -65,7 +65,7 @@
     margin-top: 2px;
 }
 
-[class*="pagedsettings_PagedSettingsDialog_PageListItem"][class*="Active"]{
+.bkfjn0yka2uHNqEvWZaTJ.ActiveTextChannel{
     background-color: var(--GreenBG);
     z-index: 10;
     border-bottom: none;
@@ -74,15 +74,15 @@
     margin-top: 0;
 }
 
-[class*="pagedsettings_PagedSettingsDialog_PageListItem"] [class*="pagedsettings_PagedSettingsDialog_PageListItem_Title"]{
+.bkfjn0yka2uHNqEvWZaTJ .pagedsettings_PagedSettingsDialog_PageListItem_Title{
     text-overflow: unset;
 }
 
-[class*="pagedsettings_PagedSettingsDialog_PageListItem"] [class*="pagedsettings_PageListItem_Icon"]{
+.bkfjn0yka2uHNqEvWZaTJ .U6HcKswXzjmWtFxbjxuz4{
     color: inherit !important;
 }
 
-[class*="pagedsettings_PagedSettingsDialog_Title"]{
+._3qEgQJqeb0zyM12KXq64Or{
     padding: 0;
     margin: 0;
     position: absolute;
@@ -94,7 +94,7 @@
     font-weight: normal;
 }
 
-.DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageListColumn"]{
+.DesktopUI .RTicBCbDcEGkjsbmWzA8C{
     background: var(--GreenBG);
     padding: 0;
     min-width: 100%;
@@ -113,7 +113,7 @@
     box-sizing: border-box;
 }
 
-.DesktopUI [class*="pagedsettings_PagedSettingsDialog_PageContent"]{
+.DesktopUI ._1I3NifxqTHCkE-2DeritAs{
     padding: 8px !important;
     background: var(--GreenBG);
     border: none;
@@ -121,28 +121,28 @@
 
 /* Toggles =================================================================*/
 
-[class*="gamepaddialog_Toggle"]{
+._3__ODLQXuoDAX41pQbgHf9{
     box-shadow: none !important;
 }
 
-[class*="gamepaddialog_ToggleRail"]{
+._2JtC3JSLKaOtdpAVEACsG1{
     background: var(--DarkGreenBG);
     border: var(--Inset);
     border-radius: 0%;
     transition: none;
 }
 
-[class*="gamepaddialog_Toggle"][class*="Disabled"] [class*="gamepaddialog_ToggleRail"], [class*="gamepaddialog_Toggle"][class*="Disabled"] [class*="gamepaddialog_ToggleSwitch"]{
+._3__ODLQXuoDAX41pQbgHf9.Disabled ._2JtC3JSLKaOtdpAVEACsG1, ._3__ODLQXuoDAX41pQbgHf9.Disabled ._3__ODLQXuoDAX41pQbgHf9{
     background: var(--DisabledText1);
 }
 
 
-[class*="gamepaddialog_On"] [class*="gamepaddialog_ToggleRail"]::before{
+._3ld7THBuSMiFtcB_Wo165i ._2JtC3JSLKaOtdpAVEACsG1::before{
     background: var(--MaizeBG);
     transition: none;
 }
 
-[class*="gamepaddialog_ToggleSwitch"]{
+._3__ODLQXuoDAX41pQbgHf9{
     border-radius: 0%;
     transition: none;
     box-shadow: none;
@@ -152,43 +152,43 @@
 
 }
 
-[class*="gamepaddialog_On"] [class*="gamepaddialog_ToggleSwitch"]{
+._3ld7THBuSMiFtcB_Wo165i ._3__ODLQXuoDAX41pQbgHf9{
     background: var(--Maize);
 }
 
 /* Content =================================================================*/
 
-.DesktopUI [class*="gamepaddialog_FieldDescription"], [class*="appproperties_AppProperties"] [class*="appproperties_LocalFilesLink"] a{
+.DesktopUI ._2OJfkxlD3X9p8Ygu1vR7Lr, ._1FyBL6obxHQ2Z2CsaV2Gbz ._1wSQxXZWWYuvKQyTg1CHKj a{
     color: var(--Label);
 }
 
-[class*="appproperties_AppProperties"] [class*="appproperties_LocalFilesLink"] a:hover{
+._1FyBL6obxHQ2Z2CsaV2Gbz ._1wSQxXZWWYuvKQyTg1CHKj a:hover{
     color: var(--Maize);
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_Title"]{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3zuICQ63IRympzZ6qgs-5O{
     color: var(--OffWhite);
     text-transform: none;
     font-size: 20px;
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_BlueHighlight"]{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._1KmR8MOpvgQ9OO2AmwOCca{
     color: var(--Maize);
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_SteamInputStatusGrid"]{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3lj3-GDYOlcoIFB3fFo1ko{
     background: var(--DarkGreenBG);
     border: var(--Inset);
     border-radius: 0%;
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"]{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW{
     border: 1px transparent;
     box-shadow: none;
     background: var(--DarkGreenBG);
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_DlcHeader"], [class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_DlcHeader"]:hover{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW ._1SKB0Xc7OpWlOlr-wSi8ho, ._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW ._1SKB0Xc7OpWlOlr-wSi8ho:hover{
     background: var(--GreenBG);
     border: var(--Outset);
     text-transform: none;
@@ -196,52 +196,52 @@
     border-right: none;
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_DlcHeader"]:first-of-type{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW ._1SKB0Xc7OpWlOlr-wSi8ho:first-of-type{
     border-left: var(--Outset);
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_DlcHeader"]:nth-of-type(4){
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW ._1SKB0Xc7OpWlOlr-wSi8ho:nth-of-type(4){
     border-right: var(--Outset);
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_Install_"]{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW ._2nXS1OQvhODwzoAc75AEKR{
     border-left: var(--Inset);
     border-bottom: var(--Inset);
     margin: 0;
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_SizeDisk"]{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW ._2tvvLzzndDzD9b0ORuVNjk{
     border-right: var(--Inset);
     border-bottom: var(--Inset);
     margin: 0;
 }
 
-[class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] a, [class*="appproperties_AppProperties"] .DialogBody [class*="appproperties_DlcGrid"] [class*="appproperties_Added"]{
+._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW a, ._1FyBL6obxHQ2Z2CsaV2Gbz .DialogBody ._3sXdOJ9DEh5zdS54_ptwgW .dR1gzt2Xg4CjsE9T0Q4Lc{
     border-bottom: var(--Inset);
     margin: 0;
 }
 
 /* Settings specific content =================================================================*/
 
-[class*="accountsettings_EntryValue"], .DesktopUI [class*="notificationssettings_FriendsDescription"][class*="notificationssettings_FriendsDescription"] {
+._3qIXY674NedSZNa-CXtNlt, .DesktopUI ._3fPiC9QRyT5oJ6xePCVYz8._3fPiC9QRyT5oJ6xePCVYz8 {
     color: var(--Label);
 }
 
-.DesktopUI [class*="settings_SettingsDialogSubHeader"], [class*="familysettings_UserListHeader"], .DesktopUI [class*="remoteplaysettings_TableHeader"]{
+.DesktopUI ._2rK4YqGvSzXLj1bPZL8xMJ, ._2LOrs2FFkZpqUcObLlzpuc, .DesktopUI ._1HL6KuwUJaZQ7x2rmAxxSz{
     color: var(--OffWhite);
     text-transform: none;
 }
 
-[class*="desktopsecuritysettings_EntryValue"]{
+._1PBuyc38k9xkUt4KB_lXh-{
     color: var(--Maize);
 }
 
-[class*="notificationssettings_NotificationSection"] button.DialogButton{
+.BRmrC-jnwpXqye4oYB21C button.DialogButton{
     background: transparent;
     color: var(--OffWhite);
 }
 
-.DesktopUI [class*="settings_SettingsDialogBodyFade"]{
+.DesktopUI .aFxOaYcllWYkCfVYQJFs0{
     mask-image: none;
     -webkit-mask-image: none;
 }
@@ -255,64 +255,64 @@
     color: var(--Maize);
 }
 
-[class*="contentmanagement_AppsGrid"] [class*="contentmanagement_AppBody"]:hover{
+._2n6FNLKyb6al_YPk13xS7S ._3vHX3wZSMEfQYNhAjbu0RB:hover{
     background-color: transparent;
 }
 
-[class*="contentmanagement_LibraryContent"] [class*="contentmanagement_DriveUsage"] [class*="contentmanagement_DriveName"]{
+.ybEU2kARViIFGigPw8VQ0 ._181OY9APZJDARykJ_KOFPE ._1rihlgVMF4Q_fFZDnXeVt5{
     text-transform: none;
     color: var(--Maize);
 }
 
-[class*="contentmanagement_AppInfo"]{
+._1L9a0QuKYIDA8pw0ztz0tr{
     color: var(--Label) !important;
 }
 
-.DesktopUI [class*="contentmanagement_AppInfo"] svg, [class*="contentmanagement_AppInfo"] [class*="contentmanagement_AppUsageValue"], [class*="contentmanagement_AppInfo"] [class*="contentmanagement_AppUsageText"]{
+.DesktopUI ._1L9a0QuKYIDA8pw0ztz0tr svg, ._1L9a0QuKYIDA8pw0ztz0tr ._2B8djgiwv5XCyvzl7GxWBA, ._1L9a0QuKYIDA8pw0ztz0tr ._1G9v2mshuM0YQNG51iX5fH{
     color: inherit !important;
     text-transform: none !important;
 }
 
-[class*="settings_DesktopPopup"] [class*="gamepaddialog_Field"][class*="gamepaddialog_Clickable"]:not([class*="Disabled"]):hover{
+.MzjwfxXSiSauz8kyEuhYO ._2OJfkxlD3X9p8Ygu1vR7Lr._27UVYW_V-GslmLf0-gfVCM:not(.Disabled):hover{
     background: none;
     cursor: default;
 }
 
-[class*="gamepaddialog_Field"][class*="gamepaddialog_Disabled"] [class*="gamepaddialog_FieldLabel"]{
+._2OJfkxlD3X9p8Ygu1vR7Lr._1pmyxI3wxLrWwGnc52yVns .lcD7JwtsRxFA78_NDNzGr{
     color: var(--Maize);
 }
 
-[class*="gamepadslider_SliderHandle"]{
+._2yVKjlAVW3txkGmVpX9G8i{
     background: transparent;
     border-radius: 0;
     box-shadow: none;
 }
 
-[class*="radio_Group"]{
+._2qYC3gFAkLcB48i6dTz051{
     border-radius: 0;
     background-color: var(--DarkGreenBG);
     border: var(--Inset);
     color: var(--OffWhite);
 }
 
-[class*="radio_Group"] [class*="radio_Button"]{
+._2qYC3gFAkLcB48i6dTz051 ._3lwcRYJ_r7x01Cn15bcdYI{
     background-color: var(--GreenBG);
     border-radius: 0%;
     border: var(--Outset);
     transition: none;
 }
 
-[class*="radio_Group"] [class*="radio_Button"]:hover{
+._2qYC3gFAkLcB48i6dTz051 ._3lwcRYJ_r7x01Cn15bcdYI:hover{
     color: var(--Maize);
 }
 
-[class*="radio_Group"] [class*="radio_Active"]{
+._2qYC3gFAkLcB48i6dTz051 ._3ZBFoxumQBb1JEVw_DZzaC{
     background-color: var(--DarkGreenBG);
     border-radius: 0%;
     border: var(--Inset);
     color: var(--OffWhite);
 }
 
-[class*="radio_Group"] [class*="radio_Active"]:hover, [class*="voicesettings_MicrophoneTest"] [class*="voicesettings_VolumeBar"]{
+._2qYC3gFAkLcB48i6dTz051 ._3ZBFoxumQBb1JEVw_DZzaC:hover, ._3Q_M7UkwxmT8syYL2g2DBQ .Qeg4qAFIMLaYd3mHOBndS{
     background: var(--DarkGreenBG);
 }

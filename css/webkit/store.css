@@ -30,7 +30,7 @@
     background: var(--DarkGreenBG);
 }
 
-.store_nav .tab > span, .store_nav .flyout_tab > span a[class*="pulldown"]{
+.store_nav .tab > span, .store_nav .flyout_tab > span a.pulldown{
     line-height: 29px !important;
     height: 29px !important;
     color: inherit !important;
@@ -277,11 +277,7 @@ body.v6 .store_nav .popup_block_new .popup_body.search_v2 {
     height: 394px;
 }
 
-.store_capsule, .store_capsule:hover,
-.carousel_container.spotlight .carousel_items > * .store_capsule, 
-.carousel_container.spotlight .carousel_items > * .store_capsule.daily_deal,
-.recently_updated .store_capsule,
-.recommended_creators_ctn .store_capsule{
+.store_capsule, .store_capsule:hover, .carousel_container.spotlight .carousel_items > * .store_capsule, .carousel_container.spotlight .carousel_items > * .store_capsule.daily_deal, .recently_updated .store_capsule, .recommended_creators_ctn .store_capsule{
     box-shadow: none;
     background: var(--GreenBG);
     border: var(--Outset);
@@ -704,7 +700,7 @@ body.v6 .discover_queue_empty>h3, .discover_queue_empty>p{
 }
 
 /* Game Hover */
-[class*="hover_arrow_"]{
+.hover_arrow_{
     display: none !important;
 }
 
