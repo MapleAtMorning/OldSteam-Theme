@@ -52,7 +52,7 @@ function waitForElement(querySelector, timeout) {
 
 async function runStyling(){
     if (document.title !== "Steam"){return;}
-    const { querySelector, matchedElements } = await waitForElement('[class*="_3mz8wQ6Q44B8P7pzPP4Iyw"] [class*="RGNMWtyj73_-WdhflrmuY"]', 3000)
+    const { querySelector, matchedElements } = await waitForElement('[class*="_3mz8wQ6Q44B8P7pzPP4Iyw"] [class*="RGNMWtyj73_-WdhflrmuY"]', 10000)
     console.log('awaited code', querySelector, matchedElements)
     
     const rootMenuNav = document.querySelector("[class*='_39oUCO1OuizVPwcnnv88no']")
