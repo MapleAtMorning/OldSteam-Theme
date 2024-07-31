@@ -81,7 +81,7 @@
     color: var(--OffWhite) !important;
 }
 
-.SVGIcon_Notification, .RtSv39ZoBOySnb8XQ5hJf .Icon{
+.RtSv39ZoBOySnb8XQ5hJf svg{
     color: inherit !important;
 }
 
@@ -91,7 +91,7 @@
     color: #fff !important;
 }
 
-.RtSv39ZoBOySnb8XQ5hJf.HasNew, .RtSv39ZoBOySnb8XQ5hJf.HasNew:hover{
+.RtSv39ZoBOySnb8XQ5hJf._3L1c8C0o_xXzPy26aoLBFd, .RtSv39ZoBOySnb8XQ5hJf._3L1c8C0o_xXzPy26aoLBFd:hover{
     color: var(--Maize) !important;
 }
 
