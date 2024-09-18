@@ -52,11 +52,6 @@
     overflow: visible;
 }
 
-.millennium-tabs-list {
-    flex-direction: row;
-    display: flex;
-}
-
 ._EebF_xe4DGRZ9a0XkyDj::-webkit-scrollbar{
     background-color: var(--DarkGreenBG);
 }

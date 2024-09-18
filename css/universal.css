@@ -12,6 +12,22 @@
 	--DisabledText1: #75806f !important;
 	--DisabledText2: #282e22 !important; 
 	--FullGreen: #7ea64b !important;
+
+	/* TF2-Esque Theme, comment out colors above and uncomment colors below. */
+	/* --LightGreenBG: #a39884 !important;
+	--GreenBG: #393532 !important;
+	--DarkGreenBG: #221f1c !important;
+	--BorderBright: #4a453d !important;
+	--BorderDark: #4a453d !important;
+	--OffWhite: #d9d9d9 !important;
+	--Maize: #c4b550 !important;
+	--MaizeBG: #91863c !important;
+	--Label: #c8bca2 !important;
+	--DimListText: #c8bca2 !important;
+	--DisabledText1: #575248 !important;
+	--DisabledText2: #575248 !important; 
+	--FullGreen: #4a453d !important; */
+
     --Inset: 1px inset var(--BorderBright);
     --Outset: 1px outset var(--BorderBright);
 	--MaizeFilter: brightness(0) saturate(100%) invert(75%) sepia(22%) saturate(895%) hue-rotate(15deg) brightness(90%) contrast(95%);
