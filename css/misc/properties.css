@@ -111,8 +111,6 @@
 }
 
 .DialogContentTransition{
-    width: 100%;
-    max-width: 100%;
     height: 100%;
     border: var(--Outset);
     box-sizing: border-box;
@@ -154,7 +152,6 @@
     border: var(--Outset);
     width: 20px;
     background: var(--GreenBG);
-
 }
 
 ._3ld7THBuSMiFtcB_Wo165i ._3__ODLQXuoDAX41pQbgHf9{
