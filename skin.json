@@ -25,100 +25,73 @@
         "Classic"
     ],
 
-    "Configuration": [
-        {
-            "Name": "Disable Avatar Status Lines",
-            "ToolTip": "Disable the avatar status lines on friends",
-            "Type": "CheckBox",
-            "Value": true
+    "Conditions": {
+        "Disable Avatar Status Lines": {
+            "default": "true",
+            "description": "Disable the avatar status lines on friends",
+            "values": {
+                "true": {
+                    "TargetCss": {
+                        "affects": [".*"],  "src": "css/config/statuslines.css"
+                    }
+                },
+                "false": {
+                }
+            }
         },
-        {
-            "Name": "Disable Download Logo",
-            "ToolTip": "Disable the logo that shows up on the downloads page for the currently downloading game",
-            "Type": "CheckBox",
-            "Value": false
+        "Disable Download Logo": {
+            "default": "false",
+            "description": "Disable the logo that shows up on the downloads page for the currently downloading game",
+            "values": {
+                "true": {
+                    "TargetCss": {
+                        "affects": ["^Steam$"],  "src": "css/config/downloadlogo.css"
+                    }
+                },
+                "false": {
+                }
+            }
         },
-        {
-            "Name": "Disable Avatar Frames",
-            "ToolTip": "Disable the avatar frames around profile pictures",
-            "Type": "CheckBox",
-            "Value": true
+        "Disable Avatar Frames": {
+            "default": "false",
+            "description": "Disable the avatar frames around profile pictures",
+            "values": {
+                "true": {
+                    "TargetCss": {
+                        "affects": [".*"],  "src": "css/config/avatarframes.css"
+                    }
+                },
+                "false": {
+                }
+            }
         },
-        {
-            "Name": "Disable Rare Achievements Effect",
-            "ToolTip": "Disable the animated yellow glow around rare achievements",
-            "Type": "CheckBox",
-            "Value": false
+        "Disable New Message Line": {
+            "default": "true",
+            "description": "Disable the yellow line and \"New Message\" text in chats",
+            "values": {
+                "true": {
+                    "TargetCss": {
+                        "affects": [".*"],  "src": "css/config/newmsgline.css"
+                    }
+                },
+                "false": {
+                }
+            }
         },
-        {
-            "Name": "Disable New Message Line",
-            "ToolTip": "Disable the yellow line and \"New Message\" text in chats",
-            "Type": "CheckBox",
-            "Value": true
-        },
-        {
-            "Name": "Disable Chat Tab PFPs",
-            "ToolTip": "Disable the profile pictures in tabs for chat",
-            "Type": "CheckBox",
-            "Value": false
+        "Disable Chat Tab PFPs": {
+            "default": "false",
+            "description": "Disable the profile pictures in tabs for steam chat",
+            "values": {
+                "true": {
+                    "TargetCss": {
+                        "affects": [".*"],  "src": "css/config/chattabpfps.css"
+                    }
+                },
+                "false": {
+                }
+            }
         }
-    ],
+    },
 
-    "UseDefaultPatches": true,
-    "Patches": [
-        {
-            "MatchRegexString": ".*",
-            "Statement": [
-                {
-                    "If": "Disable Avatar Status Lines",
-                    "Equals": true,
-                    "True": {
-                        "TargetCss": "css/config/statuslines.css"
-                    }
-                },
-                {
-                    "If": "Disable Avatar Frames",
-                    "Equals": true,
-                    "True": {
-                        "TargetCss": "css/config/avatarframes.css"
-                    }
-                },
-                {
-                    "If": "Disable New Message Line",
-                    "Equals": true,
-                    "True": {
-                        "TargetCss": "css/config/newmsgline.css"
-                    }
-                },
-                {
-                    "If": "Disable Chat Tab PFPs",
-                    "Equals": true,
-                    "True": {
-                        "TargetCss": "css/config/chattabpfps.css"
-                    }
-                }
-            ]
-        },
-        {
-            "MatchRegexString": "^Steam$",
-            "TargetJs": "libraryroot.custom.js",
-            "TargetCss": "libraryroot.custom.css",
-            "Statement": [
-                {
-                    "If": "Disable Download Logo",
-                    "Equals": true,
-                    "True": {
-                        "TargetCss": "css/config/downloadlogo.css"
-                    }
-                },
-                {
-                    "If": "Disable Rare Achievements Effect",
-                    "Equals": true,
-                    "True": {
-                        "TargetCss": "css/config/rareachievements.css"
-                    }
-                }
-            ]
-        }
-    ]
+    "UseDefaultPatches": true
 }
